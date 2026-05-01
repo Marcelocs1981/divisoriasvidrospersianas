@@ -10,20 +10,21 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-800px.webp';
 <section class="hero">
   <div class="bg">
     <picture>
-      <source 
-        media="(max-width: 767px)" 
-        srcset={imgMobile.src} 
-      />
-      <Image 
-        src={imgDesktop}
-        alt="Divisórias de vidro com persianas em ambiente corporativo"
-        widths={[480, 800, 1920]}  /* Adicionei o 480 aqui */
-        sizes="(max-width: 767px) 100vw, 1920px"
-        loading="eager"
-        fetchpriority="high"
-        format="webp"
-/>
-    </picture>
+  <source 
+    media="(max-width: 767px)" 
+    srcset={imgMobile.src} 
+  />
+  <Image 
+    src={imgDesktop}
+    alt="Divisórias de vidro com persianas embutidas instaladas em escritório em Alphaville"
+    widths={[480, 800, 1920]}
+    sizes="(max-width: 767px) 480px, 100vw"
+    loading="eager"
+    fetchpriority="high"
+    quality={80}
+    format="webp"
+  />
+</picture>
 
     <div class="overlay"></div>
     <div class="gold-glow"></div>
