@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 
 // Importando as duas versões da imagem
 import imgDesktop from '../assets/divisorias-de-vidros-com-persianas-1920px.webp';
-import imgMobile from '../assets/divisorias-de-vidros-com-persianas-800px.webp';
+import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 ---
 
 <section class="hero">
@@ -16,12 +16,12 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-800px.webp';
   />
   <Image 
     src={imgDesktop}
-    alt="Divisórias de vidro com persianas embutidas instaladas em escritório em Alphaville"
-    widths={[480, 800, 1920]}
+    alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
+    widths={[1024, 1920]}
     sizes="(max-width: 767px) 480px, 100vw"
     loading="eager"
     fetchpriority="high"
-    quality={80}
+    quality={80} 
     format="webp"
   />
 </picture>
