@@ -1,31 +1,34 @@
 ---
-import "../styles/fonts.css";
-import { Image } from 'astro:assets';
-
-// Importando as duas versões da imagem
+import { Image, getImage } from 'astro:assets'; // Importamos getImage para processar a mobile
 import imgDesktop from '../assets/divisorias-de-vidros-com-persianas-1920px.webp';
 import imgMobile from '../assets/divisorias-de-vidros-com-persianas-400px.webp';
+
+// Aqui está o segredo: processamos a imagem mobile antes de renderizar
+const mobileOptimized = await getImage({
+  src: imgMobile,
+  width: 400,
+  quality: 20, // Forçamos a compressão máxima que o Google quer
+  format: 'webp'
+});
 ---
 
-<section class="hero">
-  <div class="bg">
-    <picture>
-      <source 
-        media="(max-width: 767px)" 
-        srcset={imgMobile.src} 
-      />
-      <Image 
-        src={imgDesktop}
-        alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-        widths={[1024, 1920]}
-        sizes="(max-width: 767px) 100vw, 1920px"
-        loading="eager"
-        fetchpriority="high"
-        quality={20} 
-        format="webp"
-        decoding="sync"
-      />
-    </picture>
+<picture>
+  <source 
+    media="(max-width: 767px)" 
+    srcset={mobileOptimized.src} 
+  />
+  <Image 
+    src={imgDesktop}
+    alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
+    widths={[1024, 1920]}
+    sizes="(max-width: 767px) 100vw, 1920px"
+    loading="eager"
+    fetchpriority="high"
+    quality={20}
+    format="webp"
+    decoding="sync"
+  />
+</picture>
 
     <div class="overlay"></div>
     <div class="gold-glow"></div>
