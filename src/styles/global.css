@@ -1,0 +1,29 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background: #050505;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 200; /* 🔥 padrão leve */
+}
+
+/* TÍTULOS */
+h1, h2, h3 {
+  font-family: 'Cormorant', serif;
+}
+
+/* DESTAQUES */
+strong, b {
+  font-weight: 400;
+}

@@ -1,0 +1,33 @@
+/* INTER (somente pesos essenciais) */
+
+/* INTER OTIMIZADO */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+/* CORMORANT (somente título) */
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/cormorant/CormorantGaramond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/cormorant/CormorantGaramond-Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}

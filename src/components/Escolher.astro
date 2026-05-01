@@ -1,0 +1,114 @@
+<section class="testimonial-section">
+  <div class="container">
+    <blockquote class="quote-text">
+      Escolher especialistas em divisórias de vidro para escritório é a maneira mais 
+      <span class="gold-text">rápida, econômica, segura e tranquila</span> 
+      de garantir o sucesso do seu projeto.
+    </blockquote>
+
+    <div class="quote-footer">
+      <div class="line"></div>
+      <div class="footer-content">
+        <p class="footer-title">+25 anos criando ambientes corporativos com vidros</p>
+        <p class="footer-subtitle">Especialistas em divisórias de vidro com persianas integradas</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .testimonial-section {
+    background-color: #050708;
+    color: #ffffff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    position: relative;
+    /* Força o navegador a não aplicar aspas automáticas vazias */
+    quotes: none;
+  }
+
+  /* Aspa de Abertura - Usando Unicode \201C */
+  .quote-text::before {
+    content: "\201C" !important;
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5.5rem;
+    color: #967000;
+    line-height: 1;
+    margin-bottom: -10px;
+    margin-left: -5px;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Aspa de Fechamento - Usando Unicode \201D */
+  .quote-text::after {
+    content: "\201D" !important;
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    color: #967000;
+    font-size: 5.5rem;
+    margin-left: 8px;
+    vertical-align: top;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .gold-text {
+    color: #967000;
+  }
+
+  .quote-footer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .line {
+    width: 65px;
+    height: 1px;
+    background-color: #967000;
+  }
+
+  .footer-content {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  .footer-subtitle {
+    font-size: 0.85rem;
+    font-weight: 300;
+    margin: 4px 0 0 0;
+    color: #888;
+  }
+
+  @media (max-width: 768px) {
+    .quote-text { font-size: 2.2rem; }
+    .quote-text::before { font-size: 70px; }
+    .quote-text::after { font-size: 2.2rem; }
+    .quote-footer { margin-top: 40px; }
+  }
+</style>

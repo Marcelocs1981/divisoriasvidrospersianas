@@ -1,0 +1,371 @@
+---
+import { Image } from 'astro:assets';
+
+/* IMAGENS */
+import imgPlaceholder from '../assets/placeholder.webp';
+
+const produtos = [
+  {
+    label: "CLÁSSICO",
+    title: "Divisória de vidro duplo com persiana embutida do piso até o teto",
+    desc: "Controle preciso por cordão interno entre os vidros. Robusto, silencioso e atemporal.",
+    featured: false,
+    href: "https://google.com",
+    image: imgPlaceholder
+  },
+  {
+    label: "Sofisticação",
+    title: "Divisória de vidro junta seca com persiana embutida",
+    desc: "Menos alumínio e mais elegância com vidros em juntas postas.",
+    featured: false,
+    href: "https://google.com",
+    image: imgPlaceholder
+  },
+  {
+    label: "Privacidade",
+    title: "Divisória de vidro acústico com persiana embutida",
+    desc: "Divisórias privativas para reuniões sigilosas.",
+    featured: true,
+    href: "https://google.com",
+    image: imgPlaceholder
+  },
+  {
+    label: "Indústrias",
+    title: "Divisória industrial de vidro com persiana embutida",
+    desc: "Visual limpo e contínuo, sem perfis verticais.",
+    featured: false,
+    href: "https://google.com",
+    image: imgPlaceholder
+  },
+  {
+    label: "Alexa Modo Reunião",
+    title: "Divisória de vidro duplo com persiana automatizada",
+    desc: "Botão é coisa do passado, crie seu cenário etenha o controle total das persianas intergradas por comando de voz.",
+    featured: false,
+    href: "https://google.com",
+    image: imgPlaceholder
+  },
+  {
+    label: "Industrial",
+    title: "Vidro industrial com persiana embutida",
+    desc: "Estética moderna com estrutura marcante.",
+    featured: true,
+    href: "https://google.com",
+    image: imgPlaceholder
+  }
+];
+---
+<section class="produtos">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+
+      <span class="tag">
+        11 MODELOS EXCLUSIVOS
+      </span>
+
+      <h2>
+        Escolha a divisória que vai <span class="gold">redefinir</span> seu escritório.
+      </h2>
+
+      <p>
+        Cada modelo é fabricado sob medida na nossa fábrica, com garantia total e suporte especializado. Mais de 2.800 projetos entregues e executados para escritórios de empresas e indústrias.
+      </p>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+
+      {produtos.map((item) => (
+
+        <article class={`card ${item.featured ? 'featured' : ''}`}>
+
+          <a
+            href={item.href}
+            class="image"
+            aria-label={item.title}
+          >
+
+            <span class="label">
+              {item.label}
+            </span>
+
+            <Image
+              src={item.image}
+              alt={item.title}
+              widths={[480, 768]}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              loading="lazy"
+              decoding="async"
+              format="webp"
+            />
+
+          </a>
+
+          <h3>
+            <a href={item.href}>
+              {item.title}
+            </a>
+          </h3>
+
+          <p>
+            {item.desc}
+          </p>
+
+        </article>
+
+      ))}
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="#">
+        QUERO O MODELO IDEAL DE DIVISÓRIAS DE VIDRO COM PERSIANAS PARA MINHA EMPRESA →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.produtos {
+  padding: 140px 0;
+  background: #050505;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+  max-width: 900px;
+  margin-bottom: 80px;
+}
+
+.tag {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 11px;
+  letter-spacing: 4px;
+
+  color: #b58a0a;
+}
+
+.header h2 {
+  font-size: clamp(1.9rem, 2.9vw, 4rem);
+  line-height: 1.05;
+  font-weight: 200;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  font-family: 'Cormorant', serif;font-weight: 200;
+  color: #eaeaea;
+  max-width: 900px;
+}
+
+/* GRADIENTE */
+.gold {
+  background: linear-gradient(90deg, #b58a0a, #f5d76e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  color: #aaa;
+  line-height: 1.7;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* LINK IMAGEM */
+.image {
+  position: relative;
+
+  display: block;
+
+  overflow: hidden;
+  border-radius: 10px;
+
+  text-decoration: none;
+}
+
+/* IMG */
+.image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image img {
+  transform: scale(1.03);
+}
+
+/* OVERLAY */
+.image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.72),
+      rgba(0,0,0,0.15),
+      transparent
+    );
+}
+
+/* LABEL */
+.label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  z-index: 2;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: rgba(0,0,0,0.75);
+
+  color: #ffffff;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+
+  backdrop-filter: blur(4px);
+}
+
+/* TITULO */
+.card h3 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-weight: 200;
+  font-size: clamp(0.95rem, 1.5vw, 1.5rem);
+}
+
+.card h3 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+  transition: color 0.25s ease;
+}
+
+.card h3 a:hover {
+  color: #b58a0a;
+}
+
+/* TEXTO */
+.card p {
+  line-height: 1.5;
+  color: #aaa;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+}
+
+/* FEATURED */
+.featured {
+  padding: 12px;
+
+  border: 1px solid rgba(181,138,10,0.25);
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(181,138,10,0.04),
+      transparent
+    );
+}
+
+/* CTA */
+.cta {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 32px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #b58a0a, #f5d76e);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cta a:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 30px rgba(181,138,10,0.25);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .produtos {
+    padding: 100px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .header h2 {
+    font-size: 32px;
+  }
+}
+</style>

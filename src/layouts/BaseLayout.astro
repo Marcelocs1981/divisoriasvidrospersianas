@@ -1,0 +1,28 @@
+---
+const { title = "Site", description = "" } = Astro.props;
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <!-- 🚀 PRELOAD DE FONTES -->
+  <link rel="preload" href="/fonts/inter/Inter-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+
+<body>
+  
+  <slot />
+<Footer />
+</body>
+</html>

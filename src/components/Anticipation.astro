@@ -1,0 +1,158 @@
+---
+import { Image } from 'astro:assets';
+import imgDesktop from '../assets/divisoria-de-vidro-duplo-com-persiana-embutida-1200px.webp';
+import imgMobile from '../assets/divisoria-de-vidro-duplo-com-persiana-embutida-800px.webp';
+---
+
+<section class="anticipation">
+
+  <div class="container">
+    <span class="tag">IMAGINE POR UM MOMENTO</span>
+    <h2>
+      Seu cliente atravessa a porta, levanta o olhar<span class="gold"> <i>e percebe que está diante de uma empresa diferente.</i></span></h2></span>
+    </h2>
+    <div class="content">
+      <!-- TEXTO -->
+      <div class="left">
+        <div class="text">
+          <p>
+            As divisórias de vidro duplo com persianas embutidas, se estendem do piso ao teto — com persianas integradas, perfeitamente alinhadas, filtram a luz com elegância cinematográfica.
+          </p>
+          <p>
+            Um toque no smartphone — e a sala de reuniões se torna privada.
+            <span class="highlight">Outro toque, e a transparência volta.</span>
+            Silêncio absoluto. Temperatura impecável. Nenhum reflexo no monitor.
+          </p>
+
+          <p class="strong">
+            Antes mesmo da primeira palavra, a negociação já começou a seu favor.
+          </p>
+
+          <p>
+            É exatamente isso que divisórias em vidros com persianas embutidas entregam: <b>maior percepção de valor da sua marca.</b>
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGEM -->
+      <div class="right">
+        <picture>
+          <source 
+            media="(max-width: 768px)" 
+            srcset={imgMobile.src} 
+          />
+
+          <Image
+            src={imgDesktop}
+            alt="Divisória de vidro duplo com persiana embutida"
+            loading="lazy"
+            width={1200}
+            height={800}
+            class="hero-img"
+          />
+        </picture>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.anticipation {
+  padding: 100px 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(150,112,0,0.12), transparent 40%),
+    #050505;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TAG */
+.tag {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #b58a0a;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* TÍTULO */
+h2 {
+  font-size: clamp(1.9rem, 2.9vw, 4rem);
+  line-height: 1.05;
+  font-weight: 200;
+  margin-bottom: 70px;
+  letter-spacing: -1px;
+  font-family: 'Cormorant', serif;font-weight: 200;
+  color: #eaeaea;
+  max-width: 900px;
+  }
+
+/* GRADIENTE */
+.gold {
+  background: linear-gradient(90deg, #b58a0a, #f5d76e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRID CORRETO */
+.content {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 100px;
+  align-items: center; /* 👈 ESSA LINHA resolve */
+}
+
+/* TEXTO */
+.text {
+  max-width: 620px;
+}
+
+.text p {
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  color: #cfcfcf;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #fff;
+}
+
+.strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* IMAGEM */
+.hero-img {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+}
+</style>
