@@ -10,22 +10,22 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-400px.webp';
 <section class="hero">
   <div class="bg">
     <picture>
-  <source 
-    media="(max-width: 767px)" 
-    srcset={imgMobile.src} 
-  />
-  <Image 
-    src={imgDesktop}
-    alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-    widths={[400, 1024, 1920]}
-    sizes="(max-width: 767px) 400px, 100vw"
-    loading="eager"
-    fetchpriority="high"
-    quality={50} 
-    format="webp"
-    decoding="sync"
-  />
-</picture>
+      <source 
+        media="(max-width: 767px)" 
+        srcset={imgMobile.src} 
+      />
+      <Image 
+        src={imgDesktop}
+        alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
+        widths={[1024, 1920]}
+        sizes="(max-width: 767px) 100vw, 1920px"
+        loading="eager"
+        fetchpriority="high"
+        quality={40} 
+        format="webp"
+        decoding="sync"
+      />
+    </picture>
 
     <div class="overlay"></div>
     <div class="gold-glow"></div>
@@ -87,7 +87,7 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-400px.webp';
 </section>
 
 <style>
-/* Reset local para evitar saltos de layout */
+/* Reset local */
 .hero {
   position: relative;
   width: 100%;
@@ -96,7 +96,7 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-400px.webp';
   align-items: center;
   overflow: hidden;
   color: #fff;
-  background: #050505; /* Fallback de cor */
+  background: #050505;
 }
 
 /* BACKGROUND */
@@ -110,7 +110,6 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-400px.webp';
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Transform removido para evitar avisos de performance do Lighthouse em telas menores */
 }
 
 .overlay {
@@ -185,7 +184,7 @@ nav {
 }
 
 nav a {
-  color: #ccc;
+  color: #ffffff; /* Ajustado para 100% de contraste (Acessibilidade) */
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
@@ -209,7 +208,7 @@ nav a:hover {
 .hero h1 {
   font-size: 3.5rem;
   line-height: 1.1;
-  font-weight: 400; /* Ajustado para Cormorant Regular */
+  font-weight: 400;
   margin-bottom: 30px;
   letter-spacing: -1px;
   font-family: 'Cormorant', serif;
@@ -224,7 +223,7 @@ nav a:hover {
 
 .hero p {
   font-size: 1.1rem;
-  color: #ddd; /* Melhor contraste para acessibilidade */
+  color: #ffffff; /* Ajustado para Branco Puro (Contraste Máximo) */
   max-width: 650px;
   margin-bottom: 40px;
   line-height: 1.6;
@@ -275,7 +274,7 @@ nav a:hover {
 
 .stats span {
   font-size: 10px;
-  color: #999;
+  color: #ffffff; /* Ajustado para Branco (Acessibilidade) */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -288,7 +287,7 @@ nav a:hover {
   text-align: center;
   font-size: 10px;
   letter-spacing: 4px;
-  color: #777;
+  color: #ffffff; /* Ajustado para Branco */
   text-transform: uppercase;
 }
 
