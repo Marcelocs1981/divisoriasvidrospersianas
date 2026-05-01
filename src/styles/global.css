@@ -1,3 +1,6 @@
+/* IMPORT DAS FONTES (Certifique-se que o arquivo existe) */
+@import "./fonts.css";
+
 /* RESET */
 *,
 *::before,
@@ -14,16 +17,25 @@ html, body {
 
 body {
   background: #050505;
+  color: #ffffff; /* Garante que o texto apareça no fundo preto */
   font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 200; /* 🔥 padrão leve */
+  font-weight: 400; /* 🔥 Ajustado: Agora usa seu Inter-Regular.woff2 */
+  line-height: 1.6; /* Melhora muito a leitura do conteúdo */
 }
 
 /* TÍTULOS */
 h1, h2, h3 {
   font-family: 'Cormorant', serif;
+  font-weight: 400; /* Usa a Cormorant-Regular */
 }
 
 /* DESTAQUES */
+/* Quando você usar <strong>, o navegador vai buscar o arquivo Inter-Bold de 24kb */
 strong, b {
-  font-weight: 400;
+  font-weight: 700; 
+}
+
+/* Se quiser um título mais forte em algum lugar específico */
+h1 {
+  font-weight: 700; /* Isso usará a Cormorant-Bold se você baixou ela */
 }

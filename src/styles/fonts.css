@@ -1,33 +1,61 @@
-/* INTER (somente pesos essenciais) */
+/* ============================================================
+   INTER - Otimizada (24kb - 25kb)
+   ============================================================ */
 
-/* INTER OTIMIZADO */
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-ExtraLight.woff2') format('woff2');
-  font-weight: 200;
-  font-display: swap;
-}
-
+/* Corpo do texto normal */
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
-/* CORMORANT (somente título) */
 
+/* Itálico real */
 @font-face {
-  font-family: 'Cormorant';
-  src: url('/fonts/cormorant/CormorantGaramond-Regular.woff2') format('woff2');
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Italic.woff2') format('woff2');
   font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cormorant';
-  src: url('/fonts/cormorant/CormorantGaramond-Italic.woff2') format('woff2');
   font-style: italic;
+  font-display: swap;
+}
+
+/* Negritos e Destaques */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   CORMORANT - Títulos (Otimizada)
+   ============================================================ */
+
+/* Regular */
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/cormorant/Cormorant-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/cormorant/Cormorant-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/cormorant/Cormorant-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
