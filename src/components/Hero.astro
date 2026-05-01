@@ -16,11 +16,13 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-800px.webp';
       />
       <Image 
         src={imgDesktop}
-        alt="Divisórias de vidro com persianas"
-        widths={[480, 1024, 1920]} 
-        sizes="100vw"
+        alt="Divisórias de vidro com persianas em ambiente corporativo"
+        widths={[480, 800, 1200, 1920]} /* Adicionamos o 480 para o Lighthouse ficar feliz */
+        sizes="(max-width: 767px) 100vw, 1920px"
         loading="eager"
         fetchpriority="high"
+        quality={80}  /* 🔥 Reduzimos de 100 para 80: economia gigante de KBs sem olho humano notar */
+        format="webp"
 />
     </picture>
 
