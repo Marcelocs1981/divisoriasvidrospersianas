@@ -107,12 +107,17 @@ const mobileOptimized = await getImage({
   position: absolute;
   inset: 0;
   z-index: 0;
+  overflow: hidden; /* Garante que nada escape do limite da seção */
 }
 
+/* Forçamos a tag picture e a img a ocuparem 100% do espaço do pai (.bg) */
+.bg picture,
 .bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: block; /* Remove espaços vazios na base da imagem */
+  object-fit: cover; /* Faz a imagem cobrir tudo sem distorcer */
+  object-position: center; /* Mantém o foco no meio da foto */
 }
 
 .overlay {
