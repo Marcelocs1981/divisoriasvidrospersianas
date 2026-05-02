@@ -421,10 +421,38 @@ nav a:hover {
     width: 100%;
   }
 
-  /*.stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }*/
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .stats div {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .stats strong {
+    margin-bottom: 0;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: #b58a0a;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .stats span {
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+}
 
   .scroll {
     display: none;
