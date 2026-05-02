@@ -5,26 +5,16 @@
 /* Corpo do texto normal */
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
-  font-weight: 400;
+  src: url('/fonts/inter/inter-Light.woff2') format('woff2');
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
-/* Itálico real */
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Negritos e Destaques */
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Bold.woff2') format('woff2');
-  font-weight: 700;
+  src: url('/fonts/inter/inter-Bold.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
