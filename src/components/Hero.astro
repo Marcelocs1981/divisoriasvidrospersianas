@@ -2,12 +2,13 @@
 import { Image, getImage } from 'astro:assets';
 
 import imgDesktop from '../assets/divisorias-de-vidros-com-persianas-1920px.webp';
-import imgMobile from '../assets/divisorias-de-vidros-com-persianas-400px.webp';
+import imgMobile from '../assets/divisorias-de-vidros-com-persianas-768x1080.webp';
 
+/* IMAGEM MOBILE OTIMIZADA */
 const mobileOptimized = await getImage({
   src: imgMobile,
-  width: 400,
-  quality: 50,
+  width: 768,
+  quality: 45,
   format: 'webp'
 });
 ---
@@ -18,11 +19,14 @@ const mobileOptimized = await getImage({
   <div class="bg">
 
     <picture>
+
+      <!-- MOBILE -->
       <source
         media="(max-width: 767px)"
         srcset={mobileOptimized.src}
       />
 
+      <!-- DESKTOP -->
       <Image
         src={imgDesktop}
         alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
@@ -34,6 +38,7 @@ const mobileOptimized = await getImage({
         format="webp"
         decoding="sync"
       />
+
     </picture>
 
     <div class="overlay"></div>
@@ -43,14 +48,19 @@ const mobileOptimized = await getImage({
 
   <!-- TOPBAR -->
   <div class="topbar">
+
     <div class="wrapper">
 
       <div class="logo">
-        <div class="logo-box">DVP</div>
+
+        <div class="logo-box">
+          DVP
+        </div>
 
         <div class="logo-text">
           Divisórias de Vidros com Persianas<span>.</span>
         </div>
+
       </div>
 
       <nav>
@@ -61,6 +71,7 @@ const mobileOptimized = await getImage({
       </nav>
 
     </div>
+
   </div>
 
   <!-- CONTEÚDO -->
@@ -116,6 +127,7 @@ const mobileOptimized = await getImage({
       </div>
 
     </div>
+
   </div>
 
   <div class="scroll">
@@ -145,7 +157,12 @@ const mobileOptimized = await getImage({
   overflow: hidden;
 }
 
-.bg picture,
+.bg picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .bg img {
   width: 100%;
   height: 100%;
@@ -153,6 +170,8 @@ const mobileOptimized = await getImage({
   object-fit: cover;
   object-position: center;
 }
+
+/* OVERLAY */
 
 .overlay {
   position: absolute;
@@ -174,6 +193,8 @@ const mobileOptimized = await getImage({
     transparent 50%
   );
 }
+
+/* LAYOUT */
 
 .wrapper {
   width: 100%;
@@ -198,6 +219,8 @@ const mobileOptimized = await getImage({
   align-items: center;
   padding: 24px 20px;
 }
+
+/* LOGO */
 
 .logo {
   display: flex;
@@ -224,6 +247,8 @@ const mobileOptimized = await getImage({
 .logo-text span {
   color: #b58a0a;
 }
+
+/* MENU */
 
 nav {
   display: flex;
@@ -256,6 +281,8 @@ nav a:hover {
   max-width: 780px;
 }
 
+/* TÍTULO */
+
 .hero h1 {
   font-size: clamp(2.4rem, 5vw, 4.4rem);
   line-height: 1.05;
@@ -272,6 +299,8 @@ nav a:hover {
   font-weight: 700;
 }
 
+/* TEXTO */
+
 .hero p {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   line-height: 1.7;
@@ -279,6 +308,8 @@ nav a:hover {
   margin-bottom: 42px;
   color: #fff;
 }
+
+/* BOTÕES */
 
 .buttons {
   display: flex;
@@ -315,6 +346,8 @@ nav a:hover {
   background: rgba(181,138,10,0.08);
 }
 
+/* STATS */
+
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -337,6 +370,8 @@ nav a:hover {
   color: #fff;
 }
 
+/* SCROLL */
+
 .scroll {
   position: absolute;
   left: 0;
@@ -357,6 +392,10 @@ nav a:hover {
   .hero {
     min-height: auto;
     padding-bottom: 60px;
+  }
+
+  .bg img {
+    object-position: center top;
   }
 
   .topbar .wrapper {
