@@ -1,12 +1,11 @@
 /* ============================================================
-   INTER - Otimizada (24kb - 25kb)
+   INTER
    ============================================================ */
 
-/* Corpo do texto normal */
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/inter/inter-Light.woff2') format('woff2');
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -14,16 +13,15 @@
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/inter/inter-Bold.woff2') format('woff2');
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 /* ============================================================
-   CORMORANT - Títulos (Otimizada)
+   CORMORANT
    ============================================================ */
 
-/* Regular */
 @font-face {
   font-family: 'Cormorant';
   src: url('/fonts/cormorant/Cormorant-Regular.woff2') format('woff2');
@@ -32,7 +30,6 @@
   font-display: swap;
 }
 
-/* Italic */
 @font-face {
   font-family: 'Cormorant';
   src: url('/fonts/cormorant/Cormorant-Italic.woff2') format('woff2');
@@ -41,7 +38,6 @@
   font-display: swap;
 }
 
-/* Bold (700) */
 @font-face {
   font-family: 'Cormorant';
   src: url('/fonts/cormorant/Cormorant-Bold.woff2') format('woff2');

@@ -16,7 +16,7 @@ body {
   background: #050505;
   color: #ffffff; /* Garante que o texto apareça no fundo preto */
   font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 400; /* 🔥 Ajustado: Agora usa seu Inter-Regular.woff2 */
+  font-weight: 200; /* 🔥 Ajustado: Agora usa seu Inter-Regular.woff2 */
   line-height: 1.6; /* Melhora muito a leitura do conteúdo */
 }
 

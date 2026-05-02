@@ -3,14 +3,17 @@ const { title = "Site", description = "" } = Astro.props;
 
 import Footer from '../components/Footer.astro';
 
+/* IMPORT GLOBAL DIRETO NO FRONTMATTER */
+/* MELHOR PARA PERFORMANCE NO ASTRO */
 import '../styles/global.css';
 import '../styles/fonts.css';
 ---
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+  <!-- META -->
   <meta charset="UTF-8" />
 
   <meta
@@ -18,6 +21,7 @@ import '../styles/fonts.css';
     content="width=device-width, initial-scale=1.0"
   />
 
+  <!-- SEO -->
   <title>{title}</title>
 
   <meta
@@ -25,16 +29,16 @@ import '../styles/fonts.css';
     content={description}
   />
 
-  <!-- PRELOAD DAS FONTES -->
-
+  <!-- PRECONNECT -->
   <link
-    rel="preload"
-    href="/fonts/cormorant/Cormorant-Regular.woff2"
-    as="font"
-    type="font/woff2"
+    rel="preconnect"
+    href="https://divisoriasvidrospersianas.vercel.app"
     crossorigin
   />
 
+  <!-- PRELOAD DAS FONTES CRÍTICAS -->
+  <!-- Carrega antes da renderização -->
+  
   <link
     rel="preload"
     href="/fonts/inter/inter-Light.woff2"
@@ -49,6 +53,20 @@ import '../styles/fonts.css';
     as="font"
     type="font/woff2"
     crossorigin
+  />
+
+  <link
+    rel="preload"
+    href="/fonts/cormorant/Cormorant-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+
+  <!-- MELHORA RENDERIZAÇÃO MOBILE -->
+  <meta
+    name="theme-color"
+    content="#050505"
   />
 
 </head>
