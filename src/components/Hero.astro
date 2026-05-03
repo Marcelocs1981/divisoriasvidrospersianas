@@ -83,9 +83,7 @@ const mobileOptimized = await getImage({
     <div class="content">
 
       <h1>
-        O ambiente que <span class="gold">impressiona</span><br />
-        clientes, investidores e parceiros de negócios,
-        sem precisar dizer uma <span class="gold">palavra</span>.
+        Divisórias de Vidros com Persianas.
       </h1>
 
       <p>
@@ -218,7 +216,7 @@ const mobileOptimized = await getImage({
   align-items: center;
   justify-content: center;
   color: #000;
-  font-weight: 600;
+  font-weight: 200;
   flex-shrink: 0;
 }
 
@@ -269,13 +267,14 @@ nav a:hover {
 
 /* TÍTULO */
 .hero h1 {
-  font-size: clamp(1.9rem, 2.9vw, 4.4rem);
-  line-height: 1.05;
-  font-weight: 600;
-  margin-bottom: 28px;
-  letter-spacing: -1px;
+  font-size: clamp(1.6rem, 2vw, 3.4rem);
+  line-height: 1.15;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0;
   font-family: serif;
   text-align: left;
+  max-width: 12ch;
 }
 
 .gold {
@@ -335,10 +334,7 @@ nav a:hover {
 
 /* STATS */
 .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  max-width: 760px;
+  display: none;
 }
 
 .stats strong {
