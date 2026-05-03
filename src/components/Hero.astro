@@ -19,23 +19,27 @@ const mobileOptimized = await getImage({
   <div class="bg">
 
     <picture>
-     <source
-      media="(max-width: 767px)"
-      srcset={mobileOptimized.src}
-    />
 
-    <Image
-     src={imgDesktop}
-     alt="..."
-     widths={[1024, 1440, 1920]}
-     sizes="100vw"
-     loading="eager"
-     fetchpriority="high"
-     quality={45}
-     format="webp"
-    />
+      <!-- MOBILE -->
+      <source
+        media="(max-width: 767px)"
+        srcset={mobileOptimized.src}
+      />
 
-</picture>
+      <!-- DESKTOP -->
+      <Image
+        src={imgDesktop}
+        alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
+        widths={[1024, 1440, 1920]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+        quality={45}
+        format="webp"
+        decoding="async"
+      />
+
+    </picture>
 
     <div class="overlay"></div>
     <div class="gold-glow"></div>
@@ -80,6 +84,7 @@ const mobileOptimized = await getImage({
         clientes, investidores e parceiros de negócios,
         sem precisar dizer uma <span class="gold">palavra</span>.
       </h1>
+
       <p>
         Divisória em vidro duplo com persiana embutida, aumenta o valor da sua marca, com
         <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
@@ -131,7 +136,7 @@ const mobileOptimized = await getImage({
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100svh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -182,8 +187,9 @@ const mobileOptimized = await getImage({
   top: -150px;
   right: -150px;
   border-radius: 50%;
-  background: rgba(181,138,10,0.10);
-  filter: blur(120px);
+  background: rgba(181,138,10,0.08);
+  filter: blur(100px);
+  pointer-events: none;
 }
 
 /* LAYOUT */
@@ -229,6 +235,7 @@ const mobileOptimized = await getImage({
   justify-content: center;
   color: #000;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -241,6 +248,7 @@ const mobileOptimized = await getImage({
 }
 
 /* MENU */
+
 nav {
   display: flex;
   gap: 28px;
@@ -250,17 +258,17 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.3s ease, opacity 0.3s ease; /* era: transition: 0.3s — genérico demais */
-  will-change: opacity;                            /* NOVO */
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+  will-change: opacity;
 }
 
 nav a:hover {
   color: #b58a0a;
 }
 
-
 /* CONTEÚDO */
-
 .container {
   position: relative;
   z-index: 2;
@@ -276,7 +284,6 @@ nav a:hover {
 }
 
 /* TÍTULO */
-
 .hero h1 {
   font-size: clamp(1.9rem, 2.9vw, 4.4rem);
   line-height: 1.05;
@@ -285,14 +292,14 @@ nav a:hover {
   letter-spacing: -1px;
   font-family: 'Cormorant', serif;
   text-align: left;
+  text-wrap: balance;
 }
 
 .gold {
- color: #d4a51a;
+  color: #d4a51a;
 }
 
 /* TEXTO */
-
 .hero p {
   font-size: clamp(0.9rem, 1.5vw, 1.15rem);
   line-height: 1.7;
@@ -305,7 +312,6 @@ nav a:hover {
 }
 
 /* BOTÕES */
-
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -319,8 +325,10 @@ nav a:hover {
   text-decoration: none;
   font-size: clamp(0.85rem, 1.2vw, 1rem);
   font-weight: 700;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* era: transition: 0.3s — genérico */
-  will-change: transform;                                 /* NOVO */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  will-change: transform;
 }
 
 .primary {
@@ -343,7 +351,6 @@ nav a:hover {
 }
 
 /* STATS */
-
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -367,7 +374,6 @@ nav a:hover {
 }
 
 /* RESPONSIVO */
-
 @media (max-width: 768px) {
 
   .hero {
@@ -398,6 +404,7 @@ nav a:hover {
 
   .hero h1 {
     line-height: 1.1;
+    text-wrap: pretty;
   }
 
   .hero p {
@@ -417,7 +424,6 @@ nav a:hover {
   }
 
   .stats {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 22px 18px;
     max-width: 100%;
@@ -431,11 +437,8 @@ nav a:hover {
   }
 
   .stats strong {
-    display: block;
     margin-bottom: 4px;
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
     line-height: 1;
-    color: #b58a0a;
   }
 
   .stats span {
