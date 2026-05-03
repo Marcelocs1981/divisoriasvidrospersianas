@@ -239,18 +239,14 @@
 /* CARD FORM */
 .right {
   background: rgba(5,10,15,0.92);
-
   border: 1px solid rgba(255,255,255,0.06);
-
   border-radius: 8px;
-
   padding: 42px;
-
   backdrop-filter: blur(10px);
-
   box-shadow:
     0 0 0 1px rgba(255,255,255,0.02),
     0 20px 60px rgba(0,0,0,0.5);
+  contain: layout paint; /* NOVO: isola o backdrop-filter da página */
 }
 
 /* GRID */
@@ -281,83 +277,40 @@
 .field input,
 .field textarea {
   width: 100%;
-
   background: #050505;
-
   border: 1px solid rgba(255,255,255,0.08);
-
   border-radius: 4px;
-
   color: #fff;
-
   padding: 14px 16px;
-
   font-size: 0.95rem;
-
   outline: none;
-
   transition:
     border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
-
+    box-shadow 0.25s ease;  /* removido: background 0.25s ease */
   box-sizing: border-box;
-}
-
-.field textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.field input::placeholder,
-.field textarea::placeholder {
-  color: rgba(255,255,255,0.35);
-}
-
-.field input:focus,
-.field textarea:focus {
-  border-color: rgba(150,112,0,0.7);
-
-  box-shadow:
-    0 0 0 1px rgba(150,112,0,0.3),
-    0 0 20px rgba(150,112,0,0.08);
 }
 
 /* BOTÃO */
 .form button {
   width: 100%;
-
   height: 58px;
-
   border: 0;
   border-radius: 4px;
-
-  background: linear-gradient(
-    180deg,
-    #c89d37,
-    #967000
-  );
-
+  background: linear-gradient(180deg, #c89d37, #967000);
   color: #000;
-
   font-size: 0.95rem;
   font-weight: 600;
-
   letter-spacing: 0.5px;
-
   cursor: pointer;
-
   transition:
     transform 0.2s ease,
-    opacity 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease;  /* removido: opacity 0.2s ease */
+  will-change: transform;  /* NOVO */
 }
 
 .form button:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 10px 30px rgba(150,112,0,0.2);
+  box-shadow: 0 10px 30px rgba(150,112,0,0.2);
 }
 
 /* PRIVACIDADE */

@@ -255,7 +255,8 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.3s;
+  transition: color 0.3s ease, opacity 0.3s ease; /* era: transition: 0.3s — genérico demais */
+  will-change: opacity;                            /* NOVO */
 }
 
 nav a:hover {
@@ -312,20 +313,14 @@ nav a:hover {
 
 /* BOTÕES */
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 40px;
-}
-
 .btn {
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
   font-size: clamp(0.85rem, 1.2vw, 1rem);
   font-weight: 700;
-  transition: 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* era: transition: 0.3s — genérico */
+  will-change: transform;                                 /* NOVO */
 }
 
 .primary {

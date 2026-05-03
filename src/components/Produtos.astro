@@ -194,9 +194,9 @@ const produtos = [
 
 /* CARD */
 .card {
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease;
+  transition: transform 0.3s ease; 
+  will-change: transform;
+  contain: layout style;
 }
 
 .card:hover {
@@ -219,13 +219,14 @@ const produtos = [
 .image img {
   width: 100%;
   height: auto;
-
   display: block;
-
   aspect-ratio: 3 / 2;
   object-fit: cover;
-
   transition: transform 0.5s ease;
+  will-change: transform;
+  transform: translateZ(0);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 3/2;
 }
 
 .card:hover .image img {
@@ -313,11 +314,6 @@ const produtos = [
 }
 
 /* CTA */
-.cta {
-  margin-top: 70px;
-  text-align: center;
-}
-
 .cta a {
   display: inline-flex;
   align-items: center;
@@ -330,15 +326,13 @@ const produtos = [
   font-size: clamp(0.95rem, 1.1vw, 1.2rem);
   font-weight: 400;
   letter-spacing: 1px;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
 }
 
 .cta a:hover {
   transform: translateY(-2px);
-  box-shadow:
-    0 10px 30px rgba(181,138,10,0.25);
+  box-shadow: 0 10px 30px rgba(181,138,10,0.25);
 }
 
 /* RESPONSIVO */
