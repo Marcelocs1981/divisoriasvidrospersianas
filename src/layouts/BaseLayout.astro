@@ -2,21 +2,18 @@
 const { title = "Site", description = "" } = Astro.props;
 
 import Footer from '../components/Footer.astro';
-
 import fs from 'node:fs';
 
-/* INLINE CSS CRÍTICO */
-/* REMOVE RENDER BLOCKING */
+const globalCss = fs.readFileSync('./src/styles/global.css', 'utf-8');
+const fontsCss = fs.readFileSync('./src/styles/fonts.css', 'utf-8');
 
-const globalCss = fs.readFileSync(
-  './src/styles/global.css',
-  'utf-8'
-);
+/* Hash do nome do arquivo da imagem LCP — pega dinamicamente do build */
+import { getImage } from 'astro:assets';
+import imgDesktop from '../assets/divisorias-de-vidros-com-persianas-1920px.webp';
+import imgMobile from '../assets/divisorias-de-vidros-com-persianas-768x1080.webp';
 
-const fontsCss = fs.readFileSync(
-  './src/styles/fonts.css',
-  'utf-8'
-);
+const lcpDesktop = await getImage({ src: imgDesktop, format: 'webp', quality: 45, width: 1920 });
+const lcpMobile  = await getImage({ src: imgMobile,  format: 'webp', quality: 45, width: 768  });
 ---
 
 <!DOCTYPE html>
@@ -26,63 +23,40 @@ const fontsCss = fs.readFileSync(
 
   <!-- META -->
   <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
   <title>{title}</title>
-
-  <meta
-    name="description"
-    content={description}
-  />
+  <meta name="description" content={description} />
 
   <!-- THEME -->
-  <meta
-    name="theme-color"
-    content="#050505"
+  <meta name="theme-color" content="#050505" />
+
+  <!-- PRELOAD IMAGEM LCP (desktop) -->
+  <link
+    rel="preload"
+    as="image"
+    href={lcpDesktop.src}
+    fetchpriority="high"
+    media="(min-width: 768px)"
   />
 
-  <!-- PRECONNECT -->
+  <!-- PRELOAD IMAGEM LCP (mobile) -->
   <link
-    rel="preconnect"
-    href="https://divisoriasvidrospersianas.vercel.app"
-    crossorigin
+    rel="preload"
+    as="image"
+    href={lcpMobile.src}
+    fetchpriority="high"
+    media="(max-width: 767px)"
   />
 
   <!-- PRELOAD FONTES -->
-  <link
-    rel="preload"
-    href="/fonts/inter/inter-Light.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
+  <link rel="preload" href="/fonts/inter/inter-Light.woff2"        as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/inter/inter-Bold.woff2"         as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/cormorant/Cormorant-Regular.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link
-    rel="preload"
-    href="/fonts/inter/inter-Bold.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-
-  <link
-    rel="preload"
-    href="/fonts/cormorant/Cormorant-Regular.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-
-  <!-- INLINE CSS -->
-  <!-- REMOVE RENDER BLOCKING -->
-
+  <!-- INLINE CSS CRÍTICO -->
   <style is:global set:html={fontsCss}></style>
-
   <style is:global set:html={globalCss}></style>
 
 </head>
