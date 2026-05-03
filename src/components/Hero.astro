@@ -27,16 +27,16 @@ const mobileOptimized = await getImage({
       />
 
       <!-- DESKTOP -->
-      <img
-        src={imgDesktop.src}
-        srcset={`${imgDesktop.src} 1920w`}
-        alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-        sizes="100vw"
-        loading="eager"
-        fetchpriority="high"
-        decoding="sync"
-        width="1920"
-        height="1080"
+      <Image
+       src={imgDesktop}
+       alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
+       widths={[768, 1024, 1440, 1920]}
+       sizes="100vw"
+       loading="eager"
+       fetchpriority="high"
+       quality={45}
+       format="webp"
+       decoding="sync"
       />
 
     </picture>
