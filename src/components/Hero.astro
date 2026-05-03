@@ -19,28 +19,21 @@ const mobileOptimized = await getImage({
   <div class="bg">
 
     <picture>
+     <source
+      media="(max-width: 767px)"
+      srcset={mobileOptimized.src}
+    />
 
-  <!-- MOBILE -->
-  <source
-    media="(max-width: 767px)"
-    srcset={mobileOptimized.src}
-  />
-
-  <!-- DESKTOP -->
-  <source
-    media="(min-width: 768px)"
-    srcset={imgDesktop.src}
-  />
-
-  <img
-    src={imgDesktop.src}
-    alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-    loading="eager"
-    fetchpriority="high"
-    decoding="async"
-    width="1920"
-    height="1080"
-  />
+    <Image
+     src={imgDesktop}
+     alt="..."
+     widths={[1024, 1440, 1920]}
+     sizes="100vw"
+     loading="eager"
+     fetchpriority="high"
+     quality={45}
+     format="webp"
+    />
 
 </picture>
 
@@ -83,47 +76,9 @@ const mobileOptimized = await getImage({
     <div class="content">
 
       <h1>
-        Divisórias de Vidros com Persianas.
+        Divisórias de vidros
       </h1>
-
-      <p>
-        Divisória em vidro duplo com persiana embutida, aumenta o valor da sua marca, com
-        <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
-      </p>
-
-      <div class="buttons">
-
-        <a href="#orcamento" class="btn primary">
-          Solicitar Projeto Exclusivo Sob Medida
-        </a>
-
-        <a href="#modelos" class="btn secondary">
-          Ver Todos os Modelos
-        </a>
-
-      </div>
-
-      <div class="stats">
-
-        <div>
-          <strong>+21</strong>
-          <span>anos no mercado</span>
-        </div>
-
-        <div>
-          <strong>+800</strong>
-          <span>projetos entregues</span>
-        </div>
-
-        <div>
-          <strong>100%</strong>
-          <span>fabricação própria</span>
-        </div>
-
-        <div>
-          <strong>Pagamento</strong>
-          <span>com cartão BNDES</span>
-        </div>
+      
 
       </div>
 
@@ -137,10 +92,10 @@ const mobileOptimized = await getImage({
 .hero {
   position: relative;
   width: 100%;
-  min-height: 700px;
+  min-height: 100svh;
   display: flex;
   align-items: center;
-  overflow: clip;
+  overflow: hidden;
   color: #fff;
   background: #050505;
 }
@@ -148,9 +103,10 @@ const mobileOptimized = await getImage({
 /* BACKGROUND */
 
 .bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .bg picture {
@@ -161,17 +117,34 @@ const mobileOptimized = await getImage({
 
 .bg img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* OVERLAY */
 
 .overlay {
-  background: rgba(0,0,0,0.55);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.92) 0%,
+    rgba(0,0,0,0.72) 45%,
+    rgba(0,0,0,0.25) 100%
+  );
 }
 
 .gold-glow {
- display: none;
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: -150px;
+  right: -150px;
+  border-radius: 50%;
+  background: rgba(181,138,10,0.10);
+  filter: blur(120px);
 }
 
 /* LAYOUT */
@@ -216,8 +189,7 @@ const mobileOptimized = await getImage({
   align-items: center;
   justify-content: center;
   color: #000;
-  font-weight: 200;
-  flex-shrink: 0;
+  font-weight: 600;
 }
 
 .logo-text {
@@ -230,7 +202,6 @@ const mobileOptimized = await getImage({
 }
 
 /* MENU */
-
 nav {
   display: flex;
   gap: 28px;
@@ -240,17 +211,17 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  transition:
-    color 0.3s ease,
-    opacity 0.3s ease;
-  will-change: opacity;
+  transition: color 0.3s ease, opacity 0.3s ease; /* era: transition: 0.3s — genérico demais */
+  will-change: opacity;                            /* NOVO */
 }
 
 nav a:hover {
   color: #b58a0a;
 }
 
+
 /* CONTEÚDO */
+
 .container {
   position: relative;
   z-index: 2;
@@ -266,22 +237,23 @@ nav a:hover {
 }
 
 /* TÍTULO */
+
 .hero h1 {
-  font-size: 4rem;
-  line-height: 1.15;
-  font-weight: 500;
-  margin-bottom: 20px;
-  letter-spacing: 0;
-  font-family: serif;
+  font-size: clamp(1.9rem, 2.9vw, 4.4rem);
+  line-height: 1.05;
+  font-weight: 600;
+  margin-bottom: 28px;
+  letter-spacing: -1px;
+  font-family: 'Cormorant', serif;
   text-align: left;
-  max-width: 12ch;
 }
 
 .gold {
-  color: #d4a51a;
+ color: #d4a51a;
 }
 
 /* TEXTO */
+
 .hero p {
   font-size: clamp(0.9rem, 1.5vw, 1.15rem);
   line-height: 1.7;
@@ -294,6 +266,7 @@ nav a:hover {
 }
 
 /* BOTÕES */
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -307,10 +280,8 @@ nav a:hover {
   text-decoration: none;
   font-size: clamp(0.85rem, 1.2vw, 1rem);
   font-weight: 700;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  will-change: transform;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* era: transition: 0.3s — genérico */
+  will-change: transform;                                 /* NOVO */
 }
 
 .primary {
@@ -333,8 +304,12 @@ nav a:hover {
 }
 
 /* STATS */
+
 .stats {
-  display: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 760px;
 }
 
 .stats strong {
@@ -353,6 +328,7 @@ nav a:hover {
 }
 
 /* RESPONSIVO */
+
 @media (max-width: 768px) {
 
   .hero {
@@ -361,10 +337,8 @@ nav a:hover {
   }
 
   .bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    object-position: 60% top;
+  }
 
   .topbar .wrapper {
     justify-content: flex-start;
@@ -385,8 +359,6 @@ nav a:hover {
 
   .hero h1 {
     line-height: 1.1;
-    text-wrap: pretty;
-    font-size: 2.2rem;
   }
 
   .hero p {
@@ -406,6 +378,7 @@ nav a:hover {
   }
 
   .stats {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 22px 18px;
     max-width: 100%;
@@ -419,8 +392,11 @@ nav a:hover {
   }
 
   .stats strong {
+    display: block;
     margin-bottom: 4px;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     line-height: 1;
+    color: #b58a0a;
   }
 
   .stats span {
