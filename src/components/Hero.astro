@@ -36,7 +36,7 @@ const mobileOptimized = await getImage({
         fetchpriority="high"
         quality={45}
         format="webp"
-        decoding="sync"
+        decoding="async"
       />
 
     </picture>
@@ -308,8 +308,6 @@ nav a:hover {
   color: rgba(255,255,255,0.92);
   text-align: left;
   font-weight: 200;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* BOTÕES */
@@ -383,7 +381,7 @@ nav a:hover {
   }
 
   .bg img {
-    object-position: center top;
+    object-position: 60% top;
   }
 
   .topbar .wrapper {
