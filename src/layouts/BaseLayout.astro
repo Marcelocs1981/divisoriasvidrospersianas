@@ -3,16 +3,27 @@ const { title = "Site", description = "" } = Astro.props;
 
 import Footer from '../components/Footer.astro';
 
-/* IMPORT GLOBAL DIRETO NO FRONTMATTER */
-/* MELHOR PARA PERFORMANCE NO ASTRO */
-import '../styles/global.css';
-import '../styles/fonts.css';
+import fs from 'node:fs';
+
+/* INLINE CSS CRÍTICO */
+/* REMOVE RENDER BLOCKING */
+
+const globalCss = fs.readFileSync(
+  './src/styles/global.css',
+  'utf-8'
+);
+
+const fontsCss = fs.readFileSync(
+  './src/styles/fonts.css',
+  'utf-8'
+);
 ---
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+
   <!-- META -->
   <meta charset="UTF-8" />
 
@@ -29,6 +40,12 @@ import '../styles/fonts.css';
     content={description}
   />
 
+  <!-- THEME -->
+  <meta
+    name="theme-color"
+    content="#050505"
+  />
+
   <!-- PRECONNECT -->
   <link
     rel="preconnect"
@@ -36,9 +53,7 @@ import '../styles/fonts.css';
     crossorigin
   />
 
-  <!-- PRELOAD DAS FONTES CRÍTICAS -->
-  <!-- Carrega antes da renderização -->
-  
+  <!-- PRELOAD FONTES -->
   <link
     rel="preload"
     href="/fonts/inter/inter-Light.woff2"
@@ -63,11 +78,12 @@ import '../styles/fonts.css';
     crossorigin
   />
 
-  <!-- MELHORA RENDERIZAÇÃO MOBILE -->
-  <meta
-    name="theme-color"
-    content="#050505"
-  />
+  <!-- INLINE CSS -->
+  <!-- REMOVE RENDER BLOCKING -->
+
+  <style is:global set:html={fontsCss}></style>
+
+  <style is:global set:html={globalCss}></style>
 
 </head>
 
