@@ -106,14 +106,14 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #967000;
+    color: #ffbf00;
     display: block;
     margin-bottom: 20px;
   }
 
   h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(32px, 5vw, 64px);
+    font-size: clamp(1.9rem, 2.9vw, 4rem);
     font-weight: 300;
     line-height: 1.1;
     margin: 0;
@@ -121,7 +121,7 @@
 
   h2 em {
     font-style: normal;
-    color: #967000;
+    color: rgb(150, 112, 0);
   }
 
   /* GRID */
@@ -130,6 +130,13 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     row-gap: 60px;
+  }
+  
+  /*Texto Dourado*/
+  .gold-text {
+    background: linear-gradient(90deg, #b58a0a, #f5d76e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   /* ESTILO DE CADA ETAPA */
@@ -142,7 +149,7 @@
   .number {
     font-family: 'Cormorant Garamond', serif;
     font-size: 48px;
-    color: rgba(150, 112, 0, 0.618); /* Dourado suave/transparente como no print */
+    color: rgb(150, 112, 0);
     line-height: 1;
     font-weight: 600;
     flex-shrink: 0;

@@ -35,13 +35,12 @@
 
   .quote-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
+    font-size: clamp(1.9rem, 2.9vw, 4rem);
     line-height: 1.15;
     margin: 0;
     font-weight: 400;
     letter-spacing: -0.02em;
     position: relative;
-    /* Força o navegador a não aplicar aspas automáticas vazias */
     quotes: none;
   }
 
@@ -72,8 +71,11 @@
     opacity: 1 !important;
   }
 
+  /*Texto Dourado*/
   .gold-text {
-    color: #967000;
+    background: linear-gradient(90deg, #b58a0a, #f5d76e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .quote-footer {

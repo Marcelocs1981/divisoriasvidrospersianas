@@ -11,8 +11,7 @@
 
       <h2>
         Solicite seu projeto<br />
-        com <span>orçamento</span><br />
-        <span>sem compromisso.</span>
+        com <span class="gold-text">orçamento sem compromisso.</span>
       </h2>
 
       <p class="desc">
@@ -148,7 +147,7 @@
 
 /* CONTAINER */
 .orcamento .container {
-  max-width: 1280px;
+  max-width: 1200px;
 
   margin: 0 auto;
 
@@ -166,7 +165,7 @@
 .orcamento .tag {
   display: inline-block;
 
-  color: #967000;
+  color: #ffbf00;
 
   font-size: 11px;
   letter-spacing: 4px;
@@ -177,19 +176,11 @@
 /* TÍTULO */
 .orcamento h2 {
   color: #fff;
-
-  font-size: 72px;
+  font-size: clamp(1.9rem, 2.9vw, 4rem);
   line-height: 1.08;
-
   font-weight: 300;
-
   margin: 0 0 34px;
-
   font-family: serif;
-}
-
-.orcamento h2 span {
-  color: #967000;
 }
 
 /* TEXTO */
@@ -203,6 +194,13 @@
 
   margin-bottom: 50px;
 }
+
+/*Texto Dourado*/
+  .gold-text {
+    background: linear-gradient(90deg, #b58a0a, #f5d76e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 /* BENEFÍCIOS */
 .benefits {
@@ -351,11 +349,6 @@
     grid-template-columns: 1fr;
     gap: 70px;
   }
-
-  .orcamento h2 {
-    font-size: 56px;
-  }
-}
 
 @media (max-width: 768px) {
 
