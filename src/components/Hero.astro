@@ -30,7 +30,7 @@ const mobileOptimized = await getImage({
       <Image
         src={imgDesktop}
         alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-        widths={[1024, 1920]}
+        widths={[1024, 1440, 1920]}
         sizes="100vw"
         loading="eager"
         fetchpriority="high"
@@ -283,7 +283,7 @@ nav a:hover {
 .hero h1 {
   font-size: clamp(1.9rem, 2.9vw, 4.4rem);
   line-height: 1.05;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 28px;
   letter-spacing: -1px;
   font-family: 'Cormorant', serif;
@@ -294,7 +294,7 @@ nav a:hover {
   background: linear-gradient(90deg, #b58a0a, #f5d76e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* TEXTO */
@@ -307,7 +307,7 @@ nav a:hover {
   margin-bottom: 42px;
   color: rgba(255,255,255,0.92);
   text-align: left;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* BOTÕES */
@@ -323,8 +323,8 @@ nav a:hover {
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: clamp(0.9rem, 1.2vw, 0.85rem);
-  font-weight: 600;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-weight: 700;
   transition: 0.3s;
 }
 
@@ -365,7 +365,7 @@ nav a:hover {
 
 .stats span {
   font-size: 10px;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
@@ -385,7 +385,7 @@ nav a:hover {
   }
 
   .topbar .wrapper {
-    justify-content: left;
+    justify-content: flex-start;
   }
 
   nav {
@@ -394,7 +394,6 @@ nav a:hover {
 
   .container {
     padding: 130px 20px 80px;
-    text-align: center;
   }
 
   .content {
@@ -403,7 +402,7 @@ nav a:hover {
   }
 
   .hero h1 {
-    line-height: 1.10;
+    line-height: 1.1;
   }
 
   .hero p {
@@ -411,6 +410,7 @@ nav a:hover {
     margin-right: auto;
     margin-bottom: 30px;
     line-height: 1.4;
+    max-width: 100%;
   }
 
   .buttons {
@@ -422,38 +422,35 @@ nav a:hover {
   }
 
   .stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px 18px;
-  max-width: 100%;
-  margin-top: 5px;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 18px;
+    max-width: 100%;
+    margin-top: 5px;
+  }
 
-.stats div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.stats strong {
-  display: block;
-  margin-bottom: 4px;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  line-height: 1;
-  color: #b58a0a;
-}
+  .stats strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    line-height: 1;
+    color: #b58a0a;
+  }
 
-.stats span {
-  display: block;
-  font-size: 10px;
-  line-height: 1.3;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-  .scroll {
-    display: none;
+  .stats span {
+    display: block;
+    font-size: 10px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
   }
 
 }
+</style>
