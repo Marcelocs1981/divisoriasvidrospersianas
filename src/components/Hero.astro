@@ -16,26 +16,9 @@ const mobileOptimized = await getImage({
 <section class="hero">
 
   <!-- BACKGROUND -->
-  <div class="bg">
+  <div>
 
-    <picture>
-     <source
-      media="(max-width: 767px)"
-      srcset={mobileOptimized.src}
-    />
-
-    <Image
-     src={imgDesktop}
-     alt="..."
-     widths={[1024, 1440, 1920]}
-     sizes="100vw"
-     loading="eager"
-     fetchpriority="high"
-     quality={45}
-     format="webp"
-    />
-
-</picture>
+    
 
     <div class="overlay"></div>
     <div class="gold-glow"></div>
