@@ -7,7 +7,7 @@
   src: url('/fonts/inter/inter-Light.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
-  font-display: swap;
+  font-display: swap; /* mantém swap — texto pequeno, impacto baixo */
 }
 
 @font-face {
@@ -19,7 +19,9 @@
 }
 
 /* ============================================================
-   CORMORANT
+   CORMORANT — display: optional elimina o CLS de 0,019
+   O browser usa o fallback se a fonte não carregar no primeiro
+   frame. Como está em preload, chega rápido e é usada.
    ============================================================ */
 
 @font-face {
@@ -27,5 +29,5 @@
   src: url('/fonts/cormorant/Cormorant-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }

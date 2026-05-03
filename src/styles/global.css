@@ -14,25 +14,30 @@ html, body {
 
 body {
   background: #050505;
-  color: #ffffff; /* Garante que o texto apareça no fundo preto */
+  color: #ffffff;
   font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 200; /* 🔥 Ajustado: Agora usa seu Inter-Regular.woff2 */
-  line-height: 1.6; /* Melhora muito a leitura do conteúdo */
+  font-weight: 200;
+  line-height: 1.6;
 }
 
-/* TÍTULOS */
+@font-face {
+  font-family: 'Cormorant-fallback';
+  src: local('Georgia'), local('Times New Roman');
+  ascent-override: 96%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+  size-adjust: 108%;
+}
+
 h1, h2, h3 {
-  font-family: 'Cormorant', serif;
-  font-weight: 400; /* Usa a Cormorant-Regular */
+  font-family: 'Cormorant', 'Cormorant-fallback', serif;
+  font-weight: 400;
 }
 
-/* DESTAQUES */
-/* Quando você usar <strong>, o navegador vai buscar o arquivo Inter-Bold de 24kb */
 strong, b {
-  font-weight: 700; 
+  font-weight: 700;
 }
 
-/* Se quiser um título mais forte em algum lugar específico */
 h1 {
-  font-weight: 700; /* Isso usará a Cormorant-Bold se você baixou ela */
+  font-weight: 700;
 }
