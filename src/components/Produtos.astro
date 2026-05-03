@@ -194,9 +194,9 @@ const produtos = [
 
 /* CARD */
 .card {
-  transition: transform 0.3s ease; 
-  will-change: transform;
-  contain: layout style;
+  transition: transform 0.3s ease; /* removido border-color — card não tem border por padrão */
+  will-change: transform;          /* NOVO: cria camada GPU antes do hover */
+  contain: layout style;           /* NOVO: isola reflow interno do card */
 }
 
 .card:hover {
@@ -223,10 +223,10 @@ const produtos = [
   aspect-ratio: 3 / 2;
   object-fit: cover;
   transition: transform 0.5s ease;
-  will-change: transform;
-  transform: translateZ(0);
-  content-visibility: auto;
-  contain-intrinsic-size: auto 3/2;
+  will-change: transform;          /* NOVO: camada GPU para o scale */
+  transform: translateZ(0);        /* NOVO: promoção antecipada */
+  content-visibility: auto;        /* NOVO: pula render fora da viewport */
+  contain-intrinsic-size: auto 3/2;/* NOVO: reserva espaço proporcional */
 }
 
 .card:hover .image img {
@@ -314,6 +314,11 @@ const produtos = [
 }
 
 /* CTA */
+.cta {
+  margin-top: 70px;
+  text-align: center;
+}
+
 .cta a {
   display: inline-flex;
   align-items: center;
@@ -327,7 +332,7 @@ const produtos = [
   font-weight: 400;
   letter-spacing: 1px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;
+  will-change: transform;          /* NOVO */
 }
 
 .cta a:hover {
