@@ -28,16 +28,16 @@ const mobileOptimized = await getImage({
 
       <!-- DESKTOP -->
       <Image
-        src={imgDesktop}
-        alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-        widths={[1024, 1440, 1920]}
-        sizes="100vw"
-        loading="eager"
-        fetchpriority="high"
-        quality={45}
-        format="webp"
-        decoding="async"
-      />
+       src={imgDesktop}
+       alt="Divisórias de vidro duplo com persianas embutidas instaladas em escritório"
+       widths={[1024, 1440, 1920]}
+       sizes="100vw"
+       loading="eager"
+       fetchpriority="high"
+       decoding="sync"
+       quality={45}
+       format="webp"
+/>
 
     </picture>
 
@@ -104,7 +104,7 @@ const mobileOptimized = await getImage({
       <div class="stats">
 
         <div>
-          <strong>+27.2</strong>
+          <strong>+27.3</strong>
           <span>anos no mercado</span>
         </div>
 
