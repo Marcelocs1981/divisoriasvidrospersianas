@@ -1,43 +1,42 @@
-/* RESET */
-*,
-*::before,
-*::after {
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
-html, body {
-  overflow-x: hidden;
-}
-
 body {
-  background: #050505;
-  color: #ffffff;
-  font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 200;
-  line-height: 1.6;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
 }
 
-@font-face {
-  font-family: 'Cormorant-fallback';
-  src: local('Georgia'), local('Times New Roman');
-  ascent-override: 96%;
-  descent-override: 24%;
-  line-gap-override: 0%;
-  size-adjust: 108%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 }
 
-h1, h2, h3 {
-  font-family: 'Cormorant', 'Cormorant-fallback', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
   font-weight: 400;
-}
-
-strong, b {
-  font-weight: 700;
-}
-
-h1 {
-  font-weight: 700;
+  line-height: 1.1;
 }

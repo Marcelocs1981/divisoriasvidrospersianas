@@ -16,12 +16,32 @@ const mobileOptimized = await getImage({
 <section class="hero">
 
   <!-- BACKGROUND -->
-  <div>
+  <div class="bg">
 
-    
+    <picture>
+
+      <!-- MOBILE -->
+      <source
+        media="(max-width: 767px)"
+        srcset={mobileOptimized.src}
+      />
+
+      <!-- DESKTOP -->
+      <Image
+        src={imgDesktop}
+        alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
+        widths={[1024, 1440, 1920]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+        quality={45}
+        format="webp"
+        decoding="async"
+      />
+
+    </picture>
 
     <div class="overlay"></div>
-    <div class="gold-glow"></div>
 
   </div>
 
@@ -59,10 +79,14 @@ const mobileOptimized = await getImage({
     <div class="content">
 
       <h1>
-        Divisórias de vidros
+        O ambiente que <span class="gold">impressiona</span><br />
+        clientes, investidores e parceiros de negócios,
+        sem precisar dizer uma <span class="gold">palavra</span>.
       </h1>
+
       <p>
-        Divisória em vidro duplo com persiana embutida
+        Divisória em vidro duplo com persiana embutida, aumenta o valor da sua marca, com
+        <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
       </p>
 
       <div class="buttons">
@@ -138,6 +162,7 @@ const mobileOptimized = await getImage({
   width: 100%;
   height: 100%;
   display: block;
+
   object-fit: cover;
   object-position: center;
 }
@@ -147,6 +172,7 @@ const mobileOptimized = await getImage({
 .overlay {
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     90deg,
     rgba(0,0,0,0.92) 0%,
@@ -155,22 +181,12 @@ const mobileOptimized = await getImage({
   );
 }
 
-.gold-glow {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  top: -150px;
-  right: -150px;
-  border-radius: 50%;
-  background: rgba(181,138,10,0.10);
-  filter: blur(120px);
-}
-
 /* LAYOUT */
 
 .wrapper {
   width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -182,6 +198,7 @@ const mobileOptimized = await getImage({
   top: 0;
   left: 0;
   right: 0;
+
   z-index: 10;
 }
 
@@ -189,6 +206,7 @@ const mobileOptimized = await getImage({
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 24px 20px;
 }
 
@@ -203,17 +221,41 @@ const mobileOptimized = await getImage({
 .logo-box {
   width: 42px;
   height: 42px;
+
   background: #b58a0a;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
+
+  flex-shrink: 0;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 .logo-text {
   font-size: clamp(0.7rem, 1.5vw, 1.15rem);
-  font-family: 'Inter', sans-serif;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 .logo-text span {
@@ -221,6 +263,7 @@ const mobileOptimized = await getImage({
 }
 
 /* MENU */
+
 nav {
   display: flex;
   gap: 28px;
@@ -230,22 +273,37 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.3s ease, opacity 0.3s ease; /* era: transition: 0.3s — genérico demais */
-  will-change: opacity;                            /* NOVO */
+
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+
+  will-change: opacity;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 nav a:hover {
   color: #b58a0a;
 }
 
-
 /* CONTEÚDO */
 
 .container {
   position: relative;
   z-index: 2;
+
   width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
   padding: 140px 20px 80px;
 }
@@ -260,15 +318,23 @@ nav a:hover {
 .hero h1 {
   font-size: clamp(1.9rem, 2.9vw, 4.4rem);
   line-height: 1.05;
-  font-weight: 600;
+  font-weight: 700;
+
   margin-bottom: 28px;
+
   letter-spacing: -1px;
-  font-family: 'Cormorant', serif;
   text-align: left;
+
+  /* HEADING FONT */
+  font-family:
+    "Times New Roman",
+    Times,
+    Georgia,
+    serif;
 }
 
 .gold {
- color: #d4a51a;
+  color: #d4a51a;
 }
 
 /* TEXTO */
@@ -277,11 +343,23 @@ nav a:hover {
   font-size: clamp(0.9rem, 1.5vw, 1.15rem);
   line-height: 1.7;
   letter-spacing: 0.01em;
+
   max-width: 720px;
   margin-bottom: 42px;
+
   color: rgba(255,255,255,0.92);
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 /* BOTÕES */
@@ -289,6 +367,7 @@ nav a:hover {
 .buttons {
   display: flex;
   flex-wrap: wrap;
+
   gap: 16px;
   margin-bottom: 40px;
 }
@@ -296,11 +375,26 @@ nav a:hover {
 .btn {
   padding: 10px 20px;
   border-radius: 10px;
+
   text-decoration: none;
   font-size: clamp(0.85rem, 1.2vw, 1rem);
   font-weight: 700;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* era: transition: 0.3s — genérico */
-  will-change: transform;                                 /* NOVO */
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  will-change: transform;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 .primary {
@@ -310,7 +404,9 @@ nav a:hover {
 
 .primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(181,138,10,0.25);
+
+  box-shadow:
+    0 10px 25px rgba(181,138,10,0.25);
 }
 
 .secondary {
@@ -327,23 +423,48 @@ nav a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   gap: 30px;
+
   max-width: 760px;
 }
 
 .stats strong {
   display: block;
   margin-bottom: 1px;
+
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   color: #b58a0a;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 .stats span {
   font-size: 10px;
   line-height: 1.1;
+
   letter-spacing: 1px;
   text-transform: uppercase;
+
   color: #fff;
+
+  /* BODY FONT */
+  font-family:
+    Arial,
+    Roboto,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 /* RESPONSIVO */
@@ -383,8 +504,10 @@ nav a:hover {
   .hero p {
     margin-left: auto;
     margin-right: auto;
+
     margin-bottom: 30px;
     line-height: 1.4;
+
     max-width: 100%;
   }
 
@@ -397,9 +520,10 @@ nav a:hover {
   }
 
   .stats {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     gap: 22px 18px;
+
     max-width: 100%;
     margin-top: 5px;
   }
@@ -411,20 +535,18 @@ nav a:hover {
   }
 
   .stats strong {
-    display: block;
     margin-bottom: 4px;
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
     line-height: 1;
-    color: #b58a0a;
   }
 
   .stats span {
     display: block;
+
     font-size: 10px;
     line-height: 1.3;
+
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #fff;
   }
 
 }
