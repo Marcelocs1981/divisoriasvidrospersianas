@@ -3,13 +3,9 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-
+  output: 'static',
   build: {
-
-    /* INLINE CSS */
-    /* REMOVE RENDER BLOCKING */
-    inlineStylesheets: 'always'
-
+    inlineStylesheets: 'always',
+    concurrency: 4
   }
-
 });
