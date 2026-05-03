@@ -15,8 +15,8 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 
     <h2>
       Seu cliente atravessa a porta, levanta o olhar
-      <span>
-        <i>e percebe que está diante de uma empresa diferente.</i>
+      <span class="gold">
+        e percebe que está diante de uma empresa diferente.
       </span>
     </h2>
 
@@ -85,14 +85,7 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 <style>
 .anticipation {
   padding: 100px 0;
-  background:
-    radial-gradient(
-      circle at 30% 20%,
-      rgba(150,112,0,0.12),
-      transparent 40%
-    ),
-    #050505;
-
+  background: #050505;
   color: #fff;
 
   content-visibility: auto;
@@ -127,23 +120,25 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 /* TÍTULO */
 
 h2 {
-  max-width: 900px;
-  margin-bottom: 70px;
+  max-width: 700px;
+  margin-bottom: 55px;
 
-  font-size: clamp(1.9rem, 2.9vw, 4rem);
-  line-height: 1.05;
-  letter-spacing: -1px;
-  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-weight: 700;
 
   color: #eaeaea;
 
+  contain: layout paint;
+
   font-family:
-    "Times New Roman",
-    Times,
-    serif;
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
-h2 span {
+.gold {
   color: #d4a51a;
 }
 
@@ -151,8 +146,8 @@ h2 span {
 
 .content {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 100px;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 70px;
   align-items: center;
 }
 
@@ -163,10 +158,10 @@ h2 span {
 }
 
 .text p {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
-  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
-  line-height: 1.5;
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  line-height: 1.55;
   color: #cfcfcf;
 
   font-family:
@@ -184,7 +179,7 @@ h2 span {
 
 .strong {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* IMAGEM */
@@ -203,7 +198,7 @@ h2 span {
   height: auto;
   display: block;
 
-  border-radius: 12px;
+  border-radius: 10px;
 
   content-visibility: auto;
   contain-intrinsic-size: 1200px 800px;
@@ -213,17 +208,28 @@ h2 span {
 
 @media (max-width: 768px) {
 
+  .anticipation {
+    padding: 70px 0;
+  }
+
   .container {
     width: 90%;
   }
 
   .content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 35px;
   }
 
   h2 {
-    margin-bottom: 40px;
+    max-width: 100%;
+    margin-bottom: 35px;
+    font-size: clamp(1.9rem, 7vw, 2.6rem);
+    line-height: 1.15;
+  }
+
+  .text p {
+    line-height: 1.5;
   }
 
 }
