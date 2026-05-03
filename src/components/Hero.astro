@@ -18,7 +18,25 @@ const mobileOptimized = await getImage({
   <!-- BACKGROUND -->
   <div class="bg">
 
-    
+    <picture>
+     <source
+      media="(max-width: 767px)"
+      srcset={mobileOptimized.src}
+    />
+
+    <Image
+     src={imgDesktop}
+     alt="..."
+     widths={[1024, 1440, 1920]}
+     sizes="100vw"
+     loading="eager"
+     fetchpriority="high"
+     quality={45}
+     format="webp"
+    />
+
+</picture>
+
     <div class="overlay"></div>
     <div class="gold-glow"></div>
 
@@ -61,8 +79,7 @@ const mobileOptimized = await getImage({
         Divisórias de vidros
       </h1>
       <p>
-        Divisória em vidro duplo com persiana embutida, aumenta o valor da sua marca, com
-        <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
+        Divisória em vidro duplo com persiana embutida
       </p>
 
       <div class="buttons">
