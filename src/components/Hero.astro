@@ -19,27 +19,23 @@ const mobileOptimized = await getImage({
   <div class="bg">
 
     <picture>
+     <source
+      media="(max-width: 767px)"
+      srcset={mobileOptimized.src}
+    />
 
-      <!-- MOBILE -->
-      <source
-        media="(max-width: 767px)"
-        srcset={mobileOptimized.src}
-      />
+    <Image
+     src={imgDesktop}
+     alt="..."
+     widths={[1024, 1440, 1920]}
+     sizes="100vw"
+     loading="eager"
+     fetchpriority="high"
+     quality={45}
+     format="webp"
+    />
 
-      <!-- DESKTOP -->
-      <Image
-       src={imgDesktop}
-       alt="Divisórias de vidro com persianas embutidas instaladas em escritório"
-       widths={[768, 1024, 1440, 1920]}
-       sizes="100vw"
-       loading="eager"
-       fetchpriority="high"
-       quality={45}
-       format="webp"
-       decoding="sync"
-      />
-
-    </picture>
+</picture>
 
     <div class="overlay"></div>
     <div class="gold-glow"></div>
