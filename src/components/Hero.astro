@@ -2,14 +2,14 @@
 import { Image, getImage } from 'astro:assets';
 
 import imgDesktop from '../assets/divisorias-de-vidros-com-persianas-1920px.webp';
-import imgMobile from '../assets/divisorias-de-vidros-com-persianas-768x1080.jpg';
+import imgMobile from '../assets/divisorias-de-vidros-com-persianas-768x1080.webp';
 
 /* IMAGEM MOBILE OTIMIZADA */
 const mobileOptimized = await getImage({
   src: imgMobile,
   width: 768,
   quality: 45,
-  format: 'jpg'
+  format: 'webp'
 });
 ---
 
@@ -24,7 +24,6 @@ const mobileOptimized = await getImage({
       <source
         media="(max-width: 767px)"
         srcset={mobileOptimized.src}
-        type="image/jpeg"
       />
 
       <!-- DESKTOP -->
