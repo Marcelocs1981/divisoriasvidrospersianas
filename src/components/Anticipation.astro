@@ -19,46 +19,13 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 
     <div class="content">
 
-      <!-- TEXTO -->
-      <div class="text">
-
-        <p>
-          As divisórias de vidro duplo com persianas embutidas,
-          se estendem do piso ao teto — com persianas integradas,
-          perfeitamente alinhadas, filtram a luz com elegância cinematográfica.
-        </p>
-
-        <p>
-          Um toque no smartphone — e a sala de reuniões se torna privada.
-          <b>
-            Outro toque, e a transparência volta.
-          </b>
-          Silêncio absoluto. Temperatura impecável.
-          Nenhum reflexo no monitor.
-        </p>
-
-        <p>
-          Antes mesmo da primeira palavra,
-          a negociação já começou a seu favor.
-        </p>
-
-        <p>
-          É exatamente isso que divisórias em vidros com persianas embutidas entregam:
-          <b>maior percepção de valor da sua marca.</b>
-        </p>
-
-      </div>
-
-      <!-- IMAGEM -->
+      <!-- IMAGEM — sobe no mobile via order -->
       <div class="right">
-
         <picture>
-
           <source
             media="(max-width: 768px)"
             srcset={imgMobile.src}
           />
-
           <Image
             src={imgDesktop}
             alt="Divisória de vidro duplo com persiana embutida"
@@ -68,9 +35,30 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
             height={800}
             class="anticipation-img"
           />
-
         </picture>
+      </div>
 
+      <!-- TEXTO — desce no mobile via order -->
+      <div class="text">
+        <p>
+          As divisórias de vidro duplo com persianas embutidas,
+          se estendem do piso ao teto — com persianas integradas,
+          perfeitamente alinhadas, filtram a luz com elegância cinematográfica.
+        </p>
+        <p>
+          Um toque no smartphone — e a sala de reuniões se torna privada.
+          <b>Outro toque, e a transparência volta.</b>
+          Silêncio absoluto. Temperatura impecável.
+          Nenhum reflexo no monitor.
+        </p>
+        <p>
+          Antes mesmo da primeira palavra,
+          a negociação já começou a seu favor.
+        </p>
+        <p>
+          É exatamente isso que divisórias em vidros com persianas embutidas entregam:
+          <b>maior percepção de valor da sua marca.</b>
+        </p>
       </div>
 
     </div>
@@ -92,26 +80,14 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
   margin: 0 auto;
 }
 
-/* TAG */
-
 .tag {
   display: block;
   margin-bottom: 25px;
-
   font-size: 11px;
   letter-spacing: 4px;
   color: #ffbf00;
-
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-
-/* TÍTULO */
 
 h2 {
   max-width: 700px;
@@ -127,16 +103,12 @@ h2 {
   color: #d4a51a;
 }
 
-/* GRID */
-
 .content {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: 1fr 1.05fr;  /* imagem à esquerda, texto à direita */
   gap: 70px;
   align-items: center;
 }
-
-/* TEXTO */
 
 .text {
   width: 100%;
@@ -144,18 +116,10 @@ h2 {
 
 .text p {
   margin-bottom: 18px;
-
   font-size: clamp(0.95rem, 1.2vw, 1.08rem);
   line-height: 1.55;
   color: #cfcfcf;
-
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .highlight {
@@ -166,8 +130,6 @@ h2 {
   color: #fff;
   font-weight: 700;
 }
-
-/* IMAGEM */
 
 .right {
   width: 100%;
@@ -182,17 +144,12 @@ h2 {
   width: 100%;
   height: auto;
   display: block;
-
   border-radius: 10px;
-
   content-visibility: auto;
   contain-intrinsic-size: 1200px 800px;
 }
 
-/* RESPONSIVO */
-
 @media (max-width: 768px) {
-
   .anticipation {
     padding: 70px 0;
   }
@@ -202,8 +159,17 @@ h2 {
   }
 
   .content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 35px;
+  }
+
+  .right {
+    order: 1;
+  }
+
+  .text {
+    order: 2;
   }
 
   h2 {
@@ -216,6 +182,5 @@ h2 {
   .text p {
     line-height: 1.5;
   }
-
 }
 </style>
