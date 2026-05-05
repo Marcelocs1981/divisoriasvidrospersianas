@@ -36,7 +36,6 @@
   }
 
   .quote-text {
-    font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.9rem, 2.9vw, 4rem);
     line-height: 1.15;
     margin: 0;
@@ -44,13 +43,13 @@
     letter-spacing: -0.02em;
     position: relative;
     quotes: none;
+    font-familiy: 'times new roman', serif;
   }
 
   /* Aspa de Abertura - Usando Unicode \201C */
   .quote-text::before {
     content: "\201C" !important;
     display: inline-block;
-    font-family: 'Cormorant Garamond', serif;
     font-size: 5.5rem;
     color: #967000;
     line-height: 1;
@@ -64,7 +63,6 @@
   .quote-text::after {
     content: "\201D" !important;
     display: inline-block;
-    font-family: 'Cormorant Garamond', serif;
     color: #967000;
     font-size: 5.5rem;
     margin-left: 8px;
@@ -91,10 +89,6 @@
     width: 65px;
     height: 1px;
     background-color: #967000;
-  }
-
-  .footer-content {
-    font-family: 'Inter', sans-serif;
   }
 
   .footer-title {
