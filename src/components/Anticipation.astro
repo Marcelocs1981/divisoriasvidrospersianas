@@ -1,12 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-
 import imgDesktop from '../assets/divisoria-de-vidro-duplo-com-persiana-embutida-1200px.webp';
 import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 ---
 
 <section class="anticipation">
-
   <div class="container">
 
     <span class="tag">
@@ -19,12 +17,13 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
 
     <div class="content">
 
-      <!-- IMAGEM — sobe no mobile via order -->
+      <!-- IMAGEM -->
       <div class="right">
         <picture>
           <source
             media="(max-width: 768px)"
             srcset={imgMobile.src}
+            type="image/webp"
           />
           <Image
             src={imgDesktop}
@@ -38,7 +37,7 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
         </picture>
       </div>
 
-      <!-- TEXTO — desce no mobile via order -->
+      <!-- TEXTO -->
       <div class="text">
         <p>
           As divisórias de vidro duplo com persianas embutidas,
@@ -64,7 +63,6 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
     </div>
 
   </div>
-
 </section>
 
 <style>
@@ -78,6 +76,7 @@ import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .tag {
@@ -94,7 +93,6 @@ h2 {
   margin-bottom: 55px;
   font-size: 2.5rem;
   line-height: 1.15;
-  letter-spacing: 0;
   font-weight: 500;
   color: #eaeaea;
 }
@@ -105,13 +103,9 @@ h2 {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1.05fr;  /* imagem à esquerda, texto à direita */
+  grid-template-columns: 1fr 1.05fr;
   gap: 70px;
   align-items: center;
-}
-
-.text {
-  width: 100%;
 }
 
 .text p {
@@ -120,19 +114,6 @@ h2 {
   line-height: 1.55;
   color: #cfcfcf;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.highlight {
-  color: #fff;
-}
-
-.strong {
-  color: #fff;
-  font-weight: 700;
-}
-
-.right {
-  width: 100%;
 }
 
 .right picture {
@@ -150,12 +131,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
   .anticipation {
     padding: 70px 0;
-  }
-
-  .container {
-    width: 90%;
   }
 
   .content {
@@ -173,10 +151,8 @@ h2 {
   }
 
   h2 {
-    max-width: 100%;
     margin-bottom: 35px;
     font-size: 1.5rem;
-    line-height: 1.15;
   }
 
   .text p {
@@ -184,12 +160,10 @@ h2 {
   }
 
   .tag {
-  display: block;
-  margin-bottom: 15px;
-  font-size: 0.5rem;
-  letter-spacing: 3px;
-  color: #ffbf00;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  } 
+    margin-bottom: 15px;
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+  }
+
 }
 </style>
