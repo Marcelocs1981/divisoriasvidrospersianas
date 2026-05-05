@@ -28,3 +28,18 @@ h1, h2, h3, h4, h5, h6, .quote-text {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.tag {
+  display: block;
+  font-size: clamp(0.55rem, 1.2vw, 0.8rem);
+  letter-spacing: 4px;
+  color: #ffbf00;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.gold {
+    background: linear-gradient(90deg, #b58a0a, #f5d76e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
