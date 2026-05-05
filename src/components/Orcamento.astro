@@ -15,7 +15,7 @@
       </h2>
 
       <p class="desc">
-        Em menos de 24h, um especialista entra em contato para entender seu projeto.
+        Em poucos minutos, um especialista entra em contato para entender seu projeto.
         Visita técnica gratuita, projeto 3D personalizado e a melhor proposta do mercado.
       </p>
 
@@ -26,14 +26,14 @@
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20 6L9 17l-5-5"></path>
           </svg>
-          Visita técnica gratuita em São Paulo
+          Visita técnica gratuita com especialista em divisórias de vidro com persianas
         </li>
 
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20 6L9 17l-5-5"></path>
           </svg>
-          Projeto 3D personalizado sem compromisso
+          Projeto personalizado exclusivo para o escritório da sua empresa
         </li>
 
         <li>
@@ -47,7 +47,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20 6L9 17l-5-5"></path>
           </svg>
-          Garantia total de fábrica
+          Garantia total de fábrica de divisória de vidro com persiana
         </li>
 
       </ul>
@@ -148,15 +148,13 @@
 /* CONTAINER */
 .orcamento .container {
   max-width: 1200px;
-
+  width: 100%;
   margin: 0 auto;
-
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 560px;
-
   gap: 100px;
   align-items: start;
-
   position: relative;
   z-index: 2;
 }
@@ -164,12 +162,9 @@
 /* TAG */
 .orcamento .tag {
   display: inline-block;
-
   color: #ffbf00;
-
-  font-size: 11px;
+  font-size: clamp(0.55rem, 1.2vw, 0.80rem);
   letter-spacing: 4px;
-
   margin-bottom: 26px;
 }
 
@@ -186,12 +181,10 @@
 /* TEXTO */
 .orcamento .desc {
   max-width: 620px;
-
   color: rgba(255,255,255,0.72);
-
-  font-size: 1.15rem;
-  line-height: 1.9;
-
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  font-weight: 300;
+  line-height: 1.6;
   margin-bottom: 50px;
 }
 
@@ -214,12 +207,9 @@
   display: flex;
   align-items: center;
   gap: 14px;
-
   color: #fff;
-
   margin-bottom: 20px;
-
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 1.2vw, 0.90rem);
 }
 
 .benefits svg {

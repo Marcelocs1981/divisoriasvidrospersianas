@@ -1,0 +1,167 @@
+---
+import { Image } from 'astro:assets';
+import imgDesktop from '../assets/divisoria-de-vidro-duplo-com-persiana-embutida-1200px.webp';
+import imgMobile from '../assets/divisorias-de-vidros-com-persianas-600px.webp';
+---
+
+<section class="reuniao">
+  <div class="container">
+
+    <span class="tag">
+      PRIVACIDADE TOTAL
+    </span>
+
+    <h2>
+      O ambiente que passa segurança e credibilidade <span class="gold">para seus clientes</span>.
+    </h2>
+
+    <div class="content">
+
+     <!-- TEXTO -->
+      <div class="text">
+        <p>
+          As divisórias de vidro duplo com persianas embutidas,
+          se estendem do piso ao teto — com persianas integradas,
+          perfeitamente alinhadas, filtram a luz com elegância cinematográfica.
+        </p>
+        <p>
+          Um toque no smartphone — e a sala de reuniões se torna privada.
+          <b>Outro toque, e a transparência volta.</b>
+          Silêncio absoluto. Temperatura impecável.
+          Nenhum reflexo no monitor.
+        </p>
+        <p>
+          Antes mesmo da primeira palavra,
+          a negociação já começou a seu favor.
+        </p>
+        <p>
+          É exatamente isso que divisórias em vidros com persianas embutidas entregam:
+          <b>maior percepção de valor da sua marca.</b>
+        </p>
+      </div>
+      <!-- IMAGEM -->
+      <div class="right">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset={imgMobile.src}
+            type="image/webp"
+          />
+          <Image
+            src={imgDesktop}
+            alt="Divisória de vidro duplo com persiana embutida"
+            loading="lazy"
+            decoding="async"
+            width={1200}
+            height={800}
+            class="reuniao-img"
+          />
+        </picture>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.reuniao {
+  padding: 100px 0;
+  background: #050505;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tag {
+  display: block;
+  margin-bottom: 25px;
+  font-size: clamp(0.55rem, 1.2vw, 0.80rem);
+  letter-spacing: 4px;
+  color: #ffbf00;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h2 {
+  max-width: 1200px;
+  margin-bottom: 55px;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #eaeaea;
+}
+
+.gold {
+  color: #d4a51a;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.text p {
+  margin-bottom: 18px;
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  line-height: 1.55;
+  color: #cfcfcf;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.right picture {
+  width: 100%;
+  display: block;
+}
+
+.reuniao-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1200px 800px;
+}
+
+@media (max-width: 768px) {
+
+  .reuniao {
+    padding: 70px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .right {
+    order: 1;
+  }
+
+  .text {
+    order: 2;
+  }
+
+  h2 {
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    line-height: 1.5;
+  }
+
+  .tag {
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+  }
+
+}
+</style>

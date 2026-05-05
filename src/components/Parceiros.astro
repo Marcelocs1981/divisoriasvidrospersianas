@@ -27,8 +27,10 @@
 }
 
   .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   .header {
@@ -37,7 +39,7 @@
   }
 
   .tag {
-    font-size: 12px;
+    font-size: clamp(0.55rem, 1.2vw, 0.80rem);
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: #ffbf00;
@@ -62,10 +64,10 @@
   }
 
   .content p {
-    font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(0.95rem, 1.2vw, 1.08rem);
     line-height: 1.6;
     color: #a0a0a0;
-    font-weight: 300;
+    font-weight: 200;
     max-width: 800px;
     margin: 0;
   }
