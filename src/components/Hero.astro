@@ -50,11 +50,7 @@ const mobileOptimized = await getImage({
 
     <div class="wrapper">
 
-      <a
-        href="#"
-        class="logo"
-        aria-label="Divisórias de Vidros com Persianas - página inicial"
-      >
+      <a href="#" class="logo" aria-label="Divisórias de Vidros com Persianas - página inicial">
 
         <div class="logo-box">
           DVP
@@ -66,30 +62,12 @@ const mobileOptimized = await getImage({
 
       </a>
 
-      <!-- MENU DESKTOP -->
       <nav aria-label="Menu principal">
         <a href="#modelos">Modelos</a>
         <a href="#diferenciais">Diferenciais</a>
         <a href="#processo">Processo</a>
         <a href="#orcamento">Orçamento</a>
       </nav>
-
-      <!-- BOTÃO MOBILE -->
-      <button
-        class="menu-toggle"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-
-      <!-- MENU MOBILE -->
-      <div class="mobile-nav">
-        <a href="#modelos">Modelos</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#processo">Processo</a>
-        <a href="#orcamento">Orçamento</a>
-      </div>
 
     </div>
 
@@ -107,24 +85,18 @@ const mobileOptimized = await getImage({
       </h1>
 
       <p>
-        Divisória em vidro duplo com persiana embutida,
-        aumenta o valor da sua marca, com
-        <b>competência e profissionalismo</b> —
-        através de conforto, estilo e sofisticação.
+        Divisória em vidro duplo com persiana embutida, aumenta o valor da sua marca, com
+        <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
       </p>
 
-      <div
-        class="buttons"
-        role="group"
-        aria-label="Ações principais"
-      >
+      <div class="buttons" role="group" aria-label="Ações principais">
 
-        <a href="#orcamento" class="btn primary">
-          Solicitar Projeto Exclusivo Sob Medida
+        {/*<a href="#orcamento" class="btn primary">
+          SOLICITAR PROJETO SOB MEDIDA
         </a>
-
+         */}
         <a href="#modelos" class="btn secondary">
-          Ver Todos os Modelos
+          VER MODELOS DE DIVISÓRIAS DE VIDROS COM PERSIANAS
         </a>
 
       </div>
@@ -156,25 +128,6 @@ const mobileOptimized = await getImage({
     </div>
 
   </div>
-
-  <script>
-    const button = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.mobile-nav');
-
-    button?.addEventListener('click', () => {
-
-      nav?.classList.toggle('active');
-
-      const expanded =
-        button.getAttribute('aria-expanded') === 'true';
-
-      button.setAttribute(
-        'aria-expanded',
-        String(!expanded)
-      );
-
-    });
-  </script>
 
 </section>
 
@@ -209,30 +162,24 @@ const mobileOptimized = await getImage({
   width: 100%;
   height: 100%;
   display: block;
-
   object-fit: cover;
   object-position: center;
-
   position: relative;
   z-index: 0;
 }
 
 /* OVERLAY */
-
 .overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-
   background: rgba(0,0,0,0.55);
 }
 
 /* LAYOUT */
-
 .wrapper {
   width: 100%;
   max-width: 1200px;
-
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -244,7 +191,6 @@ const mobileOptimized = await getImage({
   top: 0;
   left: 0;
   right: 0;
-
   z-index: 10;
 }
 
@@ -252,10 +198,7 @@ const mobileOptimized = await getImage({
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 24px 20px;
-
-  position: relative;
 }
 
 /* LOGO */
@@ -264,7 +207,6 @@ const mobileOptimized = await getImage({
   display: flex;
   align-items: center;
   gap: 12px;
-
   text-decoration: none;
   color: #fff;
 }
@@ -272,33 +214,19 @@ const mobileOptimized = await getImage({
 .logo-box {
   width: 42px;
   height: 42px;
-
   background: #b58a0a;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: #000;
   font-weight: 700;
-
   flex-shrink: 0;
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .logo-text {
   font-size: clamp(0.7rem, 1.5vw, 1.15rem);
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .logo-text span {
@@ -316,38 +244,12 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   transition: color 0.3s ease;
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
 }
 
 nav a:hover {
   color: #b58a0a;
-}
-
-/* MENU MOBILE */
-
-.menu-toggle {
-  display: none;
-
-  background: transparent;
-  border: none;
-
-  color: #fff;
-  font-size: 2rem;
-
-  cursor: pointer;
-
-  z-index: 30;
-}
-
-.mobile-nav {
-  display: none;
 }
 
 /* CONTEÚDO */
@@ -355,10 +257,8 @@ nav a:hover {
 .container {
   position: relative;
   z-index: 2;
-
   width: 100%;
   max-width: 1200px;
-
   margin: 0 auto;
   padding: 140px 20px 80px;
 }
@@ -374,17 +274,10 @@ nav a:hover {
   font-size: 2.4rem;
   line-height: 1.05;
   font-weight: 500;
-
   margin-bottom: 28px;
-
   text-align: left;
   color: #fff;
-
-  font-family:
-    "Times New Roman",
-    Times,
-    Georgia,
-    serif;
+  font-family: "Times New Roman", Times, Georgia, serif;
 }
 
 .gold {
@@ -397,19 +290,12 @@ nav a:hover {
   font-size: clamp(0.9rem, 1.5vw, 1.15rem);
   line-height: 1.7;
   letter-spacing: 0.01em;
-
   max-width: 720px;
   margin-bottom: 42px;
-
   color: #fff;
   text-align: left;
   font-weight: 400;
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* BOTÕES */
@@ -417,7 +303,6 @@ nav a:hover {
 .buttons {
   display: flex;
   flex-wrap: wrap;
-
   gap: 16px;
   margin-bottom: 40px;
 }
@@ -425,32 +310,21 @@ nav a:hover {
 .btn {
   padding: 10px 20px;
   border-radius: 10px;
-
   text-decoration: none;
   font-size: clamp(0.85rem, 1.2vw, 1rem);
-  font-weight: 700;
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  font-weight: 500;
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.primary {
+{/*.primary {
   background: #b58a0a;
   color: #000;
 }
+ */}
 
 .primary:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 10px 25px rgba(181,138,10,0.25);
+  box-shadow: 0 10px 25px rgba(181,138,10,0.25);
 }
 
 .secondary {
@@ -467,11 +341,8 @@ nav a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   gap: 30px;
-
   max-width: 760px;
-
   margin: 0;
   padding: 0;
 }
@@ -479,33 +350,20 @@ nav a:hover {
 .stats dt strong {
   display: block;
   margin-bottom: 1px;
-
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   color: #b58a0a;
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .stats dd {
   margin: 0;
-
   font-size: 10px;
+  font-weight: 400;
   line-height: 1.1;
-
   letter-spacing: 1px;
   text-transform: uppercase;
-
   color: #fff;
-
-  font-family:
-    Arial,
-    Roboto,
-    system-ui,
-    sans-serif;
+  font-family: Arial, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* RESPONSIVO */
@@ -521,50 +379,12 @@ nav a:hover {
     object-position: 60% top;
   }
 
+  .topbar .wrapper {
+    justify-content: flex-start;
+  }
+
   nav {
     display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .mobile-nav {
-    position: absolute;
-
-    top: 80px;
-    right: 20px;
-
-    width: 220px;
-
-    background: rgba(0,0,0,0.96);
-
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
-
-    padding: 20px;
-
-    flex-direction: column;
-    gap: 18px;
-
-    z-index: 25;
-  }
-
-  .mobile-nav.active {
-    display: flex;
-  }
-
-  .mobile-nav a {
-    color: #fff;
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-family:
-      Arial,
-      Roboto,
-      system-ui,
-      sans-serif;
   }
 
   .container {
@@ -584,9 +404,7 @@ nav a:hover {
   .hero p {
     margin-left: auto;
     margin-right: auto;
-
     margin-bottom: 30px;
-
     line-height: 1.4;
     max-width: 100%;
   }
@@ -601,9 +419,7 @@ nav a:hover {
 
   .stats {
     grid-template-columns: repeat(2, 1fr);
-
     gap: 22px 18px;
-
     max-width: 100%;
     margin-top: 5px;
   }
@@ -621,10 +437,8 @@ nav a:hover {
 
   .stats dd {
     display: block;
-
     font-size: 10px;
     line-height: 1.3;
-
     letter-spacing: 1px;
     text-transform: uppercase;
   }
