@@ -43,3 +43,9 @@ h1, h2, h3, h4, h5, h6, .quote-text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .bgdk {
+  padding: 100px 0;
+  background: #050505;
+  color: #fff;
+}
