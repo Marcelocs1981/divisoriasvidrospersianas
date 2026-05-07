@@ -57,44 +57,80 @@
     <!-- DIREITA -->
     <div class="right">
 
-      <form class="form">
+      <form
+        class="form"
+        id="orcamento-form"
+      >
 
         <div class="grid">
 
           <div class="field">
             <label for="nome">Nome*</label>
-            <input type="text" id="nome" name="nome" />
+
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+            />
           </div>
 
           <div class="field">
             <label for="empresa">Empresa</label>
-            <input type="text" id="empresa" name="empresa" />
+
+            <input
+              type="text"
+              id="empresa"
+              name="empresa"
+            />
           </div>
 
           <div class="field">
             <label for="email">E-mail*</label>
-            <input type="email" id="email" name="email" />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
           </div>
 
           <div class="field">
-            <label for="telefone">Telefone / WhatsApp*</label>
-            <input type="tel" id="telefone" name="telefone" />
+            <label for="telefone">
+              Telefone / WhatsApp*
+            </label>
+
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              required
+            />
           </div>
 
         </div>
 
         <div class="field">
-          <label for="modelo">Modelo de interesse</label>
+
+          <label for="modelo">
+            Modelo de interesse
+          </label>
+
           <input
             type="text"
             id="modelo"
             name="modelo"
             placeholder="Ex.: Vidro duplo com persiana embutida"
           />
+
         </div>
 
         <div class="field">
-          <label for="mensagem">Conte sobre seu projeto</label>
+
+          <label for="mensagem">
+            Conte sobre seu projeto
+          </label>
 
           <textarea
             id="mensagem"
@@ -102,11 +138,17 @@
             rows="5"
             placeholder="Metragem aproximada, localização, prazo desejado..."
           ></textarea>
+
         </div>
 
         <button type="submit">
           SOLICITAR ORÇAMENTO PERSONALIZADO
         </button>
+
+        <p
+          class="status-message"
+          id="status-message"
+        ></p>
 
         <p class="privacy">
           Ao enviar, você concorda com nossa política de privacidade.
@@ -120,7 +162,100 @@
 
 </section>
 
+<script>
+
+const form =
+  document.getElementById('orcamento-form');
+
+const statusMessage =
+  document.getElementById('status-message');
+
+form.addEventListener(
+  'submit',
+  async (e) => {
+
+    e.preventDefault();
+
+    const button =
+      form.querySelector('button');
+
+    button.disabled = true;
+
+    button.innerText = 'ENVIANDO...';
+
+    statusMessage.innerText = '';
+
+    try {
+
+      const formData = new FormData(form);
+
+      const response = await fetch(
+        '/send.php',
+        {
+          method: 'POST',
+          body: formData
+        }
+      );
+
+      const result =
+        await response.json();
+
+      if (result.success) {
+
+        statusMessage.innerText =
+          'Mensagem enviada com sucesso!';
+
+        statusMessage.classList.add(
+          'success'
+        );
+
+        statusMessage.classList.remove(
+          'error'
+        );
+
+        form.reset();
+
+      } else {
+
+        statusMessage.innerText =
+          'Erro ao enviar mensagem.';
+
+        statusMessage.classList.add(
+          'error'
+        );
+
+        statusMessage.classList.remove(
+          'success'
+        );
+      }
+
+    } catch (error) {
+
+      statusMessage.innerText =
+        'Erro ao enviar mensagem.';
+
+      statusMessage.classList.add(
+        'error'
+      );
+
+      statusMessage.classList.remove(
+        'success'
+      );
+
+    }
+
+    button.disabled = false;
+
+    button.innerText =
+      'SOLICITAR ORÇAMENTO PERSONALIZADO';
+
+  }
+);
+
+</script>
+
 <style>
+
 .orcamento {
   position: relative;
 
@@ -189,16 +324,15 @@
 }
 
 /*Texto Dourado*/
-  .gold-text {
-    background: linear-gradient(90deg, #b58a0a, #f5d76e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.gold-text {
+  background: linear-gradient(90deg, #b58a0a, #f5d76e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* BENEFÍCIOS */
 .benefits {
   list-style: none;
-
   padding: 0;
   margin: 0 0 60px;
 }
@@ -234,14 +368,13 @@
   box-shadow:
     0 0 0 1px rgba(255,255,255,0.02),
     0 20px 60px rgba(0,0,0,0.5);
-  contain: layout paint; /* NOVO: isola o backdrop-filter da página */
+  contain: layout paint;
 }
 
 /* GRID */
 .form .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 20px;
 }
 
@@ -274,7 +407,7 @@
   outline: none;
   transition:
     border-color 0.25s ease,
-    box-shadow 0.25s ease;  /* removido: background 0.25s ease */
+    box-shadow 0.25s ease;
   box-sizing: border-box;
 }
 
@@ -311,13 +444,36 @@
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;  /* removido: opacity 0.2s ease */
-  will-change: transform;  /* NOVO */
+    box-shadow 0.2s ease;
+
+  will-change: transform;
 }
 
 .form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(150,112,0,0.2);
+
+  box-shadow:
+    0 10px 30px rgba(150,112,0,0.2);
+}
+
+.form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* STATUS */
+.status-message {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.status-message.success {
+  color: #7dffb3;
+}
+
+.status-message.error {
+  color: #ff7d7d;
 }
 
 /* PRIVACIDADE */
@@ -339,6 +495,7 @@
     grid-template-columns: 1fr;
     gap: 70px;
   }
+}
 
 @media (max-width: 768px) {
 
@@ -374,4 +531,5 @@
     font-size: 0.92rem;
   }
 }
+
 </style>
