@@ -31,8 +31,7 @@ try {
 
   $mail->Username = 'contato@divisoriasvidrospersianas.com.br';
 
-  $mail->Password = '87@TB(#%e3e0n$n0)Y+_}{}P{;+_O=0O)!*&!8e5154X!5@!Cr
-';
+  $mail->Password = '87@TB(#%e3e0n$n0)Y+_}{}P{;+_O=0O)!*&!8e5154X!5@!Cr';
 
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 
@@ -41,12 +40,12 @@ try {
   $mail->CharSet = 'UTF-8';
 
   $mail->setFrom(
-    'contato@seudominio.com.br',
+    'contato@divisoriasvidrospersianas.com.br',
     'Site'
   );
 
   $mail->addAddress(
-    'contato@seudominio.com.br'
+    'contato@divisoriasvidrospersianas.com.br'
   );
 
   $mail->addReplyTo(
