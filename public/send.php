@@ -46,12 +46,12 @@ try {
   $mail->CharSet = 'UTF-8';
 
   $mail->setFrom(
-    'contato@seudominio.com.br',
+    'contato@divisoriasvidrospersianas.com.br',
     'Site'
   );
 
   $mail->addAddress(
-    'contato@seudominio.com.br'
+    'contato@divisoriasvidrospersianas.com.br'
   );
 
   $mail->addReplyTo(
