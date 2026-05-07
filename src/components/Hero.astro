@@ -36,7 +36,7 @@ const mobileOptimized = await getImage({
         fetchpriority="high"
         quality={45}
         format="webp"
-        decoding="async"
+        decoding="sync"
       />
 
     </picture>
@@ -51,15 +51,15 @@ const mobileOptimized = await getImage({
     <div class="wrapper">
 
       <a href="#" class="logo" aria-label="Divisórias de Vidros com Persianas - página inicial">
-
-        <div class="logo-box">
-          DVP
-        </div>
-
-        {/*<div class="logo-text">
-          Divisórias de Vidros com Persianas<span>.</span>
-        </div>
-         */}
+        <img
+          src="/divisorias-vidros-persianas-logo.png"
+          alt="Divisórias de Vidro com Persianas"
+          width="91"
+          height="44"
+          loading="eager"
+          fetchpriority="low"
+          decoding="async"
+        />
       </a>
 
       <nav aria-label="Menu principal">
@@ -83,22 +83,16 @@ const mobileOptimized = await getImage({
         clientes, investidores e parceiros de negócios,
         sem precisar dizer uma <span class="gold">palavra</span>.
       </h1>
-         
+
       <p>
         Divisória em vidro duplo com persiana embutida, aumenta o valor da sua marca, com
         <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
       </p>
 
       <div class="buttons" role="group" aria-label="Ações principais">
-
-        {/*<a href="#orcamento" class="btn primary">
-          SOLICITAR PROJETO SOB MEDIDA
-        </a>
-         */}
         <a href="#modelos" class="btn secondary">
           VER MODELOS
         </a>
-
       </div>
 
       <dl class="stats">
@@ -141,8 +135,6 @@ const mobileOptimized = await getImage({
   overflow: hidden;
 }
 
-/* BACKGROUND */
-
 .bg {
   position: absolute;
   inset: 0;
@@ -168,7 +160,6 @@ const mobileOptimized = await getImage({
   z-index: 0;
 }
 
-/* OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
@@ -176,15 +167,12 @@ const mobileOptimized = await getImage({
   background: rgba(0,0,0,0.55);
 }
 
-/* LAYOUT */
 .wrapper {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* TOPBAR */
 
 .topbar {
   position: absolute;
@@ -202,37 +190,19 @@ const mobileOptimized = await getImage({
 }
 
 /* LOGO */
-
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
-  color: #fff;
 }
 
-.logo-box {
-  width: 42px;
-  height: 42px;
-  background: #b58a0a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-.logo-text {
-  font-size: clamp(0.7rem, 1.5vw, 1.15rem);
-}
-
-.logo-text span {
-  color: #b58a0a;
+.logo img {
+  width: 91x;
+  height: 44px;
+  display: block;
 }
 
 /* MENU */
-
 nav {
   display: flex;
   gap: 28px;
@@ -242,14 +212,13 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease; /* era: color — opacity não força repaint */
 }
 
 nav a:hover {
   color: #b58a0a;
+  opacity: 0.85;
 }
-
-/* CONTEÚDO */
 
 .container {
   position: relative;
@@ -265,8 +234,6 @@ nav a:hover {
   padding-top: 50px;
 }
 
-/* TÍTULO */
-
 .hero h1 {
   font-size: 2.4rem;
   line-height: 1.05;
@@ -276,7 +243,9 @@ nav a:hover {
   color: #fff;
 }
 
-/* TEXTO */
+.gold {
+  color: #b58a0a;
+}
 
 .hero p {
   font-size: clamp(0.9rem, 1.5vw, 1.15rem);
@@ -288,8 +257,6 @@ nav a:hover {
   text-align: left;
   font-weight: 400;
 }
-
-/* BOTÕES */
 
 .buttons {
   display: flex;
@@ -304,17 +271,8 @@ nav a:hover {
   text-decoration: none;
   font-size: clamp(0.85rem, 1.2vw, 0.90rem);
   font-weight: 500;
-}
-
-{/*.primary {
-  background: #b58a0a;
-  color: #000;
-}
- */}
-
-.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(181,138,10,0.25);
+  will-change: transform;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .secondary {
@@ -325,8 +283,6 @@ nav a:hover {
 .secondary:hover {
   background: rgba(181,138,10,0.08);
 }
-
-/* STATS */
 
 .stats {
   display: grid;
@@ -354,8 +310,6 @@ nav a:hover {
   text-transform: uppercase;
   color: #fff;
 }
-
-/* RESPONSIVO */
 
 @media (max-width: 768px) {
 
@@ -419,7 +373,7 @@ nav a:hover {
     align-items: flex-start;
   }
 
-  .stats dt b {
+  .stats dt {
     margin-bottom: 4px;
     line-height: 1;
   }
