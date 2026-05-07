@@ -17,6 +17,7 @@ const title = seo?.title ?? "Site";
 const description = seo?.description ?? "";
 const canonical = seo?.canonical ?? Astro.url.href;
 ---
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -26,6 +27,17 @@ const canonical = seo?.canonical ?? Astro.url.href;
   <meta name="description" content={description} />
   <meta name="theme-color" content="#050505" />
   <link rel="canonical" href={canonical} />
+
+  <!-- PRELOAD LOGO RODAPÉ — aparece em todas as páginas -->
+  <link
+    rel="preload"
+    href="/divisorias-vidros-persianas-logo.png"
+    as="image"
+    fetchpriority="low"
+  />
+
+  <!-- SLOT PARA PRELOADS ESPECÍFICOS DE CADA PÁGINA -->
+  <slot name="head" />
 
   {lcpDesktopSrc && (
     <link
