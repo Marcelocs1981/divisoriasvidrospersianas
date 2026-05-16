@@ -55,10 +55,10 @@ try {
 
   $mail->isHTML(true);
 
-  $mail->Subject = 'Novo orçamento';
+  $mail->Subject = 'Site Divisórias Vidros Persianas';
 
   $mail->Body = "
-    <h2>Novo orçamento</h2>
+    <h2>Formulário Home</h2>
 
     <p><strong>Nome:</strong> {$nome}</p>
 

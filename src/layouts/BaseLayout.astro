@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import { getStructuredData } from '../schemas/structured-data';
 
 interface Props {
   seo?: {
@@ -16,8 +17,9 @@ const { seo, lcpDesktopSrc = "", lcpMobileSrc = "" } = Astro.props;
 const title = seo?.title ?? "Site";
 const description = seo?.description ?? "";
 const canonical = seo?.canonical ?? Astro.url.href;
----
 
+const structuredData = getStructuredData(Astro.url.href);
+---
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -32,6 +34,11 @@ const canonical = seo?.canonical ?? Astro.url.href;
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- DADOS ESTRUTURADOS -->
+  {structuredData.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
 
   <!-- PRELOAD LOGO RODAPÉ — aparece em todas as páginas -->
   <link
