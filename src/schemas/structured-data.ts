@@ -52,7 +52,6 @@ export function getStructuredData(url: string) {
       // "https://wa.me/55119XXXXXXXX"
     ],
     "aggregateRating": {
-      // preencha com dados reais do Google
       // "@type": "AggregateRating",
       // "ratingValue": "5",
       // "reviewCount": "187",
