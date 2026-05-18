@@ -58,7 +58,7 @@ try {
   $mail->Subject = 'Site Divisórias Vidros Persianas';
 
   $mail->Body = "
-    <h2>Formulário Home</h2>
+    <h2>Formulário Home DVP</h2>
 
     <p><strong>Nome:</strong> {$nome}</p>
 
