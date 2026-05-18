@@ -128,6 +128,15 @@ const produtos = [
     </div>
 
   </div>
+    const menuToggle = document.getElementById('menu-toggle');
+  const menuLinks = document.querySelectorAll('.nav a');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.checked = false;
+    });
+  });
+</script>
 </section>
 
 <style>
