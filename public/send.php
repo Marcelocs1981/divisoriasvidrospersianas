@@ -41,7 +41,7 @@ try {
 
   $mail->setFrom(
     'contato@divisoriasvidrospersianas.com.br',
-    'Site'
+    'Site Divisorias Vidros Persianas'
   );
 
   $mail->addAddress(
@@ -55,7 +55,7 @@ try {
 
   $mail->isHTML(true);
 
-  $mail->Subject = 'Site Divisórias Vidros Persianas';
+  $mail->Subject = 'Site Divisorias Vidros Persianas';
 
   $mail->Body = "
     <h2>Formulário Home DVP</h2>
