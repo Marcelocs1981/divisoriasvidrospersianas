@@ -57,7 +57,11 @@
     <!-- DIREITA -->
     <div class="right" id="orcamento">
 
-      <form class="form">
+      <form
+        class="form"
+        id="orcamento-form"
+        method="POST"
+      >
 
         <div class="grid">
 
@@ -162,23 +166,23 @@
 <script>
 
 const form =
-  document.getElementById('orcamento-form') as HTMLFormElement | null;
+  document.getElementById('orcamento-form');
 
 const statusMessage =
   document.getElementById('status-message');
 
 if (form && statusMessage) {
+
   form.addEventListener(
     'submit',
     async (e) => {
 
       e.preventDefault();
 
-      const button = form.querySelector('button');
+      const button =
+        form.querySelector('button');
 
-      if (!button) {
-        return;
-      }
+      if (!button) return;
 
       button.disabled = true;
 
@@ -186,17 +190,21 @@ if (form && statusMessage) {
 
       statusMessage.innerText = '';
 
+      statusMessage.classList.remove(
+        'success',
+        'error'
+      );
+
       try {
 
-        const formData = new FormData(form);
+        const formData =
+          new FormData(form);
 
-        const response = await fetch(
-          '/send.php',
-          {
+        const response =
+          await fetch('/send.php', {
             method: 'POST',
             body: formData
-          }
-        );
+          });
 
         const result =
           await response.json();
@@ -210,13 +218,20 @@ if (form && statusMessage) {
             'success'
           );
 
-          statusMessage.classList.remove(
-            'error'
-          );
-
           form.reset();
 
         } else {
+
+          statusMessage.innerText =
+            'Erro ao enviar mensagem.';
+
+          statusMessage.classList.add(
+            'error'
+          );
+
+        }
+
+      } catch {
 
         statusMessage.innerText =
           'Erro ao enviar mensagem.';
@@ -225,33 +240,15 @@ if (form && statusMessage) {
           'error'
         );
 
-        statusMessage.classList.remove(
-          'success'
-        );
       }
 
-    } catch (error) {
+      button.disabled = false;
 
-      statusMessage.innerText =
-        'Erro ao enviar mensagem.';
-
-      statusMessage.classList.add(
-        'error'
-      );
-
-      statusMessage.classList.remove(
-        'success'
-      );
+      button.innerText =
+        'SOLICITAR ORÇAMENTO PERSONALIZADO';
 
     }
-
-    button.disabled = false;
-
-    button.innerText =
-      'SOLICITAR ORÇAMENTO PERSONALIZADO';
-
-  }
-);
+  );
 
 }
 
