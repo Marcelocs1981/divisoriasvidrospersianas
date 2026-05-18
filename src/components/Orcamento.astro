@@ -162,57 +162,61 @@
 <script>
 
 const form =
-  document.getElementById('orcamento-form');
+  document.getElementById('orcamento-form') as HTMLFormElement | null;
 
 const statusMessage =
   document.getElementById('status-message');
 
-form.addEventListener(
-  'submit',
-  async (e) => {
+if (form && statusMessage) {
+  form.addEventListener(
+    'submit',
+    async (e) => {
 
-    e.preventDefault();
+      e.preventDefault();
 
-    const button =
-    form.querySelector('button');
+      const button = form.querySelector('button');
 
-    button.disabled = true;
+      if (!button) {
+        return;
+      }
 
-    button.innerText = 'ENVIANDO...';
+      button.disabled = true;
 
-    statusMessage.innerText = '';
+      button.innerText = 'ENVIANDO...';
 
-    try {
+      statusMessage.innerText = '';
 
-      const formData = new FormData(form);
+      try {
 
-      const response = await fetch(
-        '/send.php',
-        {
-          method: 'POST',
-          body: formData
-        }
-      );
+        const formData = new FormData(form);
 
-      const result =
-        await response.json();
-
-      if (result.success) {
-
-        statusMessage.innerText =
-          'Mensagem enviada com sucesso!';
-
-        statusMessage.classList.add(
-          'success'
+        const response = await fetch(
+          '/send.php',
+          {
+            method: 'POST',
+            body: formData
+          }
         );
 
-        statusMessage.classList.remove(
-          'error'
-        );
+        const result =
+          await response.json();
 
-        form.reset();
+        if (result.success) {
 
-      } else {
+          statusMessage.innerText =
+            'Mensagem enviada com sucesso!';
+
+          statusMessage.classList.add(
+            'success'
+          );
+
+          statusMessage.classList.remove(
+            'error'
+          );
+
+          form.reset();
+
+        } else {
 
         statusMessage.innerText =
           'Erro ao enviar mensagem.';
@@ -248,6 +252,8 @@ form.addEventListener(
 
   }
 );
+
+}
 
 </script>
 
