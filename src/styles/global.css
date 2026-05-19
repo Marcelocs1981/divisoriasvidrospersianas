@@ -65,11 +65,11 @@ h1, h2, h3, h4, h5, h6, .quote-text {
   background: linear-gradient(90deg, #b58a0a, #f5d76e);
   color: #ffffff;
   text-decoration: none;
-  font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+  font-size: clamp(0.90rem, 1vw, 1.1rem);
   font-weight: 400;
   letter-spacing: 1px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;          /* NOVO */
+  will-change: transform;
 }
 
 .cta a:hover {
