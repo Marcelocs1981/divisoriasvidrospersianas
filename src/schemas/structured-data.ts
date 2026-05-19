@@ -9,15 +9,15 @@ export function getStructuredData(url: string) {
     "url": baseUrl,
     "logo": {
       "@type": "ImageObject",
-      "url": `${baseUrl}/divisorias-vidros-persianas-logo.png`, // substitua pelo caminho real
+      "url": `${baseUrl}/divisorias-vidros-persianas-logo.png`,
       "width": 200,
       "height": 60
     },
     "image": `${baseUrl}/logo.webp`,
     "description": "Fabricação, montagem e instalação de divisórias de vidros com persianas embutidas para escritório, sala comercial, prédios, indústria e empresas.",
-    "telephone": "+55-11-XXXX-XXXX", // preencha
-    "email": "contato@divisoriasvidrospersianas.com.br", // preencha
-    "foundingDate": "2003", // baseado nos +21 anos do Hero
+    "telephone": "+55-11-4810-5912",
+    "email": "contato@divisoriasvidrospersianas.com.br",
+    "foundingDate": "2003",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rua Vitória Pena Giorgi, 65",
@@ -28,9 +28,9 @@ export function getStructuredData(url: string) {
       "addressArea": "Parque Marajoara"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -23.6441, // confirme no Google Maps
-      "longitude": -46.5284
+     "@type": "GeoCoordinates",
+     "latitude": -23.6676641,
+     "longitude": -46.4951985
     },
     "openingHoursSpecification": [
       {
