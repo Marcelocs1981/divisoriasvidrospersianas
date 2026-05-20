@@ -36,3 +36,27 @@ const lcpMobile = await getImage({ src: imgMobile, format: 'webp', quality: 45, 
   <Parceiros />
   <Orcamento />
 </Layout>
+
+<div class="lightbox" id="lightbox">
+
+  <button
+    class="close"
+    id="closeLightbox"
+    aria-label="Fechar imagem"
+  >
+    ×
+  </button>
+
+  <img
+    src=""
+    alt=""
+    id="lightboxImage"
+  />
+
+</div>
+
+<script>
+
+  import '../scripts/lightbox.js';
+
+</script>

@@ -9,7 +9,7 @@ const produtos = [
     label: "PISO TETO",
     title: "Divisória de vidro duplo com persiana embutida do piso até o teto",
     desc: "Controle preciso por cordão interno entre os vidros. Robusto, silencioso e atemporal.",
-    featured: false,
+    featured: true,
     href: "https://google.com",
     image: imgPlaceholder
   },
@@ -17,7 +17,7 @@ const produtos = [
     label: "JUNTA SECA",
     title: "Divisória de vidro junta seca com persiana embutida",
     desc: "Menos alumínio e mais elegância com vidros em juntas postas.",
-    featured: false,
+    featured: true,
     href: "https://google.com",
     image: imgPlaceholder
   },
@@ -33,7 +33,7 @@ const produtos = [
     label: "INDUSTRIAL",
     title: "Divisória industrial de vidro com persiana embutida",
     desc: "Pensada e desenvolvida especialmente para divisão de ambiente industrial.",
-    featured: false,
+    featured: true,
     href: "https://google.com",
     image: imgPlaceholder
   },
@@ -41,7 +41,7 @@ const produtos = [
     label: "AUTOMÁTICA",
     title: "Divisória de vidro duplo com persiana automatizada",
     desc: "Botão é coisa do passado, crie seu cenário e tenha o controle total das persianas intergradas por comando de voz.",
-    featured: false,
+    featured: true,
     href: "https://google.com",
     image: imgPlaceholder
   },
@@ -55,11 +55,11 @@ const produtos = [
   }
 ];
 ---
-<section id="modelos" class="produtos">
+<section class="produtos">
   <div class="container">
 
     <!-- HEADER -->
-    <div class="header">
+    <div id="modelos" class="header">
 
       <span class="tag">
         11 MODELOS EXCLUSIVOS
@@ -168,9 +168,9 @@ const produtos = [
 
 /* CARD */
 .card {
-  transition: transform 0.3s ease; /* removido border-color — card não tem border por padrão */
-  will-change: transform;          /* NOVO: cria camada GPU antes do hover */
-  contain: layout style;           /* NOVO: isola reflow interno do card */
+  transition: transform 0.3s ease; 
+  will-change: transform;
+  contain: layout style;
 }
 
 .card:hover {
@@ -273,16 +273,9 @@ const produtos = [
 /* FEATURED */
 .featured {
   padding: 12px;
-
   border: 1px solid rgba(181,138,10,0.25);
   border-radius: 14px;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(181,138,10,0.04),
-      transparent
-    );
+  background:#1a1a1a;
 }
 
 /* RESPONSIVO */

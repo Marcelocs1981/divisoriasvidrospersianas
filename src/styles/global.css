@@ -58,12 +58,10 @@ h1, h2, h3, h4, h5, h6, .quote-text {
 
 .cta a {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 15px 32px;
-  border-radius: 6px;
-  background: linear-gradient(90deg, #b58a0a, #f5d76e);
-  color: #ffffff;
+  border: 1px solid #b58a0a;
+  border-radius: 5px;
+  color: #f5d76e;
   text-decoration: none;
   font-size: clamp(0.90rem, 1vw, 1.1rem);
   font-weight: 400;
@@ -75,4 +73,52 @@ h1, h2, h3, h4, h5, h6, .quote-text {
 .cta a:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(181,138,10,0.25);
+}
+
+/*.btndk {
+  border: 1px solid #b58a0a;
+  color: #f5d76e;
+}
+
+.btndk:hover {
+  background: rgba(181,138,10,0.08);
+}*/
+
+.lightbox-trigger {
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 42px;
+  cursor: pointer;
 }

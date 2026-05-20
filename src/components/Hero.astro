@@ -99,8 +99,8 @@ const mobileOptimized = await getImage({
         <b>competência e profissionalismo</b> — através de conforto, estilo e sofisticação.
       </p>
 
-      <div class="buttons" role="group" aria-label="Ações principais">
-        <a href="#modelos" class="btn secondary">
+      <div class="cta align" aria-label="Ações principais">
+        <a href="#modelos">
           VER MODELOS
         </a>
       </div>
@@ -147,6 +147,13 @@ const mobileOptimized = await getImage({
 </section>
 
 <style>
+
+.align {
+  display: inline-flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -331,37 +338,13 @@ const mobileOptimized = await getImage({
   line-height: 1.7;
   letter-spacing: 0.01em;
   max-width: 720px;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
   color: #fff;
   text-align: left;
   font-weight: 400;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 40px;
-}
 
-.btn {
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: clamp(0.85rem, 1.2vw, 0.90rem);
-  font-weight: 500;
-  will-change: transform;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.secondary {
-  border: 1px solid #b58a0a;
-  color: #f5d76e;
-}
-
-.secondary:hover {
-  background: rgba(181,138,10,0.08);
-}
 
 .stats {
   display: grid;
