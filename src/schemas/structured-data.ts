@@ -58,59 +58,59 @@ export function getStructuredData(url: string) {
       // "bestRating": "5"
     },
     "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Divisórias de Vidro com Persiana",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Divisória de vidro duplo com persiana embutida piso teto",
-            "description": "Divisória de vidro duplo com persiana embutida do piso ao teto para escritórios e salas comerciais."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Divisória de vidro junta seca com persiana embutida",
-            "description": "Divisória de vidro junta seca com persiana embutida para ambientes corporativos."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Divisória de vidro acústico com persiana embutida",
-            "description": "Divisória de vidro acústico com persiana embutida para isolamento sonoro em escritórios."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Divisória industrial de vidro com persiana embutida",
-            "description": "Divisória industrial de vidro com persiana embutida para indústrias e galpões."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Divisória de vidro duplo com persiana automatizada",
-            "description": "Divisória de vidro duplo com persiana automatizada controlada por smartphone."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Divisória de vidro com alumínio e persiana embutida",
-            "description": "Divisória de vidro com perfil de alumínio e persiana embutida para projetos corporativos."
-          }
-        }
-      ]
+  "@type": "OfferCatalog",
+  "name": "Divisórias de Vidro com Persiana",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Divisória de vidro duplo com persiana embutida do piso até o teto",
+        "description": "Controle preciso por cordão interno entre os vidros. Robusto, silencioso e atemporal."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Divisória de vidro junta seca com persiana embutida",
+        "description": "Menos alumínio e mais elegância com vidros em juntas postas."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Divisória de vidro acústico com persiana embutida",
+        "description": "Divisórias privativas para reuniões sigilosas."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Divisória industrial de vidro com persiana embutida",
+        "description": "Pensada e desenvolvida especialmente para divisão de ambiente industrial."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Divisória de vidro com persiana automatizada",
+        "description": "Botão é coisa do passado, crie vários cenários e tenha o controle total das persianas integradas automáticas por comando de voz ou em seu smartphone."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Divisória em vidro com alumínio e persiana embutida",
+        "description": "Estética moderna com estrutura marcante."
+      }
     }
+  ]
+}
   };
 
   const website = {
