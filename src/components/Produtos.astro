@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 
 /* IMAGENS */
-import imgPlaceholder from '../assets/placeholder.webp';
 import imgPisoTeto from '../assets/divisoria-de-vidro-duplo-com-persiana-embutida-do-piso-ate-o-teto.webp';
 import imgJuntaSeca from '../assets/divisoria-de-vidro-junta-seca-com-persiana-embutida.webp';
 import imgAcustica from '../assets/divisoria-de-vidro-acustico-com-persiana-embutida.webp';
@@ -63,41 +62,31 @@ const produtos = [
 ---
 <section class="produtos">
   <div class="container">
-
     <!-- HEADER -->
     <div id="modelos" class="header">
-
       <span class="tag">
         11 MODELOS EXCLUSIVOS
       </span>
-
       <h2>
         Escolha a divisória em vidro com persiana, que vai <span class="gold"><i>redefinir</i></span> seu escritório.
       </h2>
-
       <p>
         Cada ambiente é único. Por isso, as <strong class="strong">divisórias de vidro com persianas embutidas</strong>, são projetadas de acordo com sua preferência de design e, fabricadas sob medida em nossa fábrica. Oferecemos garantia total e suporte especializado. Ao longo dos anos, executamos mais de 2.800 projetos em salas comerciais, escritórios de empresas, indústrias e hotéis.
       </p>
-
     </div>
 
     <!-- GRID -->
     <div class="grid">
-
       {produtos.map((item) => (
-
         <article class={`card ${item.featured ? 'featured' : ''}`}>
-
           <a
             href={item.href}
             class="image"
             aria-label={item.title}
           >
-
             <span class="label">
               {item.label}
             </span>
-
             <Image
               src={item.image}
               alt={item.title}
@@ -107,19 +96,15 @@ const produtos = [
               decoding="async"
               format="webp"
             />
-
           </a>
-
           <h3>
             <a href={item.href}>
               {item.title}
             </a>
           </h3>
-
           <p>
             {item.desc}
           </p>
-
         </article>
 
       ))}
@@ -186,12 +171,9 @@ const produtos = [
 /* LINK IMAGEM */
 .image {
   position: relative;
-
   display: block;
-
   overflow: hidden;
   border-radius: 10px;
-
   text-decoration: none;
 }
 
@@ -203,10 +185,10 @@ const produtos = [
   aspect-ratio: 3 / 2;
   object-fit: cover;
   transition: transform 0.5s ease;
-  will-change: transform;          /* NOVO: camada GPU para o scale */
-  transform: translateZ(0);        /* NOVO: promoção antecipada */
-  content-visibility: auto;        /* NOVO: pula render fora da viewport */
-  contain-intrinsic-size: auto 3/2;/* NOVO: reserva espaço proporcional */
+  will-change: transform;
+  transform: translateZ(0);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 3/2;
 }
 
 .card:hover .image img {
