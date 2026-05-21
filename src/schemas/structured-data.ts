@@ -52,10 +52,10 @@ export function getStructuredData(url: string) {
       // "https://wa.me/55119XXXXXXXX"
     ],
     "aggregateRating": {
-      // "@type": "AggregateRating",
-      // "ratingValue": "5",
-      // "reviewCount": "187",
-      // "bestRating": "5"
+      "@type": "AggregateRating",
+       "ratingValue": "5",
+       "reviewCount": "587",
+       "bestRating": "5"
     },
     "hasOfferCatalog": {
   "@type": "OfferCatalog",
