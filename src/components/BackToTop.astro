@@ -1,0 +1,117 @@
+<button 
+  id="back-to-top" 
+  class="back-to-top" 
+  aria-label="Voltar ao topo da página"
+  title="Voltar ao topo"
+>
+  <svg aria-hidden="true" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3-.4z"></path>
+  </svg>   
+</button>
+
+<script>
+  function initBackToTop() {
+    const btn = document.getElementById('back-to-top');
+    if (!btn) return;
+
+    let ticking = false;
+
+    // Função de verificação encapsulada para o requestAnimationFrame
+    function updateButtonVisibility() {
+      // UX OTIMIZADA: Aparece após rolar 500px, ideal para páginas de conversão
+      if (window.scrollY > 500) {
+        btn!.classList.add('is-visible');
+      } else {
+        btn!.classList.remove('is-visible');
+      }
+      ticking = false;
+    }
+
+    // Evento de Scroll Passivo de Alta Performance
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateButtonVisibility);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // Clique para voltar ao topo suavemente
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // Inicializa no carregamento inicial da aplicação
+  initBackToTop();
+
+  // Garante o ciclo de vida limpo ao navegar via View Transitions do Astro
+  document.addEventListener('astro:after-swap', initBackToTop);
+</script>
+
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 25px; /* Posicionado perfeitamente acima do botão flutuante */
+    right: 30px;
+    z-index: 999;    
+    width: 44px;
+    height: 44px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    /* Estado inicial invisível com aceleração de hardware */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    will-change: transform, opacity;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 0.2s ease, 
+                border-color 0.2s ease;
+  }
+
+  .back-to-top svg {
+    width: 100%;
+    height: 100%;
+    fill: #ffffff;
+    transition: fill 0.2s ease;
+  }
+
+  /* Classe ativada via JavaScript */
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* Hover Dourado Premium alinhado à marca */
+  .back-to-top:hover {
+    background: #b58a0a;
+    border-color: #b58a0a;
+  }
+  
+  .back-to-top:hover svg {
+    fill: #000000;
+  }
+
+  /* Ajustes Mobile para posicionamento fixo */
+  @media (max-width: 768px) {
+    .back-to-top {
+      right: 20px;
+      bottom: 20px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+</style>

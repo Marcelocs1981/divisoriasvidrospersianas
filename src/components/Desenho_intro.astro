@@ -1,0 +1,95 @@
+---
+import { Image } from 'astro:assets';
+import imgAcabamentoDesktop from '../assets/placeholder.webp';
+import imgAcabamentoMobile from '../assets/placeholder.webp';
+---
+
+<section id="acabamento" class="section-padrao" aria-labelledby="acabamento-heading">
+  <div class="container">
+    <div class="content-grid-acabamento">
+
+      <article class="acabamento-info">
+        <header>
+          <span class="tag">Liberte a criatividade</span>
+          <h2 id="acabamento-heading">
+            Desenhos para colorir e despertar a <span class="goldgradient">imaginação</span>
+          </h2>
+        </header>
+        
+        <p>
+          Neurocientistas especializados em desenvolvimento infantil, afirmam que o ato de colorir, ativa os dois hemisférios cerebrais simultaneamente: o esquerdo, responsável pela lógica e foco, e o direito, pela criatividade e expressão. Estudos apontam que crianças que pintam desenhos regularmente, demonstram uma capacidade de concentração até 87% maior em atividades escolares de leitura e escrita. Ofereça estímulos visuais de alta qualidade e transforme o tempo livre em um laboratório de desenvolvimento cognitivo saudável.
+        </p>
+      </article>
+
+      <picture class="zoom-wrap acabamento-media">
+        <source
+          media="(max-width: 768px)"
+          srcset={imgAcabamentoMobile.src}
+          type="image/webp"
+        />
+        <Image
+          src={imgAcabamentoDesktop}
+          alt="Detalhe do acabamento impecável da divisória de vidro com persiana embutida"
+          loading="lazy"
+          decoding="async"
+          width={1200}
+          height={675}
+          class="zoom-img"
+        />
+      </picture>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ESTRUTURA DO GRID EM DESKTOP (Ajustada para divisão harmônica) */
+  .content-grid-acabamento {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px; /* Aumentado o gap para dar mais respiro corporativo */
+    align-items: center;
+  }
+
+  /* Ajuste fino do cabeçalho local */
+  .acabamento-info h2 {
+    margin-bottom: 35px;
+    font-weight: 400; /* Peso puxado da tipografia corporativa */
+  }
+
+  /* COMPORTAMENTO DA MÍDIA */
+  .acabamento-media, 
+  .acabamento-media img {
+    width: 100%;
+    display: block;
+  }
+
+  .acabamento-media img {
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    content-visibility: auto;
+    contain-intrinsic-size: 1200px 675px; /* Ajustado para bater exatamente com as dimensões do Astro */
+  }
+
+  /* MEDIA QUERY RESPONSIVO ULTRA OTIMIZADO (Mobile e Tablet) */
+  @media (max-width: 768px) {
+    .content-grid-acabamento {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    /* Reordenação nativa de acessibilidade visual no mobile */
+    .acabamento-info { 
+      order: 1; 
+    }
+    
+    .acabamento-info h2 {
+      margin-bottom: 25px;
+    }
+
+    .acabamento-media { 
+      order: 2; 
+    }
+  }
+</style>

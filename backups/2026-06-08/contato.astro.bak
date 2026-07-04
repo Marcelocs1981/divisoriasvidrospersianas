@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+import Contato from '../components/Contato.astro';
+import Hero_Institucional from '../components/Hero_Institucional.astro';
+
+import { getPageMeta } from '../utils/getGitDate';
+
+const seo = getPageMeta(
+  Astro.url.pathname,
+  "Contato | Divisórias Vidros Persianas", 
+  "Entre em contato conosco! Nossa equipe está pronta e preparada para atender suas necessidades por WhatsApp, telefone, e-mail ou formulário.", 
+  "2026-05-22T15:44:08Z" // Data de publicação fixa
+);
+---
+
+<Layout
+  seo={seo}
+>
+
+  <Hero_Institucional
+    title="Entre em Contato Conosco"
+    breadcrumb="Contato"
+    desktopImage="/assets/banner_contato_1920px.webp"
+    mobileImage="/assets/banner_contato_768px.webp"
+  />
+  <Contato />
+
+</Layout>

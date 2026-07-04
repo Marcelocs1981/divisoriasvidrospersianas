@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+import Cadastro_Fornecedor from '../components/Cadastro_Fornecedor.astro';
+import Hero_Institucional from '../components/Hero_Institucional.astro';
+
+import { getPageMeta } from '../utils/getGitDate';
+
+  const seo = getPageMeta(
+  Astro.url.pathname,
+  "Cadastro de Fornecedor | imprimiprinter",
+  "Gostaria de se cadastrar como fornecedor? envie seus dados pelo formulário.",
+  "2026-05-23T15:44:08Z" // Data de publicação fixa
+);
+---
+
+<Layout
+  seo={seo}
+>
+
+  <Hero_Institucional
+    title="Cadastro de Fornecedor"
+    breadcrumb="/ Cadastro de Fornecedor"
+    desktopImage="/assets/banner_cadastro_fornecedor_1920px.webp"
+    mobileImage="/assets/banner_cadastro_fornecedor_768px.webp"
+  />
+  <Cadastro_Fornecedor />
+
+</Layout>

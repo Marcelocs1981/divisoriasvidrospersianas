@@ -1,0 +1,2700 @@
+{
+    "animais": {
+        "meta": {
+            "title": "Desenhos de Animais para Colorir",
+            "description": "Explore nossa incrível coleção de desenhos de animais para imprimir.",
+            "h1": "Animais",
+            "cardDescription": "Explore nossa incrível coleção de desenhos de animais para imprimir.",
+            "image": "/assets/animais-geral.webp"
+        },
+        "dinossauros": {
+            "meta": {
+                "title": "Desenhos de Dinossauros para Colorir e Imprimir em PDF Grátis",
+                "description": "Explore nossa coleção de desenhos de dinossauros prontos para imprimir e colorir grátis.",
+                "h1": "Dinossauros",
+                "cardDescription": "Explore nossa coleção de desenhos de dinossauros prontos para imprimir e colorir grátis.",
+                "image": "/assets/dinossauros-geral.webp"
+            },
+            "dinossauros-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Dinossauros para Colorir e Imprimir em PDF Grátis",
+                    "description": "Desenhos de Dinossauros para Colorir",
+                    "h1": "Desenhos de Dinossauros para Colorir",
+                    "cardDescription": "Desenhos de Dinossauros para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "cachorros": {
+            "meta": {
+                "title": "Desenhos de Cachorros para Colorir e Imprimir em PDF Grátis",
+                "description": "Explore centenas de desenhos de cachorros para colorir e imprimir grátis.",
+                "h1": "Cachorros",
+                "cardDescription": "Explore centenas de desenhos de cachorros para colorir e imprimir grátis.",
+                "image": "/assets/cachorros-geral.webp"
+            },
+            "huskies": {
+                "meta": {
+                    "title": "Desenhos de Huskies para Colorir",
+                    "description": "Explore nossa coleção de desenhos de huskies prontos para imprimir e colorir grátis.",
+                    "h1": "Huskies",
+                    "cardDescription": "Explore nossa coleção de desenhos de huskies prontos para imprimir e colorir grátis.",
+                    "image": "/assets/huskies-geral.webp"
+                },
+                "huskies-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Huskies para Colorir (30 páginas)",
+                        "description": "Desenhos de Huskies (30 páginas) para Colorir",
+                        "h1": "Desenhos de Huskies (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Huskies (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "pugs": {
+                "meta": {
+                    "title": "Desenhos de Pugs para Colorir",
+                    "description": "Explore nossa coleção de desenhos de pugs prontos para imprimir e colorir grátis.",
+                    "h1": "Pugs",
+                    "cardDescription": "Explore nossa coleção de desenhos de pugs prontos para imprimir e colorir grátis.",
+                    "image": "/assets/pugs-geral.webp"
+                },
+                "pugs-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Pugs para Colorir (30 páginas)",
+                        "description": "Desenhos de Pugs (30 páginas) para Colorir",
+                        "h1": "Desenhos de Pugs (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Pugs (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "pastor-alemao": {
+                "meta": {
+                    "title": "Desenhos de Pastor Alemão para Colorir",
+                    "description": "Explore nossa coleção de desenhos de pastor alemão prontos para imprimir e colorir grátis.",
+                    "h1": "Pastor Alemão",
+                    "cardDescription": "Explore nossa coleção de desenhos de pastor alemão prontos para imprimir e colorir grátis.",
+                    "image": "/assets/pastor-alemao-geral.webp"
+                },
+                "pastor-alemao-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Pastor Alemão para Colorir (30 páginas)",
+                        "description": "Desenhos de Pastor Alemão (30 páginas) para Colorir",
+                        "h1": "Desenhos de Pastor Alemão (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Pastor Alemão (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "corgis": {
+                "meta": {
+                    "title": "Desenhos de Corgis para Colorir",
+                    "description": "Explore nossa coleção de desenhos de corgis prontos para imprimir e colorir grátis.",
+                    "h1": "Corgis",
+                    "cardDescription": "Explore nossa coleção de desenhos de corgis prontos para imprimir e colorir grátis.",
+                    "image": "/assets/corgis-geral.webp"
+                },
+                "corgis-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Corgis para Colorir (30 páginas)",
+                        "description": "Desenhos de Corgis (30 páginas) para Colorir",
+                        "h1": "Desenhos de Corgis (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Corgis (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "chihuahua": {
+                "meta": {
+                    "title": "Desenhos de Chihuahua para Colorir",
+                    "description": "Explore nossa coleção de desenhos de chihuahua prontos para imprimir e colorir grátis.",
+                    "h1": "Chihuahua",
+                    "cardDescription": "Explore nossa coleção de desenhos de chihuahua prontos para imprimir e colorir grátis.",
+                    "image": "/assets/chihuahua-geral.webp"
+                },
+                "chihuahua-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Chihuahua para Colorir (30 páginas)",
+                        "description": "Desenhos de Chihuahua (30 páginas) para Colorir",
+                        "h1": "Desenhos de Chihuahua (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Chihuahua (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "buldogue-frances": {
+                "meta": {
+                    "title": "Desenhos de Buldogue Francês para Colorir",
+                    "description": "Explore nossa coleção de desenhos de buldogue francês prontos para imprimir e colorir grátis.",
+                    "h1": "Buldogue Francês",
+                    "cardDescription": "Explore nossa coleção de desenhos de buldogue francês prontos para imprimir e colorir grátis.",
+                    "image": "/assets/buldogue-frances-geral.webp"
+                },
+                "buldogue-frances-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Buldogue Francês para Colorir (30 páginas)",
+                        "description": "Desenhos de Buldogue Francês (30 páginas) para Colorir",
+                        "h1": "Desenhos de Buldogue Francês (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Buldogue Francês (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "golden-retriever": {
+                "meta": {
+                    "title": "Desenhos de Golden Retriever para Colorir",
+                    "description": "Explore nossa coleção de desenhos de golden retriever prontos para imprimir e colorir grátis.",
+                    "h1": "Golden Retriever",
+                    "cardDescription": "Explore nossa coleção de desenhos de golden retriever prontos para imprimir e colorir grátis.",
+                    "image": "/assets/golden-retriever-geral.webp"
+                },
+                "golden-retriever-brincando-com-bola-para-colorir": {
+                    "meta": {
+                        "title": "Desenho de Golden Retriever Brincando com Bola para Colorir",
+                        "description": "Desenho de Golden Retriever Brincando com Bola para Colorir",
+                        "h1": "Desenho de Golden Retriever Brincando com Bola para Colorir",
+                        "cardDescription": "Desenho de Golden Retriever Brincando com Bola para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                },
+                "golden-retriever-fofo-deitado-para-colorir": {
+                    "meta": {
+                        "title": "Desenho de Golden Retriever Fofo Deitado para Colorir",
+                        "description": "Desenho de Golden Retriever Fofo Deitado para Colorir",
+                        "h1": "Desenho de Golden Retriever Fofo Deitado para Colorir",
+                        "cardDescription": "Desenho de Golden Retriever Fofo Deitado para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                },
+                "golden-retriever-com-oculos-de-sol-para-colorir": {
+                    "meta": {
+                        "title": "Desenho de Golden Retriever de Óculos de Sol para Colorir",
+                        "description": "Desenho de Golden Retriever de Óculos de Sol para Colorir",
+                        "h1": "Desenho de Golden Retriever de Óculos de Sol para Colorir",
+                        "cardDescription": "Desenho de Golden Retriever de Óculos de Sol para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "pitbull": {
+                "meta": {
+                    "title": "Desenhos de Pitbull para Colorir",
+                    "description": "Explore nossa coleção de desenhos de pitbull prontos para imprimir e colorir grátis.",
+                    "h1": "Pitbull",
+                    "cardDescription": "Explore nossa coleção de desenhos de pitbull prontos para imprimir e colorir grátis.",
+                    "image": "/assets/pitbull-geral.webp"
+                },
+                "pitbull-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Pitbull para Colorir (30 páginas)",
+                        "description": "Desenhos de Pitbull (30 páginas) para Colorir",
+                        "h1": "Desenhos de Pitbull (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Pitbull (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "poodle": {
+                "meta": {
+                    "title": "Desenhos de Poodle para Colorir",
+                    "description": "Explore nossa coleção de desenhos de poodle prontos para imprimir e colorir grátis.",
+                    "h1": "Poodle",
+                    "cardDescription": "Explore nossa coleção de desenhos de poodle prontos para imprimir e colorir grátis.",
+                    "image": "/assets/poodle-geral.webp"
+                },
+                "poodle-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Poodle para Colorir (30 páginas)",
+                        "description": "Desenhos de Poodle (30 páginas) para Colorir",
+                        "h1": "Desenhos de Poodle (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Poodle (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "pinscher": {
+                "meta": {
+                    "title": "Desenhos de Pinscher para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de pinscher prontos para imprimir e colorir grátis.",
+                    "h1": "Pinscher",
+                    "cardDescription": "Explore nossa coleção de desenhos de pinscher prontos para imprimir e colorir grátis.",
+                    "image": "/assets/pinscher-geral.webp"
+                },
+                "pinscher-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Pinscher para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Pinscher (30 páginas) para Colorir",
+                        "h1": "Desenhos de Pinscher (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Pinscher (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "fila": {
+                "meta": {
+                    "title": "Desenhos de Fila para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de fila prontos para imprimir e colorir grátis.",
+                    "h1": "Fila",
+                    "cardDescription": "Explore nossa coleção de desenhos de fila prontos para imprimir e colorir grátis.",
+                    "image": "/assets/fila-geral.webp"
+                },
+                "fila-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Fila para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Fila (30 páginas) para Colorir",
+                        "h1": "Desenhos de Fila (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Fila (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "chihuahua-dog": {
+                "meta": {
+                    "title": "Desenhos de Chihuahua para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de chihuahua prontos para imprimir e colorir grátis.",
+                    "h1": "Chihuahua",
+                    "cardDescription": "Explore nossa coleção de desenhos de chihuahua prontos para imprimir e colorir grátis.",
+                    "image": "/assets/chihuahua-dog-geral.webp"
+                },
+                "chihuahua-dog-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Chihuahua para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Chihuahua (30 páginas) para Colorir",
+                        "h1": "Desenhos de Chihuahua (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Chihuahua (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "salsicha": {
+                "meta": {
+                    "title": "Desenhos de Salsicha para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de salsicha prontos para imprimir e colorir grátis.",
+                    "h1": "Salsicha",
+                    "cardDescription": "Explore nossa coleção de desenhos de salsicha prontos para imprimir e colorir grátis.",
+                    "image": "/assets/salsicha-geral.webp"
+                },
+                "salsicha-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Salsicha para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Salsicha (30 páginas) para Colorir",
+                        "h1": "Desenhos de Salsicha (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Salsicha (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "beagle": {
+                "meta": {
+                    "title": "Desenhos de Beagle para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de beagle prontos para imprimir e colorir grátis.",
+                    "h1": "Beagle",
+                    "cardDescription": "Explore nossa coleção de desenhos de beagle prontos para imprimir e colorir grátis.",
+                    "image": "/assets/beagle-geral.webp"
+                },
+                "beagle-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Beagle para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Beagle (30 páginas) para Colorir",
+                        "h1": "Desenhos de Beagle (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Beagle (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "labrador": {
+                "meta": {
+                    "title": "Desenhos de Labrador para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de labrador prontos para imprimir e colorir grátis.",
+                    "h1": "Labrador",
+                    "cardDescription": "Explore nossa coleção de desenhos de labrador prontos para imprimir e colorir grátis.",
+                    "image": "/assets/labrador-geral.webp"
+                },
+                "labrador-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Labrador para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Labrador (30 páginas) para Colorir",
+                        "h1": "Desenhos de Labrador (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Labrador (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "rottweiler": {
+                "meta": {
+                    "title": "Desenhos de Rottweiler para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de rottweiler prontos para imprimir e colorir grátis.",
+                    "h1": "Rottweiler",
+                    "cardDescription": "Explore nossa coleção de desenhos de rottweiler prontos para imprimir e colorir grátis.",
+                    "image": "/assets/rottweiler-geral.webp"
+                },
+                "rottweiler-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Rottweiler para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Rottweiler (30 páginas) para Colorir",
+                        "h1": "Desenhos de Rottweiler (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Rottweiler (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "cocker": {
+                "meta": {
+                    "title": "Desenhos de Cocker para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de cocker prontos para imprimir e colorir grátis.",
+                    "h1": "Cocker",
+                    "cardDescription": "Explore nossa coleção de desenhos de cocker prontos para imprimir e colorir grátis.",
+                    "image": "/assets/cocker-geral.webp"
+                },
+                "cocker-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Cocker para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Cocker (30 páginas) para Colorir",
+                        "h1": "Desenhos de Cocker (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Cocker (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "boxer": {
+                "meta": {
+                    "title": "Desenhos de Boxer para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de boxer prontos para imprimir e colorir grátis.",
+                    "h1": "Boxer",
+                    "cardDescription": "Explore nossa coleção de desenhos de boxer prontos para imprimir e colorir grátis.",
+                    "image": "/assets/boxer-geral.webp"
+                },
+                "boxer-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Boxer para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Boxer (30 páginas) para Colorir",
+                        "h1": "Desenhos de Boxer (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Boxer (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "doberman": {
+                "meta": {
+                    "title": "Desenhos de Doberman para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de doberman prontos para imprimir e colorir grátis.",
+                    "h1": "Doberman",
+                    "cardDescription": "Explore nossa coleção de desenhos de doberman prontos para imprimir e colorir grátis.",
+                    "image": "/assets/doberman-geral.webp"
+                },
+                "doberman-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Doberman para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Doberman (30 páginas) para Colorir",
+                        "h1": "Desenhos de Doberman (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Doberman (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "shih-tzu": {
+                "meta": {
+                    "title": "Desenhos de Shih Tzu para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de shih tzu prontos para imprimir e colorir grátis.",
+                    "h1": "Shih Tzu",
+                    "cardDescription": "Explore nossa coleção de desenhos de shih tzu prontos para imprimir e colorir grátis.",
+                    "image": "/assets/shih-tzu-geral.webp"
+                },
+                "shih-tzu-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Shih Tzu para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Shih Tzu (30 páginas) para Colorir",
+                        "h1": "Desenhos de Shih Tzu (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Shih Tzu (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "bull-terrier": {
+                "meta": {
+                    "title": "Desenhos de Bull Terrier para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de bull terrier prontos para imprimir e colorir grátis.",
+                    "h1": "Bull Terrier",
+                    "cardDescription": "Explore nossa coleção de desenhos de bull terrier prontos para imprimir e colorir grátis.",
+                    "image": "/assets/bull-terrier-geral.webp"
+                },
+                "bull-terrier-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Bull Terrier para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Bull Terrier (30 páginas) para Colorir",
+                        "h1": "Desenhos de Bull Terrier (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Bull Terrier (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "sao-bernardo": {
+                "meta": {
+                    "title": "Desenhos de São Bernardo para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de são bernardo prontos para imprimir e colorir grátis.",
+                    "h1": "São Bernardo",
+                    "cardDescription": "Explore nossa coleção de desenhos de são bernardo prontos para imprimir e colorir grátis.",
+                    "image": "/assets/sao-bernardo-geral.webp"
+                },
+                "sao-bernardo-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de São Bernardo para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de São Bernardo (30 páginas) para Colorir",
+                        "h1": "Desenhos de São Bernardo (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de São Bernardo (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "chow-chow": {
+                "meta": {
+                    "title": "Desenhos de Chow-Chow para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de chow-chow prontos para imprimir e colorir grátis.",
+                    "h1": "Chow-Chow",
+                    "cardDescription": "Explore nossa coleção de desenhos de chow-chow prontos para imprimir e colorir grátis.",
+                    "image": "/assets/chow-chow-geral.webp"
+                },
+                "chow-chow-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Chow-Chow para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Chow-Chow (30 páginas) para Colorir",
+                        "h1": "Desenhos de Chow-Chow (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Chow-Chow (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "cane-corso": {
+                "meta": {
+                    "title": "Desenhos de Cane Corso para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de cane corso prontos para imprimir e colorir grátis.",
+                    "h1": "Cane Corso",
+                    "cardDescription": "Explore nossa coleção de desenhos de cane corso prontos para imprimir e colorir grátis.",
+                    "image": "/assets/cane-corso-geral.webp"
+                },
+                "cane-corso-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Cane Corso para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Cane Corso (30 páginas) para Colorir",
+                        "h1": "Desenhos de Cane Corso (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Cane Corso (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "border-collie": {
+                "meta": {
+                    "title": "Desenhos de Border Collie para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de border collie prontos para imprimir e colorir grátis.",
+                    "h1": "Border Collie",
+                    "cardDescription": "Explore nossa coleção de desenhos de border collie prontos para imprimir e colorir grátis.",
+                    "image": "/assets/border-collie-geral.webp"
+                },
+                "border-collie-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Border Collie para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Border Collie (30 páginas) para Colorir",
+                        "h1": "Desenhos de Border Collie (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Border Collie (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "dog-alemao": {
+                "meta": {
+                    "title": "Desenhos de Dog Alemão para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de dog alemão prontos para imprimir e colorir grátis.",
+                    "h1": "Dog Alemão",
+                    "cardDescription": "Explore nossa coleção de desenhos de dog alemão prontos para imprimir e colorir grátis.",
+                    "image": "/assets/dog-alemao-geral.webp"
+                },
+                "dog-alemao-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Dog Alemão para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Dog Alemão (30 páginas) para Colorir",
+                        "h1": "Desenhos de Dog Alemão (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Dog Alemão (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "maltes": {
+                "meta": {
+                    "title": "Desenhos de Maltês para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de maltês prontos para imprimir e colorir grátis.",
+                    "h1": "Maltês",
+                    "cardDescription": "Explore nossa coleção de desenhos de maltês prontos para imprimir e colorir grátis.",
+                    "image": "/assets/maltes-geral.webp"
+                },
+                "maltes-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Maltês para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Maltês (30 páginas) para Colorir",
+                        "h1": "Desenhos de Maltês (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Maltês (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "lulu-da-pomerania": {
+                "meta": {
+                    "title": "Desenhos de Lulu da Pomerânia para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de lulu da pomerânia prontos para imprimir e colorir grátis.",
+                    "h1": "Lulu da Pomerânia",
+                    "cardDescription": "Explore nossa coleção de desenhos de lulu da pomerânia prontos para imprimir e colorir grátis.",
+                    "image": "/assets/lulu-da-pomerania-geral.webp"
+                },
+                "lulu-da-pomerania-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Lulu da Pomerânia para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Lulu da Pomerânia (30 páginas) para Colorir",
+                        "h1": "Desenhos de Lulu da Pomerânia (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Lulu da Pomerânia (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            },
+            "pug": {
+                "meta": {
+                    "title": "Desenhos de Pug para Colorir e Imprimir em PDF Grátis",
+                    "description": "Explore nossa coleção de desenhos de pug prontos para imprimir e colorir grátis.",
+                    "h1": "Pug",
+                    "cardDescription": "Explore nossa coleção de desenhos de pug prontos para imprimir e colorir grátis.",
+                    "image": "/assets/pug-geral.webp"
+                },
+                "pug-para-colorir": {
+                    "meta": {
+                        "title": "Desenhos de Pug para Colorir e Imprimir em PDF Grátis (30 páginas)",
+                        "description": "Desenhos de Pug (30 páginas) para Colorir",
+                        "h1": "Desenhos de Pug (30 páginas) para Colorir",
+                        "cardDescription": "Desenhos de Pug (30 páginas) para Colorir",
+                        "image": "/placeholder.webp",
+                        "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                    }
+                }
+            }
+        },
+        "borboletas": {
+            "meta": {
+                "title": "Desenhos de Borboletas para Colorir",
+                "description": "Explore nossa coleção de desenhos de borboletas prontos para imprimir e colorir grátis.",
+                "h1": "Borboletas",
+                "cardDescription": "Explore nossa coleção de desenhos de borboletas prontos para imprimir e colorir grátis.",
+                "image": "/assets/borboletas-geral.webp"
+            },
+            "borboletas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Borboletas para Colorir",
+                    "description": "Desenhos de Borboletas para Colorir",
+                    "h1": "Desenhos de Borboletas para Colorir",
+                    "cardDescription": "Desenhos de Borboletas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "gatos": {
+            "meta": {
+                "title": "Desenhos de Gatos para Colorir",
+                "description": "Explore nossa coleção de desenhos de gatos prontos para imprimir e colorir grátis.",
+                "h1": "Gatos",
+                "cardDescription": "Explore nossa coleção de desenhos de gatos prontos para imprimir e colorir grátis.",
+                "image": "/assets/gatos-geral.webp"
+            },
+            "gatos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Gatos para Colorir",
+                    "description": "Desenhos de Gatos para Colorir",
+                    "h1": "Desenhos de Gatos para Colorir",
+                    "cardDescription": "Desenhos de Gatos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "filhotes": {
+            "meta": {
+                "title": "Desenhos de Filhotes para Colorir",
+                "description": "Explore nossa coleção de desenhos de filhotes prontos para imprimir e colorir grátis.",
+                "h1": "Filhotes",
+                "cardDescription": "Explore nossa coleção de desenhos de filhotes prontos para imprimir e colorir grátis.",
+                "image": "/assets/filhotes-geral.webp"
+            },
+            "filhotes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Filhotes para Colorir",
+                    "description": "Desenhos de Filhotes para Colorir",
+                    "h1": "Desenhos de Filhotes para Colorir",
+                    "cardDescription": "Desenhos de Filhotes para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "cavalos": {
+            "meta": {
+                "title": "Desenhos de Cavalos para Colorir",
+                "description": "Explore nossa coleção de desenhos de cavalos prontos para imprimir e colorir grátis.",
+                "h1": "Cavalos",
+                "cardDescription": "Explore nossa coleção de desenhos de cavalos prontos para imprimir e colorir grátis.",
+                "image": "/assets/cavalos-geral.webp"
+            },
+            "cavalos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Cavalos para Colorir",
+                    "description": "Desenhos de Cavalos para Colorir",
+                    "h1": "Desenhos de Cavalos para Colorir",
+                    "cardDescription": "Desenhos de Cavalos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tartarugas": {
+            "meta": {
+                "title": "Desenhos de Tartarugas para Colorir",
+                "description": "Explore nossa coleção de desenhos de tartarugas prontos para imprimir e colorir grátis.",
+                "h1": "Tartarugas",
+                "cardDescription": "Explore nossa coleção de desenhos de tartarugas prontos para imprimir e colorir grátis.",
+                "image": "/assets/tartarugas-geral.webp"
+            },
+            "tartarugas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tartarugas para Colorir",
+                    "description": "Desenhos de Tartarugas para Colorir",
+                    "h1": "Desenhos de Tartarugas para Colorir",
+                    "cardDescription": "Desenhos de Tartarugas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "animais-da-fazenda": {
+            "meta": {
+                "title": "Desenhos de Animais da Fazenda para Colorir",
+                "description": "Explore nossa coleção de desenhos de animais da fazenda prontos para imprimir e colorir grátis.",
+                "h1": "Animais da Fazenda",
+                "cardDescription": "Explore nossa coleção de desenhos de animais da fazenda prontos para imprimir e colorir grátis.",
+                "image": "/assets/animais-da-fazenda-geral.webp"
+            },
+            "animais-da-fazenda-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Animais da Fazenda para Colorir",
+                    "description": "Desenhos de Animais da Fazenda para Colorir",
+                    "h1": "Desenhos de Animais da Fazenda para Colorir",
+                    "cardDescription": "Desenhos de Animais da Fazenda para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "axolotes": {
+            "meta": {
+                "title": "Desenhos de Axolotes para Colorir",
+                "description": "Explore nossa coleção de desenhos de axolotes prontos para imprimir e colorir grátis.",
+                "h1": "Axolotes",
+                "cardDescription": "Explore nossa coleção de desenhos de axolotes prontos para imprimir e colorir grátis.",
+                "image": "/assets/axolotes-geral.webp"
+            },
+            "axolotes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Axolotes para Colorir",
+                    "description": "Desenhos de Axolotes para Colorir",
+                    "h1": "Desenhos de Axolotes para Colorir",
+                    "cardDescription": "Desenhos de Axolotes para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tubaroes": {
+            "meta": {
+                "title": "Desenhos de Tubarões para Colorir",
+                "description": "Explore nossa coleção de desenhos de tubarões prontos para imprimir e colorir grátis.",
+                "h1": "Tubarões",
+                "cardDescription": "Explore nossa coleção de desenhos de tubarões prontos para imprimir e colorir grátis.",
+                "image": "/assets/tubaroes-geral.webp"
+            },
+            "tubaroes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tubarões para Colorir",
+                    "description": "Desenhos de Tubarões para Colorir",
+                    "h1": "Desenhos de Tubarões para Colorir",
+                    "cardDescription": "Desenhos de Tubarões para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "serpentes": {
+            "meta": {
+                "title": "Desenhos de Serpentes para Colorir",
+                "description": "Explore nossa coleção de desenhos de serpentes prontos para imprimir e colorir grátis.",
+                "h1": "Serpentes",
+                "cardDescription": "Explore nossa coleção de desenhos de serpentes prontos para imprimir e colorir grátis.",
+                "image": "/assets/serpentes-geral.webp"
+            },
+            "serpentes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Serpentes para Colorir",
+                    "description": "Desenhos de Serpentes para Colorir",
+                    "h1": "Desenhos de Serpentes para Colorir",
+                    "cardDescription": "Desenhos de Serpentes para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "galinhas": {
+            "meta": {
+                "title": "Desenhos de Galinhas para Colorir",
+                "description": "Explore nossa coleção de desenhos de galinhas prontos para imprimir e colorir grátis.",
+                "h1": "Galinhas",
+                "cardDescription": "Explore nossa coleção de desenhos de galinhas prontos para imprimir e colorir grátis.",
+                "image": "/assets/galinhas-geral.webp"
+            },
+            "galinhas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Galinhas para Colorir",
+                    "description": "Desenhos de Galinhas para Colorir",
+                    "h1": "Desenhos de Galinhas para Colorir",
+                    "cardDescription": "Desenhos de Galinhas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "golfinhos": {
+            "meta": {
+                "title": "Desenhos de Golfinhos para Colorir",
+                "description": "Explore nossa coleção de desenhos de golfinhos prontos para imprimir e colorir grátis.",
+                "h1": "Golfinhos",
+                "cardDescription": "Explore nossa coleção de desenhos de golfinhos prontos para imprimir e colorir grátis.",
+                "image": "/assets/golfinhos-geral.webp"
+            },
+            "golfinhos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Golfinhos para Colorir",
+                    "description": "Desenhos de Golfinhos para Colorir",
+                    "h1": "Desenhos de Golfinhos para Colorir",
+                    "cardDescription": "Desenhos de Golfinhos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "abelhas": {
+            "meta": {
+                "title": "Desenhos de Abelhas para Colorir",
+                "description": "Explore nossa coleção de desenhos de abelhas prontos para imprimir e colorir grátis.",
+                "h1": "Abelhas",
+                "cardDescription": "Explore nossa coleção de desenhos de abelhas prontos para imprimir e colorir grátis.",
+                "image": "/assets/abelhas-geral.webp"
+            },
+            "abelhas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Abelhas para Colorir",
+                    "description": "Desenhos de Abelhas para Colorir",
+                    "h1": "Desenhos de Abelhas para Colorir",
+                    "cardDescription": "Desenhos de Abelhas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "vacas": {
+            "meta": {
+                "title": "Desenhos de Vacas para Colorir",
+                "description": "Explore nossa coleção de desenhos de vacas prontos para imprimir e colorir grátis.",
+                "h1": "Vacas",
+                "cardDescription": "Explore nossa coleção de desenhos de vacas prontos para imprimir e colorir grátis.",
+                "image": "/assets/vacas-geral.webp"
+            },
+            "vacas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Vacas para Colorir",
+                    "description": "Desenhos de Vacas para Colorir",
+                    "h1": "Desenhos de Vacas para Colorir",
+                    "cardDescription": "Desenhos de Vacas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "ras": {
+            "meta": {
+                "title": "Desenhos de Rãs para Colorir",
+                "description": "Explore nossa coleção de desenhos de rãs prontos para imprimir e colorir grátis.",
+                "h1": "Rãs",
+                "cardDescription": "Explore nossa coleção de desenhos de rãs prontos para imprimir e colorir grátis.",
+                "image": "/assets/ras-geral.webp"
+            },
+            "ras-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Rãs para Colorir",
+                    "description": "Desenhos de Rãs para Colorir",
+                    "h1": "Desenhos de Rãs para Colorir",
+                    "cardDescription": "Desenhos de Rãs para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "gatinhos": {
+            "meta": {
+                "title": "Desenhos de Gatinhos para Colorir",
+                "description": "Explore nossa coleção de desenhos de gatinhos prontos para imprimir e colorir grátis.",
+                "h1": "Gatinhos",
+                "cardDescription": "Explore nossa coleção de desenhos de gatinhos prontos para imprimir e colorir grátis.",
+                "image": "/assets/gatinhos-geral.webp"
+            },
+            "gatinhos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Gatinhos para Colorir",
+                    "description": "Desenhos de Gatinhos para Colorir",
+                    "h1": "Desenhos de Gatinhos para Colorir",
+                    "cardDescription": "Desenhos de Gatinhos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "patos": {
+            "meta": {
+                "title": "Desenhos de Patos para Colorir",
+                "description": "Explore nossa coleção de desenhos de patos prontos para imprimir e colorir grátis.",
+                "h1": "Patos",
+                "cardDescription": "Explore nossa coleção de desenhos de patos prontos para imprimir e colorir grátis.",
+                "image": "/assets/patos-geral.webp"
+            },
+            "patos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Patos para Colorir",
+                    "description": "Desenhos de Patos para Colorir",
+                    "h1": "Desenhos de Patos para Colorir",
+                    "cardDescription": "Desenhos de Patos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tigres": {
+            "meta": {
+                "title": "Desenhos de Tigres para Colorir",
+                "description": "Explore nossa coleção de desenhos de tigres prontos para imprimir e colorir grátis.",
+                "h1": "Tigres",
+                "cardDescription": "Explore nossa coleção de desenhos de tigres prontos para imprimir e colorir grátis.",
+                "image": "/assets/tigres-geral.webp"
+            },
+            "tigres-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tigres para Colorir",
+                    "description": "Desenhos de Tigres para Colorir",
+                    "h1": "Desenhos de Tigres para Colorir",
+                    "cardDescription": "Desenhos de Tigres para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "coelhos": {
+            "meta": {
+                "title": "Desenhos de Coelhos para Colorir",
+                "description": "Explore nossa coleção de desenhos de coelhos prontos para imprimir e colorir grátis.",
+                "h1": "Coelhos",
+                "cardDescription": "Explore nossa coleção de desenhos de coelhos prontos para imprimir e colorir grátis.",
+                "image": "/assets/coelhos-geral.webp"
+            },
+            "coelhos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Coelhos para Colorir",
+                    "description": "Desenhos de Coelhos para Colorir",
+                    "h1": "Desenhos de Coelhos para Colorir",
+                    "cardDescription": "Desenhos de Coelhos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "veados": {
+            "meta": {
+                "title": "Desenhos de Veados para Colorir",
+                "description": "Explore nossa coleção de desenhos de veados prontos para imprimir e colorir grátis.",
+                "h1": "Veados",
+                "cardDescription": "Explore nossa coleção de desenhos de veados prontos para imprimir e colorir grátis.",
+                "image": "/assets/veados-geral.webp"
+            },
+            "veados-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Veados para Colorir",
+                    "description": "Desenhos de Veados para Colorir",
+                    "h1": "Desenhos de Veados para Colorir",
+                    "cardDescription": "Desenhos de Veados para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "elefantes": {
+            "meta": {
+                "title": "Desenhos de Elefantes para Colorir",
+                "description": "Explore nossa coleção de desenhos de elefantes prontos para imprimir e colorir grátis.",
+                "h1": "Elefantes",
+                "cardDescription": "Explore nossa coleção de desenhos de elefantes prontos para imprimir e colorir grátis.",
+                "image": "/assets/elefantes-geral.webp"
+            },
+            "elefantes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Elefantes para Colorir",
+                    "description": "Desenhos de Elefantes para Colorir",
+                    "h1": "Desenhos de Elefantes para Colorir",
+                    "cardDescription": "Desenhos de Elefantes para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "leoes": {
+            "meta": {
+                "title": "Desenhos de Leões para Colorir",
+                "description": "Explore nossa coleção de desenhos de leões prontos para imprimir e colorir grátis.",
+                "h1": "Leões",
+                "cardDescription": "Explore nossa coleção de desenhos de leões prontos para imprimir e colorir grátis.",
+                "image": "/assets/leoes-geral.webp"
+            },
+            "leoes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Leões para Colorir",
+                    "description": "Desenhos de Leões para Colorir",
+                    "h1": "Desenhos de Leões para Colorir",
+                    "cardDescription": "Desenhos de Leões para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "pinguins": {
+            "meta": {
+                "title": "Desenhos de Pinguins para Colorir",
+                "description": "Explore nossa coleção de desenhos de pinguins prontos para imprimir e colorir grátis.",
+                "h1": "Pinguins",
+                "cardDescription": "Explore nossa coleção de desenhos de pinguins prontos para imprimir e colorir grátis.",
+                "image": "/assets/pinguins-geral.webp"
+            },
+            "pinguins-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Pinguins para Colorir",
+                    "description": "Desenhos de Pinguins para Colorir",
+                    "h1": "Desenhos de Pinguins para Colorir",
+                    "cardDescription": "Desenhos de Pinguins para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "porcos": {
+            "meta": {
+                "title": "Desenhos de Porcos para Colorir",
+                "description": "Explore nossa coleção de desenhos de porcos prontos para imprimir e colorir grátis.",
+                "h1": "Porcos",
+                "cardDescription": "Explore nossa coleção de desenhos de porcos prontos para imprimir e colorir grátis.",
+                "image": "/assets/porcos-geral.webp"
+            },
+            "porcos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Porcos para Colorir",
+                    "description": "Desenhos de Porcos para Colorir",
+                    "h1": "Desenhos de Porcos para Colorir",
+                    "cardDescription": "Desenhos de Porcos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "preguicas": {
+            "meta": {
+                "title": "Desenhos de Preguiças para Colorir",
+                "description": "Explore nossa coleção de desenhos de preguiças prontos para imprimir e colorir grátis.",
+                "h1": "Preguiças",
+                "cardDescription": "Explore nossa coleção de desenhos de preguiças prontos para imprimir e colorir grátis.",
+                "image": "/assets/preguicas-geral.webp"
+            },
+            "preguicas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Preguiças para Colorir",
+                    "description": "Desenhos de Preguiças para Colorir",
+                    "h1": "Desenhos de Preguiças para Colorir",
+                    "cardDescription": "Desenhos de Preguiças para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "crocodilos": {
+            "meta": {
+                "title": "Desenhos de Crocodilos para Colorir",
+                "description": "Explore nossa coleção de desenhos de crocodilos prontos para imprimir e colorir grátis.",
+                "h1": "Crocodilos",
+                "cardDescription": "Explore nossa coleção de desenhos de crocodilos prontos para imprimir e colorir grátis.",
+                "image": "/assets/crocodilos-geral.webp"
+            },
+            "crocodilos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Crocodilos para Colorir",
+                    "description": "Desenhos de Crocodilos para Colorir",
+                    "h1": "Desenhos de Crocodilos para Colorir",
+                    "cardDescription": "Desenhos de Crocodilos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "corujas": {
+            "meta": {
+                "title": "Desenhos de Corujas para Colorir",
+                "description": "Explore nossa coleção de desenhos de corujas prontos para imprimir e colorir grátis.",
+                "h1": "Corujas",
+                "cardDescription": "Explore nossa coleção de desenhos de corujas prontos para imprimir e colorir grátis.",
+                "image": "/assets/corujas-geral.webp"
+            },
+            "corujas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Corujas para Colorir",
+                    "description": "Desenhos de Corujas para Colorir",
+                    "h1": "Desenhos de Corujas para Colorir",
+                    "cardDescription": "Desenhos de Corujas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "ursos": {
+            "meta": {
+                "title": "Desenhos de Ursos para Colorir",
+                "description": "Explore nossa coleção de desenhos de ursos prontos para imprimir e colorir grátis.",
+                "h1": "Ursos",
+                "cardDescription": "Explore nossa coleção de desenhos de ursos prontos para imprimir e colorir grátis.",
+                "image": "/assets/ursos-geral.webp"
+            },
+            "ursos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Ursos para Colorir",
+                    "description": "Desenhos de Ursos para Colorir",
+                    "h1": "Desenhos de Ursos para Colorir",
+                    "cardDescription": "Desenhos de Ursos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "macacos": {
+            "meta": {
+                "title": "Desenhos de Macacos para Colorir",
+                "description": "Explore nossa coleção de desenhos de macacos prontos para imprimir e colorir grátis.",
+                "h1": "Macacos",
+                "cardDescription": "Explore nossa coleção de desenhos de macacos prontos para imprimir e colorir grátis.",
+                "image": "/assets/macacos-geral.webp"
+            },
+            "macacos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Macacos para Colorir",
+                    "description": "Desenhos de Macacos para Colorir",
+                    "h1": "Desenhos de Macacos para Colorir",
+                    "cardDescription": "Desenhos de Macacos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "aguias-carecas": {
+            "meta": {
+                "title": "Desenhos de Águias-carecas para Colorir",
+                "description": "Explore nossa coleção de desenhos de águias-carecas prontos para imprimir e colorir grátis.",
+                "h1": "Águias-carecas",
+                "cardDescription": "Explore nossa coleção de desenhos de águias-carecas prontos para imprimir e colorir grátis.",
+                "image": "/assets/aguias-carecas-geral.webp"
+            },
+            "aguias-carecas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Águias-carecas para Colorir",
+                    "description": "Desenhos de Águias-carecas para Colorir",
+                    "h1": "Desenhos de Águias-carecas para Colorir",
+                    "cardDescription": "Desenhos de Águias-carecas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "raposas": {
+            "meta": {
+                "title": "Desenhos de Raposa para Colorir",
+                "description": "Explore nossa coleção de desenhos de raposa prontos para imprimir e colorir grátis.",
+                "h1": "Raposa",
+                "cardDescription": "Explore nossa coleção de desenhos de raposa prontos para imprimir e colorir grátis.",
+                "image": "/assets/raposas-geral.webp"
+            },
+            "raposas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Raposa para Colorir",
+                    "description": "Desenhos de Raposa para Colorir",
+                    "h1": "Desenhos de Raposa para Colorir",
+                    "cardDescription": "Desenhos de Raposa para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "gorilas": {
+            "meta": {
+                "title": "Desenhos de Gorilas para Colorir",
+                "description": "Explore nossa coleção de desenhos de gorilas prontos para imprimir e colorir grátis.",
+                "h1": "Gorilas",
+                "cardDescription": "Explore nossa coleção de desenhos de gorilas prontos para imprimir e colorir grátis.",
+                "image": "/assets/gorilas-geral.webp"
+            },
+            "gorilas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Gorilas para Colorir",
+                    "description": "Desenhos de Gorilas para Colorir",
+                    "h1": "Desenhos de Gorilas para Colorir",
+                    "cardDescription": "Desenhos de Gorilas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "guepardos": {
+            "meta": {
+                "title": "Desenhos de Guepardos para Colorir",
+                "description": "Explore nossa coleção de desenhos de guepardos prontos para imprimir e colorir grátis.",
+                "h1": "Guepardos",
+                "cardDescription": "Explore nossa coleção de desenhos de guepardos prontos para imprimir e colorir grátis.",
+                "image": "/assets/guepardos-geral.webp"
+            },
+            "guepardos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Guepardos para Colorir",
+                    "description": "Desenhos de Guepardos para Colorir",
+                    "h1": "Desenhos de Guepardos para Colorir",
+                    "cardDescription": "Desenhos de Guepardos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lhamas": {
+            "meta": {
+                "title": "Desenhos de Lhamas para Colorir",
+                "description": "Explore nossa coleção de desenhos de lhamas prontos para imprimir e colorir grátis.",
+                "h1": "Lhamas",
+                "cardDescription": "Explore nossa coleção de desenhos de lhamas prontos para imprimir e colorir grátis.",
+                "image": "/assets/lhamas-geral.webp"
+            },
+            "lhamas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lhamas para Colorir",
+                    "description": "Desenhos de Lhamas para Colorir",
+                    "h1": "Desenhos de Lhamas para Colorir",
+                    "cardDescription": "Desenhos de Lhamas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lagartas": {
+            "meta": {
+                "title": "Desenhos de Lagartas para Colorir",
+                "description": "Explore nossa coleção de desenhos de lagartas prontos para imprimir e colorir grátis.",
+                "h1": "Lagartas",
+                "cardDescription": "Explore nossa coleção de desenhos de lagartas prontos para imprimir e colorir grátis.",
+                "image": "/assets/lagartas-geral.webp"
+            },
+            "lagartas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lagartas para Colorir",
+                    "description": "Desenhos de Lagartas para Colorir",
+                    "h1": "Desenhos de Lagartas para Colorir",
+                    "cardDescription": "Desenhos de Lagartas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "flamingos": {
+            "meta": {
+                "title": "Desenhos de Flamingos para Colorir",
+                "description": "Explore nossa coleção de desenhos de flamingos prontos para imprimir e colorir grátis.",
+                "h1": "Flamingos",
+                "cardDescription": "Explore nossa coleção de desenhos de flamingos prontos para imprimir e colorir grátis.",
+                "image": "/assets/flamingos-geral.webp"
+            },
+            "flamingos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Flamingos para Colorir",
+                    "description": "Desenhos de Flamingos para Colorir",
+                    "h1": "Desenhos de Flamingos para Colorir",
+                    "cardDescription": "Desenhos de Flamingos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lobos": {
+            "meta": {
+                "title": "Desenhos de Lobos para Colorir",
+                "description": "Explore nossa coleção de desenhos de lobos prontos para imprimir e colorir grátis.",
+                "h1": "Lobos",
+                "cardDescription": "Explore nossa coleção de desenhos de lobos prontos para imprimir e colorir grátis.",
+                "image": "/assets/lobos-geral.webp"
+            },
+            "lobos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lobos para Colorir",
+                    "description": "Desenhos de Lobos para Colorir",
+                    "h1": "Desenhos de Lobos para Colorir",
+                    "cardDescription": "Desenhos de Lobos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "pavoes": {
+            "meta": {
+                "title": "Desenhos de Pavões para Colorir",
+                "description": "Explore nossa coleção de desenhos de pavões prontos para imprimir e colorir grátis.",
+                "h1": "Pavões",
+                "cardDescription": "Explore nossa coleção de desenhos de pavões prontos para imprimir e colorir grátis.",
+                "image": "/assets/pavoes-geral.webp"
+            },
+            "pavoes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Pavões para Colorir",
+                    "description": "Desenhos de Pavões para Colorir",
+                    "h1": "Desenhos de Pavões para Colorir",
+                    "cardDescription": "Desenhos de Pavões para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "ursos-polares": {
+            "meta": {
+                "title": "Desenhos de Ursos polares para Colorir",
+                "description": "Explore nossa coleção de desenhos de ursos polares prontos para imprimir e colorir grátis.",
+                "h1": "Ursos polares",
+                "cardDescription": "Explore nossa coleção de desenhos de ursos polares prontos para imprimir e colorir grátis.",
+                "image": "/assets/ursos-polares-geral.webp"
+            },
+            "ursos-polares-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Ursos polares para Colorir",
+                    "description": "Desenhos de Ursos polares para Colorir",
+                    "h1": "Desenhos de Ursos polares para Colorir",
+                    "cardDescription": "Desenhos de Ursos polares para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "aranhas": {
+            "meta": {
+                "title": "Desenhos de Aranhas para Colorir",
+                "description": "Explore nossa coleção de desenhos de aranhas prontos para imprimir e colorir grátis.",
+                "h1": "Aranhas",
+                "cardDescription": "Explore nossa coleção de desenhos de aranhas prontos para imprimir e colorir grátis.",
+                "image": "/assets/aranhas-geral.webp"
+            },
+            "aranhas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Aranhas para Colorir",
+                    "description": "Desenhos de Aranhas para Colorir",
+                    "h1": "Desenhos de Aranhas para Colorir",
+                    "cardDescription": "Desenhos de Aranhas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "rinocerontes": {
+            "meta": {
+                "title": "Desenhos de Rinocerontes para Colorir",
+                "description": "Explore nossa coleção de desenhos de rinocerontes prontos para imprimir e colorir grátis.",
+                "h1": "Rinocerontes",
+                "cardDescription": "Explore nossa coleção de desenhos de rinocerontes prontos para imprimir e colorir grátis.",
+                "image": "/assets/rinocerontes-geral.webp"
+            },
+            "rinocerontes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Rinocerontes para Colorir",
+                    "description": "Desenhos de Rinocerontes para Colorir",
+                    "h1": "Desenhos de Rinocerontes para Colorir",
+                    "cardDescription": "Desenhos de Rinocerontes para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "hipopotamos": {
+            "meta": {
+                "title": "Desenhos de Hipopótamos para Colorir",
+                "description": "Explore nossa coleção de desenhos de hipopótamos prontos para imprimir e colorir grátis.",
+                "h1": "Hipopótamos",
+                "cardDescription": "Explore nossa coleção de desenhos de hipopótamos prontos para imprimir e colorir grátis.",
+                "image": "/assets/hipopotamos-geral.webp"
+            },
+            "hipopotamos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Hipopótamos para Colorir",
+                    "description": "Desenhos de Hipopótamos para Colorir",
+                    "h1": "Desenhos de Hipopótamos para Colorir",
+                    "cardDescription": "Desenhos de Hipopótamos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "touros": {
+            "meta": {
+                "title": "Desenhos de Touros para Colorir",
+                "description": "Explore nossa coleção de desenhos de touros prontos para imprimir e colorir grátis.",
+                "h1": "Touros",
+                "cardDescription": "Explore nossa coleção de desenhos de touros prontos para imprimir e colorir grátis.",
+                "image": "/assets/touros-geral.webp"
+            },
+            "touros-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Touros para Colorir",
+                    "description": "Desenhos de Touros para Colorir",
+                    "h1": "Desenhos de Touros para Colorir",
+                    "cardDescription": "Desenhos de Touros para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "girafas": {
+            "meta": {
+                "title": "Desenhos de Girafas para Colorir",
+                "description": "Explore nossa coleção de desenhos de girafas prontos para imprimir e colorir grátis.",
+                "h1": "Girafas",
+                "cardDescription": "Explore nossa coleção de desenhos de girafas prontos para imprimir e colorir grátis.",
+                "image": "/assets/girafas-geral.webp"
+            },
+            "girafas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Girafas para Colorir",
+                    "description": "Desenhos de Girafas para Colorir",
+                    "h1": "Desenhos de Girafas para Colorir",
+                    "cardDescription": "Desenhos de Girafas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "ovelhas": {
+            "meta": {
+                "title": "Desenhos de Ovelhas para Colorir",
+                "description": "Explore nossa coleção de desenhos de ovelhas prontos para imprimir e colorir grátis.",
+                "h1": "Ovelhas",
+                "cardDescription": "Explore nossa coleção de desenhos de ovelhas prontos para imprimir e colorir grátis.",
+                "image": "/assets/ovelhas-geral.webp"
+            },
+            "ovelhas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Ovelhas para Colorir",
+                    "description": "Desenhos de Ovelhas para Colorir",
+                    "h1": "Desenhos de Ovelhas para Colorir",
+                    "cardDescription": "Desenhos de Ovelhas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "cabras": {
+            "meta": {
+                "title": "Desenhos de Cabras para Colorir",
+                "description": "Explore nossa coleção de desenhos de cabras prontos para imprimir e colorir grátis.",
+                "h1": "Cabras",
+                "cardDescription": "Explore nossa coleção de desenhos de cabras prontos para imprimir e colorir grátis.",
+                "image": "/assets/cabras-geral.webp"
+            },
+            "cabras-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Cabras para Colorir",
+                    "description": "Desenhos de Cabras para Colorir",
+                    "h1": "Desenhos de Cabras para Colorir",
+                    "cardDescription": "Desenhos de Cabras para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "beija-flores": {
+            "meta": {
+                "title": "Desenhos de Beija-flores para Colorir",
+                "description": "Explore nossa coleção de desenhos de beija-flores prontos para imprimir e colorir grátis.",
+                "h1": "Beija-flores",
+                "cardDescription": "Explore nossa coleção de desenhos de beija-flores prontos para imprimir e colorir grátis.",
+                "image": "/assets/beija-flores-geral.webp"
+            },
+            "beija-flores-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Beija-flores para Colorir",
+                    "description": "Desenhos de Beija-flores para Colorir",
+                    "h1": "Desenhos de Beija-flores para Colorir",
+                    "cardDescription": "Desenhos de Beija-flores para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "pandas": {
+            "meta": {
+                "title": "Desenhos de Pandas para Colorir",
+                "description": "Explore nossa coleção de desenhos de pandas prontos para imprimir e colorir grátis.",
+                "h1": "Pandas",
+                "cardDescription": "Explore nossa coleção de desenhos de pandas prontos para imprimir e colorir grátis.",
+                "image": "/assets/pandas-geral.webp"
+            },
+            "pandas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Pandas para Colorir",
+                    "description": "Desenhos de Pandas para Colorir",
+                    "h1": "Desenhos de Pandas para Colorir",
+                    "cardDescription": "Desenhos de Pandas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "narval": {
+            "meta": {
+                "title": "Desenhos de Narval para Colorir",
+                "description": "Explore nossa coleção de desenhos de narval prontos para imprimir e colorir grátis.",
+                "h1": "Narval",
+                "cardDescription": "Explore nossa coleção de desenhos de narval prontos para imprimir e colorir grátis.",
+                "image": "/assets/narval-geral.webp"
+            },
+            "narval-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Narval para Colorir",
+                    "description": "Desenhos de Narval para Colorir",
+                    "h1": "Desenhos de Narval para Colorir",
+                    "cardDescription": "Desenhos de Narval para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "cavalos-marinhos": {
+            "meta": {
+                "title": "Desenhos de Cavalos-marinhos para Colorir",
+                "description": "Explore nossa coleção de desenhos de cavalos-marinhos prontos para imprimir e colorir grátis.",
+                "h1": "Cavalos-marinhos",
+                "cardDescription": "Explore nossa coleção de desenhos de cavalos-marinhos prontos para imprimir e colorir grátis.",
+                "image": "/assets/cavalos-marinhos-geral.webp"
+            },
+            "cavalos-marinhos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Cavalos-marinhos para Colorir",
+                    "description": "Desenhos de Cavalos-marinhos para Colorir",
+                    "h1": "Desenhos de Cavalos-marinhos para Colorir",
+                    "cardDescription": "Desenhos de Cavalos-marinhos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "zebras": {
+            "meta": {
+                "title": "Desenhos de Zebras para Colorir",
+                "description": "Explore nossa coleção de desenhos de zebras prontos para imprimir e colorir grátis.",
+                "h1": "Zebras",
+                "cardDescription": "Explore nossa coleção de desenhos de zebras prontos para imprimir e colorir grátis.",
+                "image": "/assets/zebras-geral.webp"
+            },
+            "zebras-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Zebras para Colorir",
+                    "description": "Desenhos de Zebras para Colorir",
+                    "h1": "Desenhos de Zebras para Colorir",
+                    "cardDescription": "Desenhos de Zebras para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "pandas-vermelhos": {
+            "meta": {
+                "title": "Desenhos de Pandas-vermelhos para Colorir",
+                "description": "Explore nossa coleção de desenhos de pandas-vermelhos prontos para imprimir e colorir grátis.",
+                "h1": "Pandas-vermelhos",
+                "cardDescription": "Explore nossa coleção de desenhos de pandas-vermelhos prontos para imprimir e colorir grátis.",
+                "image": "/assets/pandas-vermelhos-geral.webp"
+            },
+            "pandas-vermelhos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Pandas-vermelhos para Colorir",
+                    "description": "Desenhos de Pandas-vermelhos para Colorir",
+                    "h1": "Desenhos de Pandas-vermelhos para Colorir",
+                    "cardDescription": "Desenhos de Pandas-vermelhos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lagartos": {
+            "meta": {
+                "title": "Desenhos de Lagartos para Colorir",
+                "description": "Explore nossa coleção de desenhos de lagartos prontos para imprimir e colorir grátis.",
+                "h1": "Lagartos",
+                "cardDescription": "Explore nossa coleção de desenhos de lagartos prontos para imprimir e colorir grátis.",
+                "image": "/assets/lagartos-geral.webp"
+            },
+            "lagartos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lagartos para Colorir",
+                    "description": "Desenhos de Lagartos para Colorir",
+                    "h1": "Desenhos de Lagartos para Colorir",
+                    "cardDescription": "Desenhos de Lagartos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "ouricos": {
+            "meta": {
+                "title": "Desenhos de Ouriço para Colorir",
+                "description": "Explore nossa coleção de desenhos de ouriço prontos para imprimir e colorir grátis.",
+                "h1": "Ouriço",
+                "cardDescription": "Explore nossa coleção de desenhos de ouriço prontos para imprimir e colorir grátis.",
+                "image": "/assets/ouricos-geral.webp"
+            },
+            "ouricos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Ouriço para Colorir",
+                    "description": "Desenhos de Ouriço para Colorir",
+                    "h1": "Desenhos de Ouriço para Colorir",
+                    "cardDescription": "Desenhos de Ouriço para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "papagaios": {
+            "meta": {
+                "title": "Desenhos de Papagaios para Colorir",
+                "description": "Explore nossa coleção de desenhos de papagaios prontos para imprimir e colorir grátis.",
+                "h1": "Papagaios",
+                "cardDescription": "Explore nossa coleção de desenhos de papagaios prontos para imprimir e colorir grátis.",
+                "image": "/assets/papagaios-geral.webp"
+            },
+            "papagaios-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Papagaios para Colorir",
+                    "description": "Desenhos de Papagaios para Colorir",
+                    "h1": "Desenhos de Papagaios para Colorir",
+                    "cardDescription": "Desenhos de Papagaios para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "polvo": {
+            "meta": {
+                "title": "Desenhos de Polvo para Colorir",
+                "description": "Explore nossa coleção de desenhos de polvo prontos para imprimir e colorir grátis.",
+                "h1": "Polvo",
+                "cardDescription": "Explore nossa coleção de desenhos de polvo prontos para imprimir e colorir grátis.",
+                "image": "/assets/polvo-geral.webp"
+            },
+            "polvo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Polvo para Colorir",
+                    "description": "Desenhos de Polvo para Colorir",
+                    "h1": "Desenhos de Polvo para Colorir",
+                    "cardDescription": "Desenhos de Polvo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "aguas-vivas": {
+            "meta": {
+                "title": "Desenhos de Águas-vivas para Colorir",
+                "description": "Explore nossa coleção de desenhos de águas-vivas prontos para imprimir e colorir grátis.",
+                "h1": "Águas-vivas",
+                "cardDescription": "Explore nossa coleção de desenhos de águas-vivas prontos para imprimir e colorir grátis.",
+                "image": "/assets/aguas-vivas-geral.webp"
+            },
+            "aguas-vivas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Águas-vivas para Colorir",
+                    "description": "Desenhos de Águas-vivas para Colorir",
+                    "h1": "Desenhos de Águas-vivas para Colorir",
+                    "cardDescription": "Desenhos de Águas-vivas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "morcegos": {
+            "meta": {
+                "title": "Desenhos de Morcegos para Colorir",
+                "description": "Explore nossa coleção de desenhos de morcegos prontos para imprimir e colorir grátis.",
+                "h1": "Morcegos",
+                "cardDescription": "Explore nossa coleção de desenhos de morcegos prontos para imprimir e colorir grátis.",
+                "image": "/assets/morcegos-geral.webp"
+            },
+            "morcegos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Morcegos para Colorir",
+                    "description": "Desenhos de Morcegos para Colorir",
+                    "h1": "Desenhos de Morcegos para Colorir",
+                    "cardDescription": "Desenhos de Morcegos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "perus": {
+            "meta": {
+                "title": "Desenhos de Perus para Colorir",
+                "description": "Explore nossa coleção de desenhos de perus prontos para imprimir e colorir grátis.",
+                "h1": "Perus",
+                "cardDescription": "Explore nossa coleção de desenhos de perus prontos para imprimir e colorir grátis.",
+                "image": "/assets/perus-geral.webp"
+            },
+            "perus-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Perus para Colorir",
+                    "description": "Desenhos de Perus para Colorir",
+                    "h1": "Desenhos de Perus para Colorir",
+                    "cardDescription": "Desenhos de Perus para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "joaninhas": {
+            "meta": {
+                "title": "Desenhos de Joaninhas para Colorir",
+                "description": "Explore nossa coleção de desenhos de joaninhas prontos para imprimir e colorir grátis.",
+                "h1": "Joaninhas",
+                "cardDescription": "Explore nossa coleção de desenhos de joaninhas prontos para imprimir e colorir grátis.",
+                "image": "/assets/joaninhas-geral.webp"
+            },
+            "joaninhas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Joaninhas para Colorir",
+                    "description": "Desenhos de Joaninhas para Colorir",
+                    "h1": "Desenhos de Joaninhas para Colorir",
+                    "cardDescription": "Desenhos de Joaninhas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "estrela-do-mar": {
+            "meta": {
+                "title": "Desenhos de Estrela-do-mar para Colorir",
+                "description": "Explore nossa coleção de desenhos de estrela-do-mar prontos para imprimir e colorir grátis.",
+                "h1": "Estrela-do-mar",
+                "cardDescription": "Explore nossa coleção de desenhos de estrela-do-mar prontos para imprimir e colorir grátis.",
+                "image": "/assets/estrela-do-mar-geral.webp"
+            },
+            "estrela-do-mar-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Estrela-do-mar para Colorir",
+                    "description": "Desenhos de Estrela-do-mar para Colorir",
+                    "h1": "Desenhos de Estrela-do-mar para Colorir",
+                    "cardDescription": "Desenhos de Estrela-do-mar para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "esquilos": {
+            "meta": {
+                "title": "Desenhos de Esquilos para Colorir",
+                "description": "Explore nossa coleção de desenhos de esquilos prontos para imprimir e colorir grátis.",
+                "h1": "Esquilos",
+                "cardDescription": "Explore nossa coleção de desenhos de esquilos prontos para imprimir e colorir grátis.",
+                "image": "/assets/esquilos-geral.webp"
+            },
+            "esquilos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Esquilos para Colorir",
+                    "description": "Desenhos de Esquilos para Colorir",
+                    "h1": "Desenhos de Esquilos para Colorir",
+                    "cardDescription": "Desenhos de Esquilos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "libelulas": {
+            "meta": {
+                "title": "Desenhos de Libélulas para Colorir",
+                "description": "Explore nossa coleção de desenhos de libélulas prontos para imprimir e colorir grátis.",
+                "h1": "Libélulas",
+                "cardDescription": "Explore nossa coleção de desenhos de libélulas prontos para imprimir e colorir grátis.",
+                "image": "/assets/libelulas-geral.webp"
+            },
+            "libelulas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Libélulas para Colorir",
+                    "description": "Desenhos de Libélulas para Colorir",
+                    "h1": "Desenhos de Libélulas para Colorir",
+                    "cardDescription": "Desenhos de Libélulas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tucanos": {
+            "meta": {
+                "title": "Desenhos de Tucanos para Colorir",
+                "description": "Explore nossa coleção de desenhos de tucanos prontos para imprimir e colorir grátis.",
+                "h1": "Tucanos",
+                "cardDescription": "Explore nossa coleção de desenhos de tucanos prontos para imprimir e colorir grátis.",
+                "image": "/assets/tucanos-geral.webp"
+            },
+            "tucanos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tucanos para Colorir",
+                    "description": "Desenhos de Tucanos para Colorir",
+                    "h1": "Desenhos de Tucanos para Colorir",
+                    "cardDescription": "Desenhos de Tucanos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "cisnes": {
+            "meta": {
+                "title": "Desenhos de Cisnes para Colorir",
+                "description": "Explore nossa coleção de desenhos de cisnes prontos para imprimir e colorir grátis.",
+                "h1": "Cisnes",
+                "cardDescription": "Explore nossa coleção de desenhos de cisnes prontos para imprimir e colorir grátis.",
+                "image": "/assets/cisnes-geral.webp"
+            },
+            "cisnes-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Cisnes para Colorir",
+                    "description": "Desenhos de Cisnes para Colorir",
+                    "h1": "Desenhos de Cisnes para Colorir",
+                    "cardDescription": "Desenhos de Cisnes para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "dragoes-barbudos": {
+            "meta": {
+                "title": "Desenhos de Dragões Barbudos para Colorir",
+                "description": "Explore nossa coleção de desenhos de dragões barbudos prontos para imprimir e colorir grátis.",
+                "h1": "Dragões Barbudos",
+                "cardDescription": "Explore nossa coleção de desenhos de dragões barbudos prontos para imprimir e colorir grátis.",
+                "image": "/assets/dragoes-barbudos-geral.webp"
+            },
+            "dragoes-barbudos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Dragões Barbudos para Colorir",
+                    "description": "Desenhos de Dragões Barbudos para Colorir",
+                    "h1": "Desenhos de Dragões Barbudos para Colorir",
+                    "cardDescription": "Desenhos de Dragões Barbudos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "alce": {
+            "meta": {
+                "title": "Desenhos de Alce para Colorir",
+                "description": "Explore nossa coleção de desenhos de alce prontos para imprimir e colorir grátis.",
+                "h1": "Alce",
+                "cardDescription": "Explore nossa coleção de desenhos de alce prontos para imprimir e colorir grátis.",
+                "image": "/assets/alce-geral.webp"
+            },
+            "alce-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Alce para Colorir",
+                    "description": "Desenhos de Alce para Colorir",
+                    "h1": "Desenhos de Alce para Colorir",
+                    "cardDescription": "Desenhos de Alce para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "orca": {
+            "meta": {
+                "title": "Desenhos de Orca para Colorir",
+                "description": "Explore nossa coleção de desenhos de orca prontos para imprimir e colorir grátis.",
+                "h1": "Orca",
+                "cardDescription": "Explore nossa coleção de desenhos de orca prontos para imprimir e colorir grátis.",
+                "image": "/assets/orca-geral.webp"
+            },
+            "orca-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Orca para Colorir",
+                    "description": "Desenhos de Orca para Colorir",
+                    "h1": "Desenhos de Orca para Colorir",
+                    "cardDescription": "Desenhos de Orca para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lontras": {
+            "meta": {
+                "title": "Desenhos de Lontras para Colorir",
+                "description": "Explore nossa coleção de desenhos de lontras prontos para imprimir e colorir grátis.",
+                "h1": "Lontras",
+                "cardDescription": "Explore nossa coleção de desenhos de lontras prontos para imprimir e colorir grátis.",
+                "image": "/assets/lontras-geral.webp"
+            },
+            "lontras-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lontras para Colorir",
+                    "description": "Desenhos de Lontras para Colorir",
+                    "h1": "Desenhos de Lontras para Colorir",
+                    "cardDescription": "Desenhos de Lontras para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "focas": {
+            "meta": {
+                "title": "Desenhos de Focas para Colorir",
+                "description": "Explore nossa coleção de desenhos de focas prontos para imprimir e colorir grátis.",
+                "h1": "Focas",
+                "cardDescription": "Explore nossa coleção de desenhos de focas prontos para imprimir e colorir grátis.",
+                "image": "/assets/focas-geral.webp"
+            },
+            "focas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Focas para Colorir",
+                    "description": "Desenhos de Focas para Colorir",
+                    "h1": "Desenhos de Focas para Colorir",
+                    "cardDescription": "Desenhos de Focas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "iguana": {
+            "meta": {
+                "title": "Desenhos de Iguana para Colorir",
+                "description": "Explore nossa coleção de desenhos de iguana prontos para imprimir e colorir grátis.",
+                "h1": "Iguana",
+                "cardDescription": "Explore nossa coleção de desenhos de iguana prontos para imprimir e colorir grátis.",
+                "image": "/assets/iguana-geral.webp"
+            },
+            "iguana-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Iguana para Colorir",
+                    "description": "Desenhos de Iguana para Colorir",
+                    "h1": "Desenhos de Iguana para Colorir",
+                    "cardDescription": "Desenhos de Iguana para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "caranguejos": {
+            "meta": {
+                "title": "Desenhos de Caranguejos para Colorir",
+                "description": "Explore nossa coleção de desenhos de caranguejos prontos para imprimir e colorir grátis.",
+                "h1": "Caranguejos",
+                "cardDescription": "Explore nossa coleção de desenhos de caranguejos prontos para imprimir e colorir grátis.",
+                "image": "/assets/caranguejos-geral.webp"
+            },
+            "caranguejos-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Caranguejos para Colorir",
+                    "description": "Desenhos de Caranguejos para Colorir",
+                    "h1": "Desenhos de Caranguejos para Colorir",
+                    "cardDescription": "Desenhos de Caranguejos para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "camaleao": {
+            "meta": {
+                "title": "Desenhos de Camaleão para Colorir",
+                "description": "Explore nossa coleção de desenhos de camaleão prontos para imprimir e colorir grátis.",
+                "h1": "Camaleão",
+                "cardDescription": "Explore nossa coleção de desenhos de camaleão prontos para imprimir e colorir grátis.",
+                "image": "/assets/camaleao-geral.webp"
+            },
+            "camaleao-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Camaleão para Colorir",
+                    "description": "Desenhos de Camaleão para Colorir",
+                    "h1": "Desenhos de Camaleão para Colorir",
+                    "cardDescription": "Desenhos de Camaleão para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "besouros": {
+            "meta": {
+                "title": "Desenhos de Besouros para Colorir",
+                "description": "Explore nossa coleção de desenhos de besouros prontos para imprimir e colorir grátis.",
+                "h1": "Besouros",
+                "cardDescription": "Explore nossa coleção de desenhos de besouros prontos para imprimir e colorir grátis.",
+                "image": "/assets/besouros-geral.webp"
+            },
+            "besouros-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Besouros para Colorir",
+                    "description": "Desenhos de Besouros para Colorir",
+                    "h1": "Desenhos de Besouros para Colorir",
+                    "cardDescription": "Desenhos de Besouros para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "porquinho-da-india": {
+            "meta": {
+                "title": "Desenhos de Porquinho-da-índia para Colorir",
+                "description": "Explore nossa coleção de desenhos de porquinho-da-índia prontos para imprimir e colorir grátis.",
+                "h1": "Porquinho-da-índia",
+                "cardDescription": "Explore nossa coleção de desenhos de porquinho-da-índia prontos para imprimir e colorir grátis.",
+                "image": "/assets/porquinho-da-india-geral.webp"
+            },
+            "porquinho-da-india-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Porquinho-da-índia para Colorir",
+                    "description": "Desenhos de Porquinho-da-índia para Colorir",
+                    "h1": "Desenhos de Porquinho-da-índia para Colorir",
+                    "cardDescription": "Desenhos de Porquinho-da-índia para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "hamsters": {
+            "meta": {
+                "title": "Desenhos de Hamsters para Colorir",
+                "description": "Explore nossa coleção de desenhos de hamsters prontos para imprimir e colorir grátis.",
+                "h1": "Hamsters",
+                "cardDescription": "Explore nossa coleção de desenhos de hamsters prontos para imprimir e colorir grátis.",
+                "image": "/assets/hamsters-geral.webp"
+            },
+            "hamsters-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Hamsters para Colorir",
+                    "description": "Desenhos de Hamsters para Colorir",
+                    "h1": "Desenhos de Hamsters para Colorir",
+                    "cardDescription": "Desenhos de Hamsters para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "coalas": {
+            "meta": {
+                "title": "Desenhos de Coalas para Colorir",
+                "description": "Explore nossa coleção de desenhos de coalas prontos para imprimir e colorir grátis.",
+                "h1": "Coalas",
+                "cardDescription": "Explore nossa coleção de desenhos de coalas prontos para imprimir e colorir grátis.",
+                "image": "/assets/coalas-geral.webp"
+            },
+            "coalas-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Coalas para Colorir",
+                    "description": "Desenhos de Coalas para Colorir",
+                    "h1": "Desenhos de Coalas para Colorir",
+                    "cardDescription": "Desenhos de Coalas para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "castor": {
+            "meta": {
+                "title": "Desenhos de Castor para Colorir",
+                "description": "Explore nossa coleção de desenhos de castor prontos para imprimir e colorir grátis.",
+                "h1": "Castor",
+                "cardDescription": "Explore nossa coleção de desenhos de castor prontos para imprimir e colorir grátis.",
+                "image": "/assets/castor-geral.webp"
+            },
+            "castor-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Castor para Colorir",
+                    "description": "Desenhos de Castor para Colorir",
+                    "h1": "Desenhos de Castor para Colorir",
+                    "cardDescription": "Desenhos de Castor para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "burro": {
+            "meta": {
+                "title": "Desenhos de Burro para Colorir",
+                "description": "Explore nossa coleção de desenhos de burro prontos para imprimir e colorir grátis.",
+                "h1": "Burro",
+                "cardDescription": "Explore nossa coleção de desenhos de burro prontos para imprimir e colorir grátis.",
+                "image": "/assets/burro-geral.webp"
+            },
+            "burro-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Burro para Colorir",
+                    "description": "Desenhos de Burro para Colorir",
+                    "h1": "Desenhos de Burro para Colorir",
+                    "cardDescription": "Desenhos de Burro para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "guaxinim": {
+            "meta": {
+                "title": "Desenhos de Guaxinim para Colorir",
+                "description": "Explore nossa coleção de desenhos de guaxinim prontos para imprimir e colorir grátis.",
+                "h1": "Guaxinim",
+                "cardDescription": "Explore nossa coleção de desenhos de guaxinim prontos para imprimir e colorir grátis.",
+                "image": "/assets/guaxinim-geral.webp"
+            },
+            "guaxinim-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Guaxinim para Colorir",
+                    "description": "Desenhos de Guaxinim para Colorir",
+                    "h1": "Desenhos de Guaxinim para Colorir",
+                    "cardDescription": "Desenhos de Guaxinim para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "peixinho-dourado": {
+            "meta": {
+                "title": "Desenhos de Peixinho Dourado para Colorir",
+                "description": "Explore nossa coleção de desenhos de peixinho dourado prontos para imprimir e colorir grátis.",
+                "h1": "Peixinho Dourado",
+                "cardDescription": "Explore nossa coleção de desenhos de peixinho dourado prontos para imprimir e colorir grátis.",
+                "image": "/assets/peixinho-dourado-geral.webp"
+            },
+            "peixinho-dourado-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Peixinho Dourado para Colorir",
+                    "description": "Desenhos de Peixinho Dourado para Colorir",
+                    "h1": "Desenhos de Peixinho Dourado para Colorir",
+                    "cardDescription": "Desenhos de Peixinho Dourado para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "dragoes-de-komodo": {
+            "meta": {
+                "title": "Desenhos de Dragões de Komodo para Colorir",
+                "description": "Explore nossa coleção de desenhos de dragões de komodo prontos para imprimir e colorir grátis.",
+                "h1": "Dragões de Komodo",
+                "cardDescription": "Explore nossa coleção de desenhos de dragões de komodo prontos para imprimir e colorir grátis.",
+                "image": "/assets/dragoes-de-komodo-geral.webp"
+            },
+            "dragoes-de-komodo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Dragões de Komodo para Colorir",
+                    "description": "Desenhos de Dragões de Komodo para Colorir",
+                    "h1": "Desenhos de Dragões de Komodo para Colorir",
+                    "cardDescription": "Desenhos de Dragões de Komodo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "megalodonte": {
+            "meta": {
+                "title": "Desenhos de Megalodonte para Colorir",
+                "description": "Explore nossa coleção de desenhos de megalodonte prontos para imprimir e colorir grátis.",
+                "h1": "Megalodonte",
+                "cardDescription": "Explore nossa coleção de desenhos de megalodonte prontos para imprimir e colorir grátis.",
+                "image": "/assets/megalodonte-geral.webp"
+            },
+            "megalodonte-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Megalodonte para Colorir",
+                    "description": "Desenhos de Megalodonte para Colorir",
+                    "h1": "Desenhos de Megalodonte para Colorir",
+                    "cardDescription": "Desenhos de Megalodonte para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "capivara": {
+            "meta": {
+                "title": "Desenhos de Capivara para Colorir",
+                "description": "Explore nossa coleção de desenhos de capivara prontos para imprimir e colorir grátis.",
+                "h1": "Capivara",
+                "cardDescription": "Explore nossa coleção de desenhos de capivara prontos para imprimir e colorir grátis.",
+                "image": "/assets/capivara-geral.webp"
+            },
+            "capivara-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Capivara para Colorir",
+                    "description": "Desenhos de Capivara para Colorir",
+                    "h1": "Desenhos de Capivara para Colorir",
+                    "cardDescription": "Desenhos de Capivara para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "dachshund": {
+            "meta": {
+                "title": "Desenhos de Dachshund para Colorir",
+                "description": "Explore nossa coleção de desenhos de dachshund prontos para imprimir e colorir grátis.",
+                "h1": "Dachshund",
+                "cardDescription": "Explore nossa coleção de desenhos de dachshund prontos para imprimir e colorir grátis.",
+                "image": "/assets/dachshund-geral.webp"
+            },
+            "dachshund-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Dachshund para Colorir",
+                    "description": "Desenhos de Dachshund para Colorir",
+                    "h1": "Desenhos de Dachshund para Colorir",
+                    "cardDescription": "Desenhos de Dachshund para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "peixe-boi": {
+            "meta": {
+                "title": "Desenhos de Peixe-boi para Colorir",
+                "description": "Explore nossa coleção de desenhos de peixe-boi prontos para imprimir e colorir grátis.",
+                "h1": "Peixe-boi",
+                "cardDescription": "Explore nossa coleção de desenhos de peixe-boi prontos para imprimir e colorir grátis.",
+                "image": "/assets/peixe-boi-geral.webp"
+            },
+            "peixe-boi-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Peixe-boi para Colorir",
+                    "description": "Desenhos de Peixe-boi para Colorir",
+                    "h1": "Desenhos de Peixe-boi para Colorir",
+                    "cardDescription": "Desenhos de Peixe-boi para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "camelo": {
+            "meta": {
+                "title": "Desenhos de Camelo para Colorir",
+                "description": "Explore nossa coleção de desenhos de camelo prontos para imprimir e colorir grátis.",
+                "h1": "Camelo",
+                "cardDescription": "Explore nossa coleção de desenhos de camelo prontos para imprimir e colorir grátis.",
+                "image": "/assets/camelo-geral.webp"
+            },
+            "camelo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Camelo para Colorir",
+                    "description": "Desenhos de Camelo para Colorir",
+                    "h1": "Desenhos de Camelo para Colorir",
+                    "cardDescription": "Desenhos de Camelo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "caracol": {
+            "meta": {
+                "title": "Desenhos de Caracol para Colorir",
+                "description": "Explore nossa coleção de desenhos de caracol prontos para imprimir e colorir grátis.",
+                "h1": "Caracol",
+                "cardDescription": "Explore nossa coleção de desenhos de caracol prontos para imprimir e colorir grátis.",
+                "image": "/assets/caracol-geral.webp"
+            },
+            "caracol-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Caracol para Colorir",
+                    "description": "Desenhos de Caracol para Colorir",
+                    "h1": "Desenhos de Caracol para Colorir",
+                    "cardDescription": "Desenhos de Caracol para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lagosta": {
+            "meta": {
+                "title": "Desenhos de Lagosta para Colorir",
+                "description": "Explore nossa coleção de desenhos de lagosta prontos para imprimir e colorir grátis.",
+                "h1": "Lagosta",
+                "cardDescription": "Explore nossa coleção de desenhos de lagosta prontos para imprimir e colorir grátis.",
+                "image": "/assets/lagosta-geral.webp"
+            },
+            "lagosta-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lagosta para Colorir",
+                    "description": "Desenhos de Lagosta para Colorir",
+                    "h1": "Desenhos de Lagosta para Colorir",
+                    "cardDescription": "Desenhos de Lagosta para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "corvo": {
+            "meta": {
+                "title": "Desenhos de Corvo para Colorir",
+                "description": "Explore nossa coleção de desenhos de corvo prontos para imprimir e colorir grátis.",
+                "h1": "Corvo",
+                "cardDescription": "Explore nossa coleção de desenhos de corvo prontos para imprimir e colorir grátis.",
+                "image": "/assets/corvo-geral.webp"
+            },
+            "corvo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Corvo para Colorir",
+                    "description": "Desenhos de Corvo para Colorir",
+                    "h1": "Desenhos de Corvo para Colorir",
+                    "cardDescription": "Desenhos de Corvo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "morsa": {
+            "meta": {
+                "title": "Desenhos de Morsa para Colorir",
+                "description": "Explore nossa coleção de desenhos de morsa prontos para imprimir e colorir grátis.",
+                "h1": "Morsa",
+                "cardDescription": "Explore nossa coleção de desenhos de morsa prontos para imprimir e colorir grátis.",
+                "image": "/assets/morsa-geral.webp"
+            },
+            "morsa-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Morsa para Colorir",
+                    "description": "Desenhos de Morsa para Colorir",
+                    "h1": "Desenhos de Morsa para Colorir",
+                    "cardDescription": "Desenhos de Morsa para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "animais-da-australia": {
+            "meta": {
+                "title": "Desenhos de Animais da Austrália para Colorir",
+                "description": "Explore nossa coleção de desenhos de animais da austrália prontos para imprimir e colorir grátis.",
+                "h1": "Animais da Austrália",
+                "cardDescription": "Explore nossa coleção de desenhos de animais da austrália prontos para imprimir e colorir grátis.",
+                "image": "/assets/animais-da-australia-geral.webp"
+            },
+            "animais-da-australia-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Animais da Austrália para Colorir",
+                    "description": "Desenhos de Animais da Austrália para Colorir",
+                    "h1": "Desenhos de Animais da Austrália para Colorir",
+                    "cardDescription": "Desenhos de Animais da Austrália para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "galo": {
+            "meta": {
+                "title": "Desenhos de Galo para Colorir",
+                "description": "Explore nossa coleção de desenhos de galo prontos para imprimir e colorir grátis.",
+                "h1": "Galo",
+                "cardDescription": "Explore nossa coleção de desenhos de galo prontos para imprimir e colorir grátis.",
+                "image": "/assets/galo-geral.webp"
+            },
+            "galo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Galo para Colorir",
+                    "description": "Desenhos de Galo para Colorir",
+                    "h1": "Desenhos de Galo para Colorir",
+                    "cardDescription": "Desenhos de Galo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "animais-do-zoologico": {
+            "meta": {
+                "title": "Desenhos de Animais do Zoológico para Colorir",
+                "description": "Explore nossa coleção de desenhos de animais do zoológico prontos para imprimir e colorir grátis.",
+                "h1": "Animais do Zoológico",
+                "cardDescription": "Explore nossa coleção de desenhos de animais do zoológico prontos para imprimir e colorir grátis.",
+                "image": "/assets/animais-do-zoologico-geral.webp"
+            },
+            "animais-do-zoologico-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Animais do Zoológico para Colorir",
+                    "description": "Desenhos de Animais do Zoológico para Colorir",
+                    "h1": "Desenhos de Animais do Zoológico para Colorir",
+                    "cardDescription": "Desenhos de Animais do Zoológico para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "animais-do-artico": {
+            "meta": {
+                "title": "Desenhos de Animais do Ártico para Colorir",
+                "description": "Explore nossa coleção de desenhos de animais do ártico prontos para imprimir e colorir grátis.",
+                "h1": "Animais do Ártico",
+                "cardDescription": "Explore nossa coleção de desenhos de animais do ártico prontos para imprimir e colorir grátis.",
+                "image": "/assets/animais-do-artico-geral.webp"
+            },
+            "animais-do-artico-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Animais do Ártico para Colorir",
+                    "description": "Desenhos de Animais do Ártico para Colorir",
+                    "h1": "Desenhos de Animais do Ártico para Colorir",
+                    "cardDescription": "Desenhos de Animais do Ártico para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "lula": {
+            "meta": {
+                "title": "Desenhos de Lula para Colorir",
+                "description": "Explore nossa coleção de desenhos de lula prontos para imprimir e colorir grátis.",
+                "h1": "Lula",
+                "cardDescription": "Explore nossa coleção de desenhos de lula prontos para imprimir e colorir grátis.",
+                "image": "/assets/lula-geral.webp"
+            },
+            "lula-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Lula para Colorir",
+                    "description": "Desenhos de Lula para Colorir",
+                    "h1": "Desenhos de Lula para Colorir",
+                    "cardDescription": "Desenhos de Lula para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "verme": {
+            "meta": {
+                "title": "Desenhos de Verme para Colorir",
+                "description": "Explore nossa coleção de desenhos de verme prontos para imprimir e colorir grátis.",
+                "h1": "Verme",
+                "cardDescription": "Explore nossa coleção de desenhos de verme prontos para imprimir e colorir grátis.",
+                "image": "/assets/verme-geral.webp"
+            },
+            "verme-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Verme para Colorir",
+                    "description": "Desenhos de Verme para Colorir",
+                    "h1": "Desenhos de Verme para Colorir",
+                    "cardDescription": "Desenhos de Verme para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "robin": {
+            "meta": {
+                "title": "Desenhos de Robin para Colorir",
+                "description": "Explore nossa coleção de desenhos de robin prontos para imprimir e colorir grátis.",
+                "h1": "Robin",
+                "cardDescription": "Explore nossa coleção de desenhos de robin prontos para imprimir e colorir grátis.",
+                "image": "/assets/robin-geral.webp"
+            },
+            "robin-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Robin para Colorir",
+                    "description": "Desenhos de Robin para Colorir",
+                    "h1": "Desenhos de Robin para Colorir",
+                    "cardDescription": "Desenhos de Robin para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "peixe": {
+            "meta": {
+                "title": "Desenhos de Peixe para Colorir",
+                "description": "Explore nossa coleção de desenhos de peixe prontos para imprimir e colorir grátis.",
+                "h1": "Peixe",
+                "cardDescription": "Explore nossa coleção de desenhos de peixe prontos para imprimir e colorir grátis.",
+                "image": "/assets/peixe-geral.webp"
+            },
+            "peixe-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Peixe para Colorir",
+                    "description": "Desenhos de Peixe para Colorir",
+                    "h1": "Desenhos de Peixe para Colorir",
+                    "cardDescription": "Desenhos de Peixe para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "jaguar": {
+            "meta": {
+                "title": "Desenhos de Jaguar para Colorir",
+                "description": "Explore nossa coleção de desenhos de jaguar prontos para imprimir e colorir grátis.",
+                "h1": "Jaguar",
+                "cardDescription": "Explore nossa coleção de desenhos de jaguar prontos para imprimir e colorir grátis.",
+                "image": "/assets/jaguar-geral.webp"
+            },
+            "jaguar-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Jaguar para Colorir",
+                    "description": "Desenhos de Jaguar para Colorir",
+                    "h1": "Desenhos de Jaguar para Colorir",
+                    "cardDescription": "Desenhos de Jaguar para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "onca": {
+            "meta": {
+                "title": "Desenhos de Onça para Colorir",
+                "description": "Explore nossa coleção de desenhos de onça prontos para imprimir e colorir grátis.",
+                "h1": "Onça",
+                "cardDescription": "Explore nossa coleção de desenhos de onça prontos para imprimir e colorir grátis.",
+                "image": "/assets/onca-geral.webp"
+            },
+            "onca-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Onça para Colorir",
+                    "description": "Desenhos de Onça para Colorir",
+                    "h1": "Desenhos de Onça para Colorir",
+                    "cardDescription": "Desenhos de Onça para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "leopardo": {
+            "meta": {
+                "title": "Desenhos de Leopardo para Colorir",
+                "description": "Explore nossa coleção de desenhos de leopardo prontos para imprimir e colorir grátis.",
+                "h1": "Leopardo",
+                "cardDescription": "Explore nossa coleção de desenhos de leopardo prontos para imprimir e colorir grátis.",
+                "image": "/assets/leopardo-geral.webp"
+            },
+            "leopardo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Leopardo para Colorir",
+                    "description": "Desenhos de Leopardo para Colorir",
+                    "h1": "Desenhos de Leopardo para Colorir",
+                    "cardDescription": "Desenhos de Leopardo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tamandua": {
+            "meta": {
+                "title": "Desenhos de Tamanduá para Colorir",
+                "description": "Explore nossa coleção de desenhos de tamanduá prontos para imprimir e colorir grátis.",
+                "h1": "Tamanduá",
+                "cardDescription": "Explore nossa coleção de desenhos de tamanduá prontos para imprimir e colorir grátis.",
+                "image": "/assets/tamandua-geral.webp"
+            },
+            "tamandua-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tamanduá para Colorir",
+                    "description": "Desenhos de Tamanduá para Colorir",
+                    "h1": "Desenhos de Tamanduá para Colorir",
+                    "cardDescription": "Desenhos de Tamanduá para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "sapo": {
+            "meta": {
+                "title": "Desenhos de Sapo para Colorir",
+                "description": "Explore nossa coleção de desenhos de sapo prontos para imprimir e colorir grátis.",
+                "h1": "Sapo",
+                "cardDescription": "Explore nossa coleção de desenhos de sapo prontos para imprimir e colorir grátis.",
+                "image": "/assets/sapo-geral.webp"
+            },
+            "sapo-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Sapo para Colorir",
+                    "description": "Desenhos de Sapo para Colorir",
+                    "h1": "Desenhos de Sapo para Colorir",
+                    "cardDescription": "Desenhos de Sapo para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "jacare": {
+            "meta": {
+                "title": "Desenhos de Jacaré para Colorir",
+                "description": "Explore nossa coleção de desenhos de jacaré prontos para imprimir e colorir grátis.",
+                "h1": "Jacaré",
+                "cardDescription": "Explore nossa coleção de desenhos de jacaré prontos para imprimir e colorir grátis.",
+                "image": "/assets/jacare-geral.webp"
+            },
+            "jacare-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Jacaré para Colorir",
+                    "description": "Desenhos de Jacaré para Colorir",
+                    "h1": "Desenhos de Jacaré para Colorir",
+                    "cardDescription": "Desenhos de Jacaré para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "gaviao": {
+            "meta": {
+                "title": "Desenhos de Gavião para Colorir",
+                "description": "Explore nossa coleção de desenhos de gavião prontos para imprimir e colorir grátis.",
+                "h1": "Gavião",
+                "cardDescription": "Explore nossa coleção de desenhos de gavião prontos para imprimir e colorir grátis.",
+                "image": "/assets/gaviao-geral.webp"
+            },
+            "gaviao-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Gavião para Colorir",
+                    "description": "Desenhos de Gavião para Colorir",
+                    "h1": "Desenhos de Gavião para Colorir",
+                    "cardDescription": "Desenhos de Gavião para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "urubu": {
+            "meta": {
+                "title": "Desenhos de Urubu para Colorir",
+                "description": "Explore nossa coleção de desenhos de urubu prontos para imprimir e colorir grátis.",
+                "h1": "Urubu",
+                "cardDescription": "Explore nossa coleção de desenhos de urubu prontos para imprimir e colorir grátis.",
+                "image": "/assets/urubu-geral.webp"
+            },
+            "urubu-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Urubu para Colorir",
+                    "description": "Desenhos de Urubu para Colorir",
+                    "h1": "Desenhos de Urubu para Colorir",
+                    "cardDescription": "Desenhos de Urubu para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tuiuiu": {
+            "meta": {
+                "title": "Desenhos de Tuiuiú para Colorir",
+                "description": "Explore nossa coleção de desenhos de tuiuiú prontos para imprimir e colorir grátis.",
+                "h1": "Tuiuiú",
+                "cardDescription": "Explore nossa coleção de desenhos de tuiuiú prontos para imprimir e colorir grátis.",
+                "image": "/assets/tuiuiu-geral.webp"
+            },
+            "tuiuiu-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tuiuiú para Colorir",
+                    "description": "Desenhos de Tuiuiú para Colorir",
+                    "h1": "Desenhos de Tuiuiú para Colorir",
+                    "cardDescription": "Desenhos de Tuiuiú para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "anta": {
+            "meta": {
+                "title": "Desenhos de Anta para Colorir",
+                "description": "Explore nossa coleção de desenhos de anta prontos para imprimir e colorir grátis.",
+                "h1": "Anta",
+                "cardDescription": "Explore nossa coleção de desenhos de anta prontos para imprimir e colorir grátis.",
+                "image": "/assets/anta-geral.webp"
+            },
+            "anta-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Anta para Colorir",
+                    "description": "Desenhos de Anta para Colorir",
+                    "h1": "Desenhos de Anta para Colorir",
+                    "cardDescription": "Desenhos de Anta para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "arara": {
+            "meta": {
+                "title": "Desenhos de Arara para Colorir",
+                "description": "Explore nossa coleção de desenhos de arara prontos para imprimir e colorir grátis.",
+                "h1": "Arara",
+                "cardDescription": "Explore nossa coleção de desenhos de arara prontos para imprimir e colorir grátis.",
+                "image": "/assets/placeholder.webp"
+            },
+            "arara-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Arara para Colorir",
+                    "description": "Desenhos de Arara para Colorir",
+                    "h1": "Desenhos de Arara para Colorir",
+                    "cardDescription": "Desenhos de Arara para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        },
+        "tatu": {
+            "meta": {
+                "title": "Desenhos de Tatu para Colorir",
+                "description": "Explore nossa coleção de desenhos de tatu prontos para imprimir e colorir grátis.",
+                "h1": "Tatu",
+                "cardDescription": "Explore nossa coleção de desenhos de tatu prontos para imprimir e colorir grátis.",
+                "image": "/assets/tatu-geral.webp"
+            },
+            "tatu-para-colorir": {
+                "meta": {
+                    "title": "Desenhos de Tatu para Colorir",
+                    "description": "Desenhos de Tatu para Colorir",
+                    "h1": "Desenhos de Tatu para Colorir",
+                    "cardDescription": "Desenhos de Tatu para Colorir",
+                    "image": "/placeholder.webp",
+                    "content": "Nossa coleção exclusiva de desenhos prontos para colorir de forma gratuita!"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Língua Portuguesa",
+    "title": "Atividades de Alfabetização e Língua Portuguesa",
+    "alt": "Caderno pautado com letras do alfabeto lúdicas e coloridas",
+    "desc": "Exercícios prontos para imprimir voltados para alfabetização, caligrafia, interpretação de texto e gramática prática.",
+    "image": "/placeholder.webp",
+    "slug": "/atividades/lingua-portuguesa",
+    "textoBotao": "Ver Materiais",
+    "isAds": false
+  },
+  {
+    "label": "Matemática",
+    "title": "Desafios e Atividades de Matemática",
+    "alt": "Criança sorridente resolvendo contas de matemática com lápis de cor",
+    "desc": "Folhas de reforço escolar com operações de adição, subtração, multiplicação, frações e raciocínio lógico.",
+    "image": "/placeholder.webp",
+    "slug": "/atividades/matematica",
+    "textoBotao": "Baixar PDF",
+    "isAds": false
+  },
+  {
+    "label": "Ciências",
+    "title": "Atividades e Experimentos de Ciências",
+    "alt": "Ilustração infantil do sistema solar, plantas e tubos de ensaio",
+    "desc": "Materiais didáticos criativos sobre o corpo humano, reino animal, meio ambiente e o ecossistema terrestre.",
+    "image": "/placeholder.webp",
+    "slug": "/atividades/ciencias",
+    "textoBotao": "Acessar",
+    "isAds": false
+  },
+  {
+    "label": "História",
+    "title": "Atividades de História e Linha do Tempo",
+    "alt": "Desenho de uma caravela antiga e uma ampulheta sobre um mapa mundi",
+    "desc": "Exercícios dinâmicos sobre história do Brasil, grandes navegações, marcos históricos e evolução da sociedade.",
+    "image": "/placeholder.webp",
+    "slug": "/atividades/historia",
+    "textoBotao": "Ver Conteúdo",
+    "isAds": false
+  },
+  {
+    "label": "Geografia",
+    "title": "Atividades de Geografia e Mapas",
+    "alt": "Globo terrestre colorido ao lado de uma bússola de brinquedo",
+    "desc": "Materiais de apoio sobre relevo, clima, cartografia elemental, estados brasileiros e a relação do homem com o espaço.",
+    "image": "/placeholder.webp",
+    "slug": "/atividades/geografia",
+    "textoBotao": "Explorar",
+    "isAds": false
+  },
+  {
+    "label": "Apoio Pedagógico",
+    "title": "Recursos de Apoio Pedagógico e Inclusão",
+    "alt": "Crianças unidas montando peças de quebra-cabeça grandes e coloridas",
+    "desc": "Atividades adaptadas para educação inclusiva, coordenação motora fina, atenção, foco e reforço escolar especializado.",
+    "image": "/placeholder.webp",
+    "slug": "/atividades/apoio-pedagogico",
+    "textoBotao": "Ver Recursos",
+    "isAds": false
+  }
+]

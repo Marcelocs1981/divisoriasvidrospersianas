@@ -1,0 +1,231 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/BaseLayout.astro";
+import LayoutCategoria from "../components/LayoutCategoria.astro";
+import LayoutSubcategoria from "../components/LayoutSubcategoria.astro";
+import LayoutDownload from "../components/LayoutDownload.astro";
+
+// Importa o seu JSON centralizado
+import meta from "../data/metadata.json";
+import { getRouteSlug } from "../utils/routeAlias";
+
+export async function getStaticPaths() {
+    const arquivos = await getCollection("desenhos");
+    let todosOsItens = arquivos.flatMap((arq) => {
+        // Se for o animais.json estruturado (um objeto), nós extraímos os desenhos planos de dentro dele
+        if (arq.id.includes("animais") && !Array.isArray(arq.data)) {
+            const flatItems: any[] = [];
+            const root = arq.data["animais"] || {};
+
+            // Varre a árvore aninhada
+            Object.keys(root).forEach(bichoKey => {
+                if (bichoKey !== 'meta') {
+                    const bichoNode = root[bichoKey];
+                    Object.keys(bichoNode).forEach(key => {
+                        if (key !== 'meta') {
+                            const node = bichoNode[key];
+                            // Se for uma raça (tem filhos e possui meta, ex: golden-retriever)
+                            if (node && node.meta && !node.meta.content) {
+                                Object.keys(node).forEach(desId => {
+                                    if (desId !== 'meta') {
+                                        const des = node[desId];
+                                        flatItems.push({
+                                            id: desId,
+                                            titulo: des.meta.h1,
+                                            seoTitle: des.meta.title,
+                                            categoria: 'desenhos-animais',
+                                            subcategorias: ['desenhos-cachorros', 'desenhos-' + key],
+                                            nicho: desId,
+                                            imagemPreview: des.meta.image
+                                        });
+                                    }
+                                });
+                            } else if (node && node.meta) {
+                                // É um desenho direto sob a subcategoria bicho (ex: gatos-para-colorir)
+                                flatItems.push({
+                                    id: key,
+                                    titulo: node.meta.h1,
+                                    seoTitle: node.meta.title,
+                                    categoria: 'desenhos-animais',
+                                    subcategorias: ['desenhos-' + bichoKey],
+                                    nicho: key,
+                                    imagemPreview: node.meta.image
+                                });
+                            }
+                        }
+                    });
+                }
+            });
+
+            return flatItems;
+        }
+        return arq.data;
+    });
+
+    const todasAsRotas: {
+        params: { slug: string };
+        props: Record<string, any>;
+    }[] = [];
+    const usedSlugs = new Set<string>();
+const metaAny = meta as any;
+
+    const pushRoute = (
+        slug: string,
+        props: Record<string, any>,
+    ) => {
+        if (usedSlugs.has(slug)) return;
+        usedSlugs.add(slug);
+        todasAsRotas.push({ params: { slug }, props });
+    };
+
+    const categoriasUnicas = [
+        ...new Set(todosOsItens.map((i) => i.categoria).filter(Boolean)),
+    ];
+
+    const subcategoriasUnicas = [
+        ...new Set(
+            todosOsItens.flatMap((i) => i.subcategorias || []).filter(Boolean),
+        ),
+    ];
+
+    // Rota Hub Geral
+    pushRoute("desenhos-para-colorir", {
+        tipoLayout: "hub-geral",
+        listagem: categoriasUnicas,
+        termo: "desenhos-para-colorir",
+    });
+
+    // Rotas de Categoria
+    categoriasUnicas.forEach((cat) => {
+        const itensDaCat = todosOsItens.filter(
+            (item) => item.categoria === cat,
+        );
+        pushRoute(getRouteSlug(cat), {
+            tipoLayout: "categoria-principal",
+            listagem: itensDaCat,
+            termo: cat,
+        });
+    });
+
+    // Rotas de Subcategoria
+    subcategoriasUnicas.forEach((sub) => {
+        let itensDaSub = todosOsItens.filter((item) =>
+            item.subcategorias?.includes(sub),
+        );
+
+        // Se o animais.json estruturado tiver essa subcategoria, adaptamos para as raças e desenhos
+        // de acordo com a nova árvore aninhada
+        const bichoSemPrefixo = sub.replace('desenhos-', '');
+
+        // Verifica se a subcategoria é um bicho-pai (ex: desenhos-cachorros, desenhos-gatos, desenhos-dinossauros)
+        const sub_animais_meta = (meta as any).subcategorias || {};
+        const filhosObj = Object.entries(sub_animais_meta).filter(
+            ([key, m]: [string, any]) => m.parent === sub
+        );
+        let temFilhos = filhosObj.length > 0;
+        let listagemCategoria = itensDaSub;
+
+        // Se estamos em cachorros, por exemplo, extraímos os filhos que são as raças reais cadastradas na árvore do animais.json
+        if (sub === 'desenhos-cachorros') {
+            temFilhos = true;
+            const racaKeys = [
+                'desenhos-huskies', 'desenhos-pugs', 'desenhos-pastor-alemao', 'desenhos-corgis',
+                'desenhos-chihuahua', 'desenhos-buldogue-frances', 'desenhos-golden-retriever',
+                'desenhos-pitbull', 'desenhos-poodle', 'desenhos-pinscher', 'desenhos-fila',
+                'desenhos-chihuahua-dog', 'desenhos-salsicha', 'desenhos-beagle', 'desenhos-labrador',
+                'desenhos-rottweiler', 'desenhos-cocker', 'desenhos-boxer', 'desenhos-doberman',
+                'desenhos-shih-tzu', 'desenhos-bull-terrier', 'desenhos-sao-bernardo', 'desenhos-chow-chow',
+                'desenhos-cane-corso', 'desenhos-border-collie', 'desenhos-dog-alemao', 'desenhos-maltes',
+                'desenhos-lulu-da-pomerania', 'desenhos-pug'
+            ];
+            listagemCategoria = racaKeys.map(k => ({ subcategorias: [k] })) as any;
+        } else if (temFilhos) {
+            listagemCategoria = filhosObj.map(([key, _]) => ({ subcategorias: [key] })) as any;
+        }
+
+        const propsSub = {
+            tipoLayout: temFilhos ? "categoria-principal" : "hub-nicho-longo",
+            listagem: listagemCategoria,
+            termo: sub,
+};
+
+        pushRoute(getRouteSlug(sub), propsSub);
+    });
+
+    // Rotas de Produto
+    todosOsItens.forEach((item) => {
+        pushRoute(item.id, {
+            tipoLayout: "produto-final",
+            dados: item,
+            relacionados: todosOsItens
+                .filter(
+                    (des) =>
+                        des.categoria === item.categoria &&
+                        des.id !== item.id,
+        )
+                .slice(0, 3),
+        });
+    });
+
+    return todasAsRotas;
+    }
+
+const { tipoLayout, dados, termo } = Astro.props;
+
+const metaAny = meta as any;
+
+const formatSeoTitle = (seo: string) => {
+    if (/imprimir/i.test(seo)) {
+        return seo;
+    }
+    return `${seo} e Imprimir em PDF Grátis`;
+};
+
+const normalizeCategoryTitle = (termo: string) => {
+    const config = metaAny.categorias?.[termo];
+    const rawTitle = config?.h1 || termo.replace(/-/g, " ");
+    const tituloLimpo = rawTitle
+        .replace(/\s+para\s+colorir$/i, "")
+        .replace(/\s+para\s+imprimir$/i, "")
+        .trim();
+    return `${tituloLimpo} para Imprimir em PDF Grátis`;
+};
+
+const getSEO = (termo: string) => {
+    if (termo === "desenhos-para-colorir") {
+        return "Desenhos para Colorir e Imprimir em PDF grátis";
+    }
+
+    // Acessa as categorias do metadata.json
+    if (metaAny.categorias && metaAny.categorias[termo]) {
+        return normalizeCategoryTitle(termo);
+    }
+
+    // Acessa as subcategorias do metadata.json
+    if (metaAny.subcategorias && metaAny.subcategorias[termo]) {
+        return formatSeoTitle(metaAny.subcategorias[termo].seo);
+    }
+
+    const nomeLimpo = termo.replace(/^desenhos-/, "").replace(/-/g, " ").replace(/ para colorir$/i, "");
+    return `Desenhos de ${nomeLimpo.charAt(0).toUpperCase() + nomeLimpo.slice(1)} para Colorir e Imprimir em PDF Grátis`;
+};
+
+const tituloFinal =
+    tipoLayout === "produto-final"
+        ? dados.seoTitle || dados.titulo
+        : getSEO(termo);
+---
+
+<Layout seo={{ title: tituloFinal }}>
+    {
+        (tipoLayout === "categoria-principal" ||
+            tipoLayout === "hub-geral") && <LayoutCategoria {...Astro.props} />
+    }
+    {
+        tipoLayout === "hub-nicho-longo" && (
+            <LayoutSubcategoria {...Astro.props} />
+        )
+    }
+    {tipoLayout === "produto-final" && <LayoutDownload dados={dados} />}
+</Layout>
+

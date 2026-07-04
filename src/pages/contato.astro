@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import ContatoSection from "../components/Contato.astro";
+import Hero_Institucional from "../components/Hero_Institucional.astro";
+---
+
+<Layout
+  seo={{
+    title: "Contato | imprimiprinter",
+    description:
+      "Entre em contato conosco para solicitar um orçamento personalizado ou esclarecer dúvidas sobre nossos produtos e serviços. Estamos prontos para ajudar a transformar seu ambiente corporativo com nossas divisórias de vidro com persiana embutida.",
+    datePublished: "2026-05-22T14:24:08Z",
+  }}
+>
+  <Hero_Institucional
+    title="Entre em Contato Conosco"
+    breadcrumb="Contato"
+    desktopImage="/assets/banner_contato_1920px.webp"
+    mobileImage="/assets/banner_contato_768px.webp"
+  />
+
+  <ContatoSection />
+</Layout>

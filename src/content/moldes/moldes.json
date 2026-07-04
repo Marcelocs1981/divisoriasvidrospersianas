@@ -1,0 +1,142 @@
+[
+  {
+    "label": "Molde de Letras",
+    "title": "Moldes de Letras para Imprimir",
+    "alt": "Letras do alfabeto em moldes grandes vazados para recortar e feltro",
+    "desc": "Alfabetos completos em diversos tamanhos e fontes para painéis escolares, cartazes, decoração de salas de aula e artesanato.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/letras",
+    "textoBotao": "Ver Moldes",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Números",
+    "title": "Moldes de Números para Imprimir",
+    "alt": "Números de 0 a 9 em tamanhos grandes para moldes e atividades",
+    "desc": "Números grandes e estilizados ideais para e.v.a, feltro, contagem lúdica na educação infantil e decoração de festas de aniversário.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/numeros",
+    "textoBotao": "Baixar Moldes",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Heróis",
+    "title": "Moldes de Heróis para Imprimir",
+    "alt": "Silhuetas e símbolos de super-heróis em moldes vazados",
+    "desc": "Máscaras, símbolos e silhuetas dos heróis favoritos das crianças para criar lembrancinhas de aniversário, decorações e fantasias.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/herois",
+    "textoBotao": "Acessar",
+    "isAds": false
+  },
+  {
+    "label": "Datas Comemorativas",
+    "title": "Moldes de Datas Comemorativas",
+    "alt": "Moldes temáticos de Natal, Dia das Mães e Páscoa para feltro e papel",
+    "desc": "Recursos para o ano letivo inteiro: moldes prontos para o Dia dos Pais, Páscoa, Festa Junina, Natal e eventos escolares.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/datas-comemorativas",
+    "textoBotao": "Ver Modelos",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Festas",
+    "title": "Moldes para Decoração de Festas",
+    "alt": "Moldes de caixinhas decorativas, bandeirolas e toppers de bolo",
+    "desc": "Acervo com caixas personalizadas, toppers, bandeirolas e adereços em papel ou e.v.a para montar festas infantis completas.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/festas",
+    "textoBotao": "Explorar",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Flores",
+    "title": "Moldes de Flores para Imprimir",
+    "alt": "Pétalas e moldes de flores variadas para artesanato em papel e e.v.a",
+    "desc": "Flores em tamanho gigante, tulipas, rosas e girassóis para montagem de painéis de primavera e murais decorativos.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/flores",
+    "textoBotao": "Ver Flores",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Folhas",
+    "title": "Moldes de Folhas para Imprimir",
+    "alt": "Diversos formatos de folhas de árvores e plantas para moldes",
+    "desc": "Silhuetas de folhas tropicais, costela-de-adão e folhagens variadas para complementar murais escolares e arranjos artesanais.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/folhas",
+    "textoBotao": "Baixar PDF",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Animais",
+    "title": "Moldes de Animais para Imprimir",
+    "alt": "Contornos de animais da fazenda e safari para feltro e e.v.a",
+    "desc": "Moldes de bichinhos do safari, fazendinha, fundo do mar e floresta para confecção de brinquedos pedagógicos e murais.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/animais",
+    "textoBotao": "Ver Bichinhos",
+    "isAds": false
+  },
+  {
+    "label": "Jardim Encantado",
+    "title": "Moldes do Tema Jardim Encantado",
+    "alt": "Moldes de borboletas, passarinhos e cogumelos fofos para recortar",
+    "desc": "Elementos mágicos como borboletas, passarinhos, joaninhas, caracóis e fadas para decorações delicadas e oficinas infantis.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/jardim-encantado",
+    "textoBotao": "Ver Tema",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Laços",
+    "title": "Moldes de Laços para Imprimir",
+    "alt": "Partes de laços de papel e e.v.a para recortar e colar",
+    "desc": "Modelos em várias camadas para criar laços de cabelo, apliques em caixas de presente e decorações de lembrancinhas.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/lacos",
+    "textoBotao": "Acessar PDF",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Acessórios",
+    "title": "Moldes de Acessórios Criativos",
+    "alt": "Óculos divertidos, gravatas e coroas em moldes para recortar",
+    "desc": "Coroas de príncipe/princesa, gravatas, óculos divertidos e chapéus para dinâmicas em sala de aula e festas escolares.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/acessorios",
+    "textoBotao": "Explorar",
+    "isAds": false
+  },
+  {
+    "label": "Moldes Religiosos",
+    "title": "Moldes Religiosos para Imprimir",
+    "alt": "Anjinhos, pombas da paz e símbolos religiosos para feltro e papel",
+    "desc": "Modelos de anjos, presépios e figuras bíblicas para atividades de ensino religioso, batizados e catequese.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/religiosos",
+    "textoBotao": "Ver Materiais",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Mãos",
+    "title": "Moldes de Mãos para Imprimir",
+    "alt": "Contorno de mãos humanas abertas e em aceno para atividades",
+    "desc": "Silhuetas de mãos em tamanhos infantil e adulto, ideais para murais sobre cooperação, árvore da amizade e artes.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/maos",
+    "textoBotao": "Baixar",
+    "isAds": false
+  },
+  {
+    "label": "Molde de Pés",
+    "title": "Moldes de Pés para Imprimir",
+    "alt": "Diversos formatos de pegadas e contornos de pés para dinâmicas infantis",
+    "desc": "Pegadas divertidas e contornos de pés perfeitos para jogos de amarelinha, circuitos psicomotores e decoração no chão.",
+    "image": "/placeholder.webp",
+    "slug": "/moldes/pes",
+    "textoBotao": "Ver Pegadas",
+    "isAds": false
+  }
+]

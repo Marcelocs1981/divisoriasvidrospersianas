@@ -1,0 +1,144 @@
+---
+import { Image } from "astro:assets";
+import dadosIntro from "../content/intro_categorias.json";
+
+// 1. Tipagem estrita das propriedades aceitas pelo componente
+interface Props {
+    categoria:
+        | "desenhos"
+        | "papelaria"
+        | "educacao-infantil"
+        | "atividades-escolares"
+        | "moldes";
+}
+
+const { categoria } = Astro.props;
+const data = dadosIntro[categoria];
+
+if (!data) return null;
+
+// 2. Mapeamento dinâmico automático das imagens em /src/assets/
+const imagens = import.meta.glob<{ default: ImageMetadata }>(
+    "../assets/*.{jpeg,jpg,png,gif,webp}",
+);
+const caminhoDesktop = `../assets/${data.imgDesktop}`;
+const caminhoMobile = `../assets/${data.imgMobile}`;
+const img_intro_categorias_desktop = imagens[caminhoDesktop]
+    ? (await imagens[caminhoDesktop]()).default
+    : null;
+const img_intro_categorias_mobile = imagens[caminhoMobile]
+    ? (await imagens[caminhoMobile]()).default
+    : null;
+---
+
+<section
+    id={`intro-${categoria}`}
+    class="section-padrao intro-categorias-bg"
+    aria-labelledby={`intro-heading-${categoria}`}
+>
+    <div class="container">
+        <div class="content-grid-intro-categorias">
+            <article class="intro-categorias-info">
+                <header>
+                    <span class="tag">{data.tag}</span>
+                    <h2
+                        id={`intro-heading-${categoria}`}
+                        set:html={data.titulo}
+                    />
+                </header>
+
+                <p set:html={data.texto} />
+            </article>
+
+            {
+                img_intro_categorias_desktop && img_intro_categorias_mobile && (
+                    /* .zoom-wrap e .zoom-img já aplicam nativamente o fundo branco, 
+                       a borda sutil, o border-radius e o efeito de hover com scale(1.04) */
+                    <picture class="zoom-wrap intro-categorias-media">
+                        <source
+                            media="(max-width: 768px)"
+                            srcset={img_intro_categorias_mobile.src}
+                            type="image/webp"
+                        />
+                        <Image
+                            src={img_intro_categorias_desktop}
+                            alt={data.altImagem}
+                            loading="lazy"
+                            decoding="async"
+                            width={1200}
+                            height={675}
+                            class="zoom-img"
+                        />
+                    </picture>
+                )
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Fundo da seção em Branco Puro para criar contraste elegante com o fundo cinza do body */
+    .intro-categorias-bg {
+        background-color: var(--bg-main);
+    }
+
+    /* ESTRUTURA DO GRID EM DESKTOP */
+    .content-grid-intro-categorias {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    /* Ajuste fino do cabeçalho local baseado no text-main */
+    .intro-categorias-info h2 {
+        margin-bottom: 35px;
+        color: var(--text-main);
+    }
+
+    /* Estilização das palavras de destaque injetadas pelo JSON via :global */
+    .intro-categorias-info :global(.goldgradient) {
+        font-weight: 700;
+        /* Não precisa de propriedades de cor aqui, o .goldgradient do global.css já faz o texto ficar transparente com o degradê corporativo */
+    }
+
+    .intro-categorias-info :global(.gradiente-infantil) {
+        font-weight: 700;
+        /* O global.css já gerencia o degradê infantil automaticamente aqui também */
+    }
+
+    /* COMPORTAMENTO DA MÍDIA (Garante o encaixe na box do .zoom-wrap) */
+    .intro-categorias-media,
+    .intro-categorias-media img {
+        width: 100%;
+        display: block;
+    }
+
+    .intro-categorias-media img {
+        height: auto;
+        object-fit: cover;
+        content-visibility: auto;
+        contain-intrinsic-size: 1200px 675px;
+        /* O border-radius agora é herdado com perfeição do .zoom-wrap do seu global.css */
+    }
+
+    /* RESPONSIVIDADE ULTRA OTIMIZADA */
+    @media (max-width: 768px) {
+        .content-grid-intro-categorias {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .intro-categorias-info {
+            order: 1;
+        }
+
+        .intro-categorias-info h2 {
+            margin-bottom: 25px;
+        }
+
+        .intro-categorias-media {
+            order: 2;
+        }
+    }
+</style>

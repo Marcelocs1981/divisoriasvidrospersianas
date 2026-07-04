@@ -1,0 +1,137 @@
+---
+// Definimos a estrutura para quando você quiser passar links reais
+interface BreadcrumbLink {
+  label: string;
+  url: string;
+}
+
+interface Props {
+  title: string;
+  // Agora aceitamos String (antigo) OU um Array de objetos (novo para o Silo)
+  breadcrumb?: string | BreadcrumbLink[];
+  desktopImage: string;
+  mobileImage: string;
+}
+
+const { title, breadcrumb = "Home", desktopImage, mobileImage } = Astro.props;
+
+// Lógica para descobrir se o que foi enviado é um texto simples ou uma lista de links
+const isArray = Array.isArray(breadcrumb);
+---
+
+<section
+  class="internal-hero"
+  style={`--bg-desktop: url(${desktopImage}); --bg-mobile: url(${mobileImage});`}
+>
+  <div class="content">
+
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        
+        {/* CENÁRIO A: Se você passou a lista de links novos (Array) */}
+        {isArray && (breadcrumb as BreadcrumbLink[]).map((item, index) => {
+          const isLast = index === (breadcrumb as BreadcrumbLink[]).length - 1;
+          return (
+            <li aria-current={isLast ? "page" : undefined}>
+              {!isLast && item.url ? (
+                <a href={item.url}>{item.label}</a>
+              ) : (
+                <span>{item.label}</span>
+              )}
+            </li>
+          );
+        })}
+
+        {/* CENÁRIO B: Se você passou apenas o texto simples antigo (String) */}
+        {!isArray && breadcrumb && breadcrumb !== "Home" && (
+          <li aria-current="page">
+            <span>{breadcrumb}</span>
+          </li>
+        )}
+      </ol>
+    </nav>
+
+    <h1>{title}</h1>
+
+  </div>
+</section>
+
+<style>
+
+.internal-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background-image: var(--bg-desktop);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.internal-hero h1 {
+  color: #fff;
+  margin-top: 12px;
+}
+
+/* BREADCRUMB */
+.internal-hero nav ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.internal-hero nav ol li {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* TROCA DA SETA: Mudamos de "›" para "»" e tratamos o espaçamento de forma limpa */
+.internal-hero nav ol li::after {
+  content: "»";
+  color: rgba(255,255,255,0.4);
+}
+
+.internal-hero nav ol li:last-child::after {
+  content: "";
+}
+
+.internal-hero nav a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.internal-hero nav a:hover {
+  color: #ffbf00;
+}
+
+/* Garante que o texto da página atual (que não é link) herde a cor correta */
+.internal-hero nav ol li span {
+  color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 768px) {
+  .internal-hero {
+    min-height: 340px;
+    background-image: var(--bg-mobile);
+  }
+}
+
+</style>

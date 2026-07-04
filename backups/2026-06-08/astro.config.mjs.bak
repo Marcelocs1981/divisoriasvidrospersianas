@@ -1,0 +1,35 @@
+// @ts-check
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+
+// https://astro.build/config
+export default defineConfig({
+  site: 'https://divisoriasvidrospersianas.com.br',
+  output: 'static',
+
+  // 1. DESATIVAR O AUTO OTIMIZADOR DE IMAGENS DO ASTRO (Mantém seu TinyPNG perfeito)
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
+  },
+
+  // 2. Configurações de sitemap
+  integrations: [
+    sitemap({
+      // 1. Filtra as páginas e pasta de teste cores que você não quer no sitemap
+      filter: (page) => !page.includes('/cores/'),
+      
+      // 2. ADICIONA A FUNÇÃO LASTMOD PARA ATUALIZAR A DATA DE MODIFICAÇÃO
+      serialize(item) {
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
+    })
+  ],
+
+  build: {
+    inlineStylesheets: 'always',
+    concurrency: 4
+  }
+});

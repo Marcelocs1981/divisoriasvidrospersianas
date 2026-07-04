@@ -1,87 +1,108 @@
-<section class="bgdk">
+<section 
+  id="escolher" 
+  class="section-padrao section-escolher" 
+  aria-labelledby="escolher-heading"
+>
   <div class="container">
-    <blockquote class="quote-text">
-      Escolher especialistas em divisórias de vidro com persianas embutidas para escritório, é a maneira mais 
-      <span class="gold">rápida, econômica, segura e tranquila</span> 
-      de garantir o sucesso do seu projeto.
-    </blockquote>
+    
+<blockquote class="quote-text" cite="https://divisoriasvidrospersianas.com.br">
+  <span class="quote-body">
+    Escolher especialistas em divisórias de vidro com persianas embutidas para escritório, é a maneira mais 
+    <span class="goldgradient">rápida, econômica, segura e tranquila</span> 
+    de garantir o sucesso do seu projeto.
+  </span> <cite class="quote-author">
+    <h3 id="escolher-heading" class="author-title">+25 anos criando ambientes corporativos com vidros</h3>
+    <p class="author-subtitle">Especialistas em divisórias de vidro com persianas integradas</p>
+  </cite>
+</blockquote>
 
-    <div class="quote-footer">
-      <div class="line"></div>
-      <div class="footer-content">
-        <p class="footer-title">+25 anos criando ambientes corporativos com vidros</p>
-        <p class="footer-subtitle">Especialistas em divisórias de vidro com persianas integradas</p>
-      </div>
-    </div>
   </div>
 </section>
+
 <style>
-  
+
+.section-escolher {
+    position: relative;
+    overflow: hidden;
+  }  
+
+.section-escolher::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Aponta direto e nativamente para a pasta public do seu projeto */
+    background-image: url('/assets/bg-escolher-mobile.png'); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  @media (min-width: 769px) {
+    .section-escolher::before {
+      background-image: url('/assets/bg-escolher-pc.png');
+    }
+  }
+
+  /* O restante do CSS dos textos continua exatamente igual */
   .quote-text {
-    font-size: clamp(1.6rem, 2.9vw, 2.5rem);
-    line-height: 1.15;
+    font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+    line-height: 1.2;
     margin: 0;
     font-weight: 400;
     letter-spacing: -0.02em;
     position: relative;
+  }
+
+  .quote-body {
+    position: relative;
     quotes: none;
   }
 
-  /* Aspa de Abertura - Usando Unicode \201C */
-  .quote-text::before {
-    content: "\201C" !important;
+  .quote-body::before {
+    content: "\201C";
     display: inline-block;
-    font-size: 5.5rem;
+    font-size: clamp(4rem, 6vw, 5.5rem);
     color: #967000;
     line-height: 1;
     margin-bottom: -10px;
-    margin-left: -5px;
-    visibility: visible !important;
-    opacity: 1 !important;
+    margin-right: 5px;
   }
 
-  /* Aspa de Fechamento - Usando Unicode \201D */
-  .quote-text::after {
-    content: "\201D" !important;
+  .quote-body::after {
+    content: "\201D";
     display: inline-block;
     color: #967000;
-    font-size: 5.5rem;
+    font-size: clamp(4rem, 6vw, 5.5rem);
     margin-left: 8px;
-    vertical-align: top;
-    visibility: visible !important;
-    opacity: 1 !important;
+    line-height: 1;
+    vertical-align: text-top; /* Faz a aspa alinhar perfeitamente no topo da palavra "projeto." */
   }
 
-    .quote-footer {
-    margin-top: 1px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  .quote-author {
+    display: block;
+    font-style: normal;
+    margin-top: 30px;
+    padding-left: 25px;
+    border-left: 2px solid #967000; 
   }
 
-  .line {
-    width: 65px;
-    height: 1px;
-    background-color: #967000;
-  }
-
-  .footer-title {
-    font-size: 1rem;
+  .author-title {
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
     font-weight: 500;
-    margin: 0;
     color: #ffffff;
+    margin-bottom: 4px;
   }
 
-  .footer-subtitle {
-    font-size: 0.85rem;
-    font-weight: 300;
-    margin: 4px 0 0 0;
-    color: #888;
+  .author-subtitle {
+    font-size: clamp(0.8rem, 1vw, 0.88rem);
+    color: #888888;
   }
 
   @media (max-width: 768px) {
-    .quote-text::before { font-size: 70px; }
-    .quote-text::after { font-size: 2.2rem; }
-    .quote-footer { margin-top: 40px; }
+    .quote-author {
+      margin-top: 40px;
+    }
   }
 </style>

@@ -1,0 +1,42 @@
+{
+  "desenhos": {
+    "tag": "Liberte a Criatividade",
+    "titulo": "Desenhos para colorir e despertar a <span class=\"goldgradient\">imaginação</span>",
+    "texto": "Neurocientistas afirmam que o ato de colorir ativa os dois hemisférios cerebrais simultaneamente: o esquerdo, responsável pela lógica e foco, e o direito, pela criatividade e expressão. Estudos apontam que crianças que pintam regularmente demonstram uma capacidade de concentração até <strong>87% maior</strong> em atividades escolares de leitura e escrita. Ofereça estímulos visuais de alta qualidade e transforme o tempo livre em um laboratório de desenvolvimento cognitivo saudável.",
+    "imgDesktop": "placeholder.webp",
+    "imgMobile": "placeholder.webp",
+    "altImagem": "Criança sorridente pintando um desenho infantil impresso em folha A4"
+  },
+  "papelaria": {
+    "tag": "Organização Inteligente",
+    "titulo": "Recursos visuais que estruturam a rotina e o <span class=\"goldgradient\">aprendizado</span>",
+    "texto": "Pesquisas na área de psicologia comportamental comprovam que o uso de organizadores visuais, rotinas ilustradas e quadros de incentivo reduz a ansiedade infantil em até <strong>40%</strong> e aumenta a autonomia nas tarefas diárias. Ter uma papelaria funcional e atraente em mãos não é apenas capricho; é uma ferramenta científica para moldar hábitos saudáveis, disciplina e previsibilidade na rotina das crianças, dentro e fora da sala de aula.",
+    "imgDesktop": "placeholder.webp",
+    "imgMobile": "placeholder.webp",
+    "altImagem": "Organizadores semanais e rotinas visuais infantis impressas organizadas sobre a mesa"
+  },
+  "educacao-infantil": {
+    "tag": "Primeiros Passos Cognitivos",
+    "titulo": "Atividades pedagógicas fundamentais para os primeiros <span class=\"goldgradient\">anos</span>",
+    "texto": "Segundo dados da Organização Mundial da Saúde (OMS) e estudos de psicomotricidade, os estímulos recebidos até os 6 anos definem mais de <strong>90% das conexões cerebrais</strong> que a criança usará pelo resto da vida. Nossos materiais de Educação Infantil são projetados sob critérios pedagógicos rigorosos para acelerar de forma lúdica a coordenação motora fina, a percepção espacial e o reconhecimento fonético — preparando a base anatômica e neurológica para uma alfabetização sem traumas.",
+    "imgDesktop": "placeholder.webp",
+    "imgMobile": "placeholder.webp",
+    "altImagem": "Criança pequena realizando atividade de coordenação motora fina com lápis de cor"
+  },
+  "atividades-escolares": {
+    "tag": "Reforço de Alto Desempenho",
+    "titulo": "Materiais de apoio escolar alinhados ao sucesso <span class=\"goldgradient\">acadêmico</span>",
+    "texto": "Testes diagnósticos em larga escala revelam que o reforço escolar com folhas de atividades focadas e estruturadas eleva o rendimento em disciplinas críticas, como Matemática e Língua Portuguesa, em até <strong>3x mais</strong> do que apenas o estudo passivo por telas. Nossas folhas de exercícios combatem diretamente a curva do esquecimento através da fixação prática, garantindo que o aluno domine os conteúdos essenciais da grade curricular com confiança e autonomia.",
+    "imgDesktop": "placeholder.webp",
+    "imgMobile": "placeholder.webp",
+    "altImagem": "Aluno do ensino fundamental concentrado resolvendo exercícios de matemática em uma folha de reforço"
+  },
+  "moldes": {
+    "tag": "Facilidade Pedagógica",
+    "titulo": "Moldes precisos para criar ambientes que estimulam a <span class=\"goldgradient\">mente</span>",
+    "texto": "De acordo com a pedagogia ambientalista, uma sala de aula ou quarto visualmente enriquecido e decorado atua como um \"terceiro educador\", aumentando o engajamento e a retenção de conteúdo dos alunos em até <strong>25%</strong>. Criamos moldes com linhas de corte perfeitas e geometrias precisas para que você poupe horas de planejamento e monte murais, letreiros e brinquedos em E.V.A. ou feltro que capturam a atenção instantânea das crianças.",
+    "imgDesktop": "placeholder.webp",
+    "imgMobile": "placeholder.webp",
+    "altImagem": "Recortes de moldes de letras e animais coloridos em EVA aplicados em um painel escolar"
+  }
+}

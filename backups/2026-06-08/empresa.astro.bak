@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+import Contato from '../components/Contato.astro';
+import Hero_Institucional from '../components/Hero_Institucional.astro';
+
+import { getPageMeta } from '../utils/getGitDate';
+
+const seo = getPageMeta(
+  Astro.url.pathname,
+  "Empresa | Divisórias Vidros Persianas", 
+  "Conheça a história, missão e valores da Divisórias Vidros Persianas. Saiba por que somos a escolha certa para suas necessidades de divisórias de vidro com persianas para o escritório da sua empresa.", 
+  "2026-05-22T17:24:08Z" // Data de publicação fixa
+);
+---
+
+<Layout
+  seo={seo}
+>
+
+  <Hero_Institucional
+    title="Empresa"
+    breadcrumb="/ Empresa"
+    desktopImage="/assets/banner_empresa_1920px.webp"
+    mobileImage="/assets/banner_empresa_768px.webp"
+  />
+
+  <Contato />
+
+</Layout>

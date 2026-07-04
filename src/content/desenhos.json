@@ -1,0 +1,216 @@
+[
+    {
+        "_info": "categorias_da_home"
+    },
+    {
+        "label": "FAUNA",
+        "title": "Desenhos de Animais",
+        "alt": "Desenhos de animais para colorir e imprimir grátis",
+        "desc": "De bichinhos fofos da fazenda a feras da selva, encontre centenas de ilustrações nítidas para pintar.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-animais/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-grande",
+        "isAds": false
+    },
+    {
+        "label": "AÇÃO",
+        "title": "Super-Heróis",
+        "alt": "Desenhos de super-heróis para colorir e pintar",
+        "desc": "Os defensores da justiça mais famosos dos quadrinhos e do cinema em versões fáceis de colorir.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-super-herois/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-medio-h",
+        "isAds": false
+    },
+    {
+        "label": "ALIMENTOS",
+        "title": "Frutas e Alimentos",
+        "alt": "Desenhos de frutas para colorir e imprimir",
+        "desc": "Maçãs, bananas, uvas e muitas frutas divertidas para ajudar as crianças no reconhecimento dos alimentos.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-frutas/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "label": "ANIMES",
+        "title": "Animes e Mangás",
+        "alt": "Desenhos de anime para colorir",
+        "desc": "Os personagens de animações japonesas de maior sucesso prontos para ganhar cores vibrantes.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-anime/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "label": "BOTÂNICA",
+        "title": "Flores Lindas",
+        "alt": "Desenhos de flores para pintar",
+        "desc": "Rosas, margaridas e arranjos florais detalhados tanto para o público infantil undergrad quanto para adultos.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-flores/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-medio-v",
+        "isAds": false
+    },
+    {
+        "label": "NATUREZA",
+        "title": "Folhas e Plantas",
+        "alt": "Desenhos de folhas e ecossistemas para colorir",
+        "desc": "Explore a flora com ilustrações ricas em detalhes de folhas, árvores e plantas tropicais.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-plantas-folhas/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "label": "HISTÓRIA",
+        "title": "Dinossauros",
+        "alt": "Desenhos de dinossauros para imprimir e pintar",
+        "desc": "O temível Tiranossauro, o Tricerátops e gigantes pré-históricos em linhas perfeitas para colorir.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-dinossauros/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-grande",
+        "isAds": false
+    },
+    {
+        "label": "SOCIEDADE",
+        "title": "Profissões",
+        "alt": "Desenhos de profissões para colorir e atividades",
+        "desc": "Bombeiros, médicos, professores e diversas carreiras representadas em desenhos educativos.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-profissoes/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "label": "AVIAÇÃO",
+        "title": "Aviões e Jatos",
+        "alt": "Desenhos de aviões para colorir",
+        "desc": "Aeronaves clássicas, helicópteros e jatos modernos para quem ama a velocidade dos céus.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-avioes/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-medio-h",
+        "isAds": false
+    },
+    {
+        "label": "VEÍCULOS",
+        "title": "Carros e Automóveis",
+        "alt": "Desenhos de carros para colorir e imprimir",
+        "desc": "Modelos esportivos, carros de corrida e clássicos das pistas velozes para pintar.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-carros/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "label": "MARÍTIMO",
+        "title": "Navios e Barcos",
+        "alt": "Desenhos de navios para colorir",
+        "desc": "Grandes embarcações, navios piratas e caravelas navegando por águas prontas para ganhar cor.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-de-navios-barcos/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "label": "CELEBRAÇÃO",
+        "title": "Datas Comemorativas",
+        "alt": "Desenhos de datas comemorativas escolares para imprimir",
+        "desc": "Ilustrações de Natal, Festa Junina, Dia das Crianças e datas importantes do calendário letivo.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/datas-comemorativas/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-medio-h",
+        "isAds": false
+    },
+    {
+        "label": "PUBLICIDADE",
+        "title": "Publicidade",
+        "alt": "Espaço Publicitário",
+        "desc": "",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "#",
+        "textoBotao": "Publicidade",
+        "gridClass": "cat-medio-h bloco-anuncio",
+        "isAds": true
+    },
+    {
+        "label": "LIVRE",
+        "title": "Espaço Criativo Livre",
+        "alt": "Desenhos variados para colorir e imprimir livremente",
+        "desc": "Uma seleção aberta repleta de surpresas visuais fantásticas prontas para download imediato em A4.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-variados-livre/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-medio-v",
+        "isAds": false
+    },
+    {
+        "label": "LIVRE",
+        "title": "Expressão Livre",
+        "alt": "Imagens livres e educativas para colorir em casa",
+        "desc": "Atividades e temas genéricos estimulantes projetados para o entretenimento lúdico de crianças.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/atividades-expressao-livre/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-medio-h",
+        "isAds": false
+    },
+    {
+        "label": "LIVRE",
+        "title": "Desenhos Extras",
+        "alt": "Modelos complementar para imprimir grátis",
+        "desc": "Conteúdos extras e coleções sazonais de rápida impressão para suporte pedagógico extra.",
+        "image": "/src/assets/placeholder.webp",
+        "slug": "/desenhos-extras-livre/",
+        "textoBotao": "Ver Desenhos",
+        "gridClass": "cat-normal",
+        "isAds": false
+    },
+    {
+        "_info": "desenhos_de_cachorros"
+    },
+    {
+        "id": "golden-retriever-brincando-com-bola-para-colorir",
+        "titulo": "Desenho de Golden Retriever Brincando com Bola para Colorir",
+        "categoria": "animais",
+        "subcategoria": "cachorros",
+        "nicho": "golden-retriever-para-colorir",
+        "imagemPreview": "/src/assets/placeholder.webp"
+    },
+    {
+        "id": "golden-retriever-fofo-deitado-para-colorir",
+        "titulo": "Desenho de Golden Retriever Fofo Deitado para Colorir",
+        "categoria": "animais",
+        "subcategoria": "cachorros",
+        "nicho": "golden-retriever-para-colorir",
+        "imagemPreview": "/src/assets/placeholder.webp"
+    },
+    {
+        "id": "golden-retriever-com-oculos-de-sol-para-colorir",
+        "titulo": "Desenho de Golden Retriever de Óculos de Sol para Colorir",
+        "categoria": "animais",
+        "subcategoria": "cachorros",
+        "nicho": "golden-retriever-para-colorir",
+        "imagemPreview": "/src/assets/placeholder.webp"
+    },
+    {
+        "id": "pastor-alemao-correndo-para-colorir",
+        "titulo": "Desenho de Pastor Alemão Correndo para Colorir",
+        "categoria": "animais",
+        "subcategoria": "cachorros",
+        "nicho": "pastor-alemao-para-colorir",
+        "imagemPreview": "/src/assets/placeholder.webp"
+    }
+]

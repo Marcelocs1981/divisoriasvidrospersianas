@@ -1,0 +1,197 @@
+---
+import meta from "../data/metadata.json";
+import { getRouteHref } from "../utils/routeAlias";
+const { tipoLayout, listagem = [], termo } = Astro.props;
+
+// Forçamos o tipo para ignorar erros de tipagem
+const metaAny = meta as any;
+
+const nomeTermo =
+    tipoLayout === "hub-geral" ? "todos os desenhos" : termo || "";
+
+const breadcrumbParents: string[] = [];
+if (termo && metaAny.subcategorias?.[termo]?.parent) {
+    let parentTerm = metaAny.subcategorias[termo].parent;
+    while (parentTerm && parentTerm !== "desenhos-para-colorir") {
+        breadcrumbParents.unshift(parentTerm);
+        parentTerm = metaAny.subcategorias[parentTerm]?.parent;
+    }
+}
+
+const subcategoriasUnicas = [
+    ...new Set(listagem.flatMap((item: any) => item.subcategorias || [])),
+];
+
+const nomeLimpo = nomeTermo.replace(/^desenhos-/, "");
+const tituloTratado = nomeLimpo.replace(/-/g, " ");
+
+// Configurações do metadata para a categoria atual
+const metaDataConfig = metaAny.categorias?.[termo] || metaAny.subcategorias?.[termo] || {};
+const tituloLead = metaDataConfig.shortDescription || `Explore nossa incrível coleção de desenhos de ${tituloTratado} divididas por categorias para você colorir e imprimir.`;
+
+// Monta o H1 dinâmico evitando repetições de "para colorir" e "desenhos"
+const rawH1Base = metaDataConfig.h1 || `Desenhos de ${tituloTratado}`;
+const h1Base = rawH1Base.toLowerCase().startsWith("desenhos")
+    ? rawH1Base
+    : `Desenhos de ${rawH1Base.replace(/^desenhos\s+/i, "")}`;
+const h1Final = h1Base.toLowerCase().includes("para colorir")
+    ? `${h1Base} e Imprimir em PDF Grátis`
+    : `${h1Base} para Colorir e Imprimir em PDF Grátis`;
+
+// Busca a imagem da categoria. Prioridade: 1º Metadata, 2º a primeira imagem de preview do JSON de algum item, 3º fallback
+const itemBase = listagem[0] || {};
+const imagemCategoria = metaDataConfig.image || itemBase.imagemPreview || "/placeholder.webp";
+
+// Estratégia Monday Mandala: divide a listagem de categorias em blocos de 6 (2 linhas de 3)
+const tamanhoBloco = 6;
+const blocos = [];
+for (let i = 0; i < subcategoriasUnicas.length; i += tamanhoBloco) {
+    blocos.push(subcategoriasUnicas.slice(i, i + tamanhoBloco));
+}
+---
+
+<section class="section-padrao container">
+    <nav class="breadcrumbs">
+        <a href="/">Home</a> &gt;
+        {
+            tipoLayout === "hub-geral" ? (
+                <span>desenhos para colorir</span>
+            ) : nomeTermo === "desenhos-para-colorir" ? (
+                <span>desenhos para colorir</span>
+            ) : (
+                <>
+                    <a href="/desenhos-para-colorir/">desenhos para colorir</a>{" "}
+                    &gt;
+                    {breadcrumbParents.map((parent) => (
+                        <>
+                            <a href={getRouteHref(parent)}>
+                                {parent.replace(/-/g, " ")}
+                            </a>{" "}
+                            &gt;
+                        </>
+                    ))}
+                    <span>{nomeTermo.replace(/-/g, " ")}</span>
+                </>
+            )
+        }
+    </nav>
+
+        <h1 class="capitalize">
+        {
+            tipoLayout === "hub-geral"
+                ? "Todos os Desenhos para Colorir Grátis"
+                : h1Final
+        }
+    </h1>
+
+    <div class="layout-principal">
+        <article class="coluna-principal">
+            <p class="short-description">
+                {
+                    tipoLayout === "hub-geral"
+                        ? "Escolha uma categoria:"
+                        : tituloLead
+                }
+            </p>
+
+            {tipoLayout !== "hub-geral" && (
+                <div class="bloco-imagem-topo">
+                    <img
+                        src={imagemCategoria}
+                        alt={`Coleção de ${tituloTratado}`}
+                        width="600"
+                        height="400"
+                        loading="eager"
+                    />
+                </div>
+            )}
+
+            <!-- Banner Ad após imagem de destaque -->
+            <div class="bloco-anuncio" style="margin-bottom: 40px; min-height: 150px;">
+                [ ESPAÇO PARA BANNER AD - TOPO CATEGORIAS ]
+            </div>
+
+            {tipoLayout !== "hub-geral" && (
+                <>
+                    <p class="texto-apoio" style="margin-bottom: 12px; font-size: 1.05rem;">
+                        Para usar qualquer um desses arquivos para impressão gratuitos,
+                        basta clicar em qualquer uma das imagens ou links abaixo para
+                        abrir o PDF em alta resolução em uma nova página. A partir daí, você poderá baixar ou imprimir quantas vezes quiser!
+                    </p>
+                    <p class="texto-apoio" style="margin-bottom: 32px; font-size: 1.05rem;">
+                        Todas essas coleções de <strong class="capitalize">{tituloTratado}</strong> para colorir em PDF estão no tamanho padrão de papel carta americano, mas também se encaixam perfeitamente em papel A4! Divirta-se escolhendo sua categoria favorita!
+                    </p>
+                </>
+            )}
+
+            {
+                blocos.map((bloco, index) => (
+                    <>
+                        <div class="grid-categorias" style="margin-top: 0;">
+                            {bloco.map((sub: any) => {
+                        // Busca o primeiro desenho que pertence a essa subcategoria
+                                const desenhoDestaque = listagem.find((item: any) =>
+                            item.subcategorias?.includes(sub),
+                        );
+                        const imagemDinamica =
+                            desenhoDestaque?.imagemPreview ||
+                            "/placeholder.webp";
+
+                                const config = metaAny.subcategorias[sub] || {};
+                        const titulo = config.h1 || sub.replace(/-/g, " ");
+                        const descricao =
+                            config.shortDescription ||
+                            `Desenhos de ${sub.replace(/-/g, " ")} para colorir.`;
+                        // Usa a imagem do metadata se existir, senão usa a imagem do primeiro desenho da subcategoria
+                        const imagemCard = config.image || imagemDinamica;
+
+                        return (
+                            <a href={getRouteHref(sub)} class="card-categoria">
+                                <img
+                                    src={imagemCard}
+                                    alt={titulo}
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <div class="card-content">
+                                    <h3 class="capitalize">{titulo}</h3>
+                                    <p class="minusc">{descricao}</p>
+                                                                </div>
+                            </a>
+                        );
+                    })}
+                        </div>
+                        
+                        {/* Banner Ads após cada bloco de 6 categorias */}
+                        <div
+                            class="bloco-anuncio"
+                            style="margin: 40px 0; min-height: 150px;"
+                        >
+                            [ ESPAÇO PARA BANNER AD {index + 1} CATEGORIAS ]
+                        </div>
+                    </>
+                ))
+            }
+
+            {tipoLayout !== "hub-geral" && (
+                <>
+                    <hr style="margin: 40px 0; border: none; border-top: 1px solid var(--border-color);" />
+                    
+                    <section class="artigo-seo-base">
+                        <h2>Mais sobre as Coleções de <span class="capitalize">{tituloTratado}</span></h2>
+                        <p>
+                            Nossas categorias de desenhos de <strong>{tituloTratado}</strong> foram pensadas para organizar a diversão de maneira simples e intuitiva. Navegue pelos cards acima e encontre uma infinidade de opções separadas especialmente para facilitar a sua busca!
+                        </p>
+                        <p>
+                            Seja para atividades escolares, brincadeiras de fim de semana ou momentos de relaxamento terapêutico, temos a página de colorir ideal esperando por você. O download é sempre grátis e em alta qualidade!
+                        </p>
+                    </section>
+                </>
+            )}
+        </article>
+        <aside class="sidebar-anuncios">
+            <div class="bloco-anuncio">[ ANÚNCIO ]</div>
+        </aside>
+    </div>
+</section>
+

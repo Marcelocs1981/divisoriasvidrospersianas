@@ -1,0 +1,65 @@
+{
+  "_comentario_": "Categorias Atividades Educação Infantil - Estrutura Principal de Subcategorias (src/data/atividadesEducacao.json)",
+  "dados": [
+    {
+      "label": "Alfabetização",
+      "title": "Escrita e Linguagem",
+      "alt": "Fichas ilustradas com o alfabeto, vogais e famílias silábicas para alfabetização infantil",
+      "desc": "Materiais lúdicos para introduzir vogais, sílabas, traçados, caligrafia e o alfabeto cursivo.",
+      "image": "/placeholder.webp",
+      "slug": "/atividades-educacao-infantil/linguagem-escrita-alfabetizacao/",
+      "textoBotao": "Ver Todas Atividades de Alfabetização Para Imprimir",
+      "isAds": false
+    },
+    {
+      "label": "Matemática Infantil",
+      "title": "Raciocínio Lógico e Números",
+      "alt": "Atividades de contagem, formas geométricas e lógica para crianças",
+      "desc": "Exercícios práticos para aprender números, quantidades, formas geométricas e conceitos de opostos.",
+      "image": "/placeholder.webp",
+      "slug": "/atividades-educacao-infantil/raciocinio-logico-matematica/",
+      "textoBotao": "Ver Todas Atividades de Matemática Infantil Para Imprimir",
+      "isAds": false
+    },
+    {
+      "label": "Mundo ao Redor",
+      "title": "Natureza e Sociedade",
+      "alt": "Atividades sobre o corpo humano, animais e meio ambiente para imprimir",
+      "desc": "Fichas educativas sobre os órgãos dos sentidos, profissões, meios de transporte e consciência ecológica.",
+      "image": "/placeholder.webp",
+      "slug": "/atividades-educacao-infantil/natureza-e-sociedade/",
+      "textoBotao": "Ver Todas Atividades da Natureza e Sociedade Para Imprimir",
+      "isAds": false
+    },
+    {
+      "label": "Arte e Aprendizado",
+      "title": "Atividades Artísticas e Lúdicas",
+      "alt": "Desenhos para colorir, jogos pedagógicos e atividades de recorte e colagem",
+      "desc": "Materiais focados na coordenação motora com jogos da memória, quebra-cabeças e máscaras para montar.",
+      "image": "/placeholder.webp",
+      "slug": "/atividades-educacao-infantil/atividades-artisticas-e-ludicas/",
+      "textoBotao": "Ver Todas Atividades de Artísticas Para Imprimir",
+      "isAds": false
+    },
+    {
+      "label": "Desenvolvimento",
+      "title": "Coordenação Motora",
+      "alt": "Desenhos para colorir, jogos pedagógicos e atividades de recorte e colagem",
+      "desc": "Materiais focados na coordenação motora com jogos da memória, quebra-cabeças e máscaras para montar.",
+      "image": "/placeholder.webp",
+      "slug": "/atividades-educacao-infantil/atividades-artisticas-e-ludicas/",
+      "textoBotao": "Ver Todas Atividades de Coordenação Motora Para Imprimir",
+      "isAds": false
+    },
+    {
+      "label": "Datas Comemorativas",
+      "title": "Datas Comemorativas",
+      "alt": "Atividades temáticas de datas comemorativas como Natal, Festa Junina e Dia das Crianças",
+      "desc": "Conteúdos sazonais completos para o ano letivo: Volta às Aulas, Folclore, Dia das Mães e Natal.",
+      "image": "/placeholder.webp",
+      "slug": "/atividades-educacao-infantil/datas-comemorativas/",
+      "textoBotao": "Ver Todas Atividades Datas Especiais Para Imprimir",
+      "isAds": false
+    }
+  ]
+}

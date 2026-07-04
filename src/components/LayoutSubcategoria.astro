@@ -1,0 +1,172 @@
+---
+// src/components/LayoutSubcategoria.astro
+import meta from "../data/metadata.json";
+import { getRouteHref } from "../utils/routeAlias";
+const { listagem = [], termo, destaquesSidebar = [] } = Astro.props;
+const filteredListagem = listagem.filter((item: any) => item.id !== item.nicho);
+const displayListagem = filteredListagem.length ? filteredListagem : listagem;
+const itemBase = displayListagem[0] || {};
+
+// Tenta pegar os dados da subcategoria no metadata, senão usa defaults
+const metaAny = meta as any;
+const metaDataConfig = metaAny.subcategorias?.[termo] || {};
+
+const breadcrumbParents: string[] = [];
+if (termo && metaDataConfig.parent) {
+    let parentTerm = metaDataConfig.parent;
+    while (parentTerm && parentTerm !== "desenhos-para-colorir") {
+        breadcrumbParents.unshift(parentTerm);
+        parentTerm = metaAny.subcategorias[parentTerm]?.parent;
+    }
+}
+
+const tituloTratado = termo.replace(/^desenhos-/, "").replace(/-/g, " ").replace(/para colorir$/gi, "").trim();
+const tituloLead = metaDataConfig.shortDescription || `Explore nossa incrível coleção de desenhos de ${tituloTratado} para imprimir.`;
+
+// Pega a imagem destaque: 1º do metadata, 2º a primeira imagem de preview do JSON, 3º fallback
+const imagemCategoria = metaDataConfig.image || itemBase.imagemPreview || "/placeholder.webp";
+
+// Estratégia Monday Mandala: divide a listagem em blocos de 6 (2 linhas de 3)
+const tamanhoBloco = 6;
+const blocos = [];
+for (let i = 0; i < displayListagem.length; i += tamanhoBloco) {
+    blocos.push(displayListagem.slice(i, i + tamanhoBloco));
+}
+---
+
+<section class="section-padrao container" aria-labelledby="h1-title">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> &gt;
+        <a href="/desenhos-para-colorir/">desenhos para colorir</a> &gt;
+        {
+            breadcrumbParents.map((parent) => (
+                <>
+                    <a href={getRouteHref(parent)}>
+                        {parent.replace(/-/g, " ")}
+                    </a>{" "}
+                    &gt;
+                </>
+            ))
+        }
+        <span class="cor-atual"
+            >{termo.replace(/-/g, " ").replace(/-para-colorir$/, "")}</span
+        >
+    </nav>
+
+    <h1 id="h1-title" class="titulo-pagina">
+        Desenhos de {tituloTratado} para Colorir e Imprimir em PDF Grátis
+    </h1>
+
+    <div class="layout-principal">
+        <article class="coluna-principal">
+            <p class="short-description">
+                {tituloLead}
+            </p>
+
+            <div class="bloco-imagem-topo">
+                <img
+                    src={imagemCategoria}
+                    alt={`Desenhos de ${tituloTratado}`}
+                    width="600"
+                    height="400"
+                    loading="eager"
+                />
+            </div>
+
+            <!-- Banner Ad após imagem de destaque -->
+            <div class="bloco-anuncio" style="margin-bottom: 40px; min-height: 150px;">
+                [ ESPAÇO PARA BANNER AD - TOPO ]
+            </div>
+
+            <p class="texto-apoio" style="margin-bottom: 12px; font-size: 1.05rem;">
+                Para usar qualquer um desses arquivos para impressão gratuitos,
+                basta clicar em qualquer uma das imagens ou links abaixo para
+                abrir o PDF em alta resolução em uma nova página. A partir daí, você poderá baixar ou imprimir quantas vezes quiser!
+            </p>
+            <p class="texto-apoio" style="margin-bottom: 32px; font-size: 1.05rem;">
+                Todas essas páginas de <strong class="capitalize">{tituloTratado}</strong> para colorir em PDF estão no tamanho padrão de papel carta americano, mas também se encaixam perfeitamente em papel A4! Divirta-se!
+            </p>
+
+            <!-- Loop dos blocos com banners intercalados -->
+            {
+                blocos.map((bloco, index) => (
+                    <>
+                        <div class="grid-categorias" style="margin-top: 0;">
+                            {bloco.map((desenho: any) => (
+                                <a
+                                    href={`/${desenho.id}/`}
+                                    class="card-categoria"
+                                >
+                                    <img
+                                        src={desenho.imagemPreview}
+                                        alt={desenho.titulo}
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                    <div class="card-content">
+                                        <h3 class="capitalize">{desenho.titulo}</h3>
+                                        <p class="minusc">Desenho para colorir</p>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+
+                        {/* Banner Ads após cada bloco de 6 itens */}
+                        <div
+                            class="bloco-anuncio"
+                            style="margin: 40px 0; min-height: 150px;"
+                        >
+                            [ ESPAÇO PARA BANNER AD {index + 1} ]
+                        </div>
+                    </>
+                ))
+            }
+
+            <hr style="margin: 40px 0; border: none; border-top: 1px solid var(--border-color);" />
+            
+            <section class="artigo-seo-base">
+                <h2>Mais sobre Desenhos de <span class="capitalize">{tituloTratado}</span></h2>
+                <p>
+                    Colorir desenhos de <strong>{tituloTratado}</strong> é uma excelente atividade para desenvolver a criatividade, coordenação motora e concentração. Aqui você encontrará os melhores moldes e riscos em PDF, prontos para facilitar a sua vida!
+                </p>
+                <p>
+                    Nossa coleção exclusiva de atividades para colorir foi cuidadosamente separada para oferecer diversão e aprendizado. Imprima hoje mesmo os seus favoritos e crie momentos incríveis com arte e pintura!
+                </p>
+            </section>
+        </article>
+
+        <aside class="sidebar-anuncios">
+            <div class="bloco-anuncio">[ SIDEBAR STICKY AD ]</div>
+            {
+                destaquesSidebar.length > 0 && (
+                    <div class="widget-relacionados">
+                        <h2>Mais curtidos:</h2>
+                        <div class="lista-relacionados">
+                            {destaquesSidebar.map((desenho: any) => (
+                                <a
+                                    href={`/${desenho.id}/`}
+                                    class="card-lateral"
+                                >
+                                    <div class="img-lateral-wrap">
+                                        <img
+                                            src={desenho.imagemPreview}
+                                            alt={desenho.titulo}
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <div class="info-lateral">
+                                        <h3>{desenho.titulo}</h3>
+                                        <span class="btn-link-lateral">
+                                            Imprimir →
+                                        </span>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )
+            }
+        </aside>
+    </div>
+</section>
+

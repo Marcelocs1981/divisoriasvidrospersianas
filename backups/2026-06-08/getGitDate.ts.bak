@@ -1,0 +1,82 @@
+// src/utils/getGitDate.ts
+import { execSync } from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
+
+function tryGitDateForPath(filePath: string): string | null {
+  try {
+    // Use caminho posix para garantir compatibilidade com o git em todas as plataformas
+    const stdout = execSync(`git log -1 --format=%cI -- "${filePath}"`);
+    const dateStr = stdout.toString().trim();
+    return dateStr || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function getFsModifiedDate(filePath: string): string | null {
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    const stat = fs.statSync(filePath);
+    return stat.mtime.toISOString();
+  } catch {
+    return null;
+  }
+}
+
+export function getGitModifiedDate(astroPathname: string): string {
+  try {
+    // Normaliza a rota recebida
+    const raw = astroPathname ?? '';
+    const clean = raw.replace(/^\/++|\/++$/g, ''); // remove barras no início/fim
+
+    // Candidate paths:
+    // 1) src/pages/index.astro (home)
+    // 2) src/pages/<clean>.astro
+    // 3) src/pages/<clean>/index.astro (pastas com index)
+    const candidates: string[] = [];
+
+    if (!clean) {
+      candidates.push(path.posix.join('src', 'pages', 'index.astro'));
+    } else {
+      candidates.push(path.posix.join('src', 'pages', `${clean}.astro`));
+      candidates.push(path.posix.join('src', 'pages', clean, 'index.astro'));
+    }
+
+    if (!candidates.includes(path.posix.join('src', 'pages', 'index.astro'))) {
+      candidates.push(path.posix.join('src', 'pages', 'index.astro'));
+    }
+
+    for (const candidate of candidates) {
+      const gitDate = tryGitDateForPath(candidate);
+      const fsDate = getFsModifiedDate(candidate);
+
+      if (gitDate && fsDate) {
+        return gitDate > fsDate ? gitDate : fsDate;
+      }
+
+      if (gitDate) {
+        return gitDate;
+      }
+
+      if (fsDate) {
+        return fsDate;
+      }
+    }
+
+    return new Date().toISOString();
+  } catch (error) {
+    return new Date().toISOString();
+  }
+}
+
+export function getPageMeta(astroPathname: string, title: string, description: string, datePublished: string) {
+  const dateModified = getGitModifiedDate(astroPathname);
+
+  return {
+    title,
+    description,
+    datePublished,
+    dateModified,
+  };
+}

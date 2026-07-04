@@ -1,0 +1,389 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import Hero_Institucional from "../components/Hero_Institucional.astro";
+---
+
+<Layout
+  seo={{
+    title: "Seja um Parceiro | EduColorPrint",
+    description:
+      "Você é professor, pedagogo ou criador de conteúdo infantil? Junte-se ao time da EduColorPrint! Estamos em busca de talentos e mentes criativas para colaborar no desenvolvimento de novos desenhos, moldes e atividades pedagógicas de alto impacto.",
+    datePublished: "2026-06-26T14:24:08Z",
+  }}
+>
+  <Hero_Institucional
+    title="Seja um Parceiro"
+    breadcrumb="/ Seja um Parceiro"
+    desktopImage="/assets/banner_parcerias_1920px.webp"
+    mobileImage="/assets/banner_parcerias_768px.webp"
+  />
+
+  <section
+    id="seja-parceiro"
+    class="section-padrao section-trabalhe-conosco"
+    aria-labelledby="parceria-heading"
+  >
+    <div class="container content-grid-trabalhe-conosco">
+      <aside class="trabalhe-conosco-info">
+        <header>
+          <span class="tag">Colaboração & Parcerias</span>
+          <h2 id="parceria-heading">
+            Ajude-nos a colorir o futuro da <span class="goldgradient"
+              >educação.</span
+            >
+          </h2>
+        </header>
+
+        <p class="trabalhe-conosco-description">
+          Quer fazer parte do nosso ecossistema criativo? Se você desenvolve
+          atividades escolares, ilustrações infantis ou moldes didáticos de
+          excelência, envie sua proposta. Preencha o formulário abaixo com seu
+          portfólio ou ideias de materiais e venha colaborar com a gente!
+        </p>
+
+        <ul class="benefits-list">
+          <li>
+            <span class="check-icon">✓</span> Alcance milhares de professores, pais
+            e educadores em todo o Brasil diariamente.
+          </li>
+          <li>
+            <span class="check-icon">✓</span> Espaço de destaque para divulgação do
+            seu trabalho e materiais pedagógicos autorais.
+          </li>
+          <li>
+            <span class="check-icon">✓</span> Colaboração focada na criação de recursos
+            lúdicos e alinhados às competências da BNCC.
+          </li>
+        </ul>
+      </aside>
+
+      <div class="form-card">
+        <form
+          class="trabalhe-conosco-form"
+          id="trabalhe-conosco-form"
+          method="POST"
+          autocomplete="on"
+        >
+          <label for="nome">
+            <span>Nome Completo*</span>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              autocomplete="name"
+              placeholder="Seu nome"
+              required
+            />
+          </label>
+
+          <label for="profissao">
+            <span>Sua Atuação</span>
+            <input
+              type="text"
+              id="profissao"
+              name="profissao"
+              placeholder="Ex: Professor, Pedagogo, Ilustrador..."
+            />
+          </label>
+
+          <label for="email">
+            <span>E-mail*</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              inputmode="email"
+              placeholder="seu@email.com"
+              required
+            />
+          </label>
+
+          <label for="telefone">
+            <span>WhatsApp / Tel*</span>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              autocomplete="tel"
+              inputmode="tel"
+              placeholder="(00) 00000-0000"
+              required
+            />
+          </label>
+
+          <label for="mensagem" class="label-textarea">
+            <span>Fale sobre seus materiais e ideias pedagógicas</span>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Conte-nos quais temas de desenhos, moldes ou disciplinas escolares você costuma produzir e como gostaria de colaborar com o portal."
+            ></textarea>
+          </label>
+
+          <button
+            type="submit"
+            aria-label="Enviar formulário de proposta de parceria pedagógica"
+          >
+            ENVIAR
+          </button>
+
+          <output id="status-message" class="status-message" aria-live="polite"
+          ></output>
+
+          <small class="privacy-notice">
+            ⚠️ Ao enviar, você concorda que seus dados sejam processados
+            conforme nossa política de privacidade.
+          </small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById(
+      "trabalhe-conosco-form",
+    ) as HTMLFormElement;
+    const statusMessage = document.getElementById("status-message");
+
+    if (form && statusMessage) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const button = form.querySelector("button");
+        if (!button) return;
+
+        form.setAttribute("aria-busy", "true");
+        button.disabled = true;
+        button.textContent = "ENVIANDO...";
+        statusMessage.textContent = "";
+        statusMessage.classList.remove("success", "error");
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch("/send.php", {
+            method: "POST",
+            body: formData,
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            statusMessage.textContent =
+              "Proposta de parceria enviada com sucesso! Logo entraremos em contato.";
+            statusMessage.classList.add("success");
+            form.reset();
+          } else {
+            statusMessage.textContent =
+              "Ocorreu um erro ao enviar sua proposta. Tente novamente.";
+            statusMessage.classList.add("error");
+          }
+        } catch {
+          statusMessage.textContent = "Erro de conexão ao enviar a mensagem.";
+          statusMessage.classList.add("error");
+        } finally {
+          form.setAttribute("aria-busy", "false");
+          button.disabled = false;
+          button.textContent = "ENVIAR PROPOSTA";
+        }
+      });
+    }
+  </script>
+
+  <style>
+    /* GRADIENTE DE FUNDO UNIFICADO NA SEÇÃO */
+    .section-trabalhe-conosco {
+      position: relative;
+    }
+
+    .section-trabalhe-conosco::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle at 70% 20%,
+        rgba(124, 93, 0, 0.25),
+        transparent 50%
+      );
+      pointer-events: none;
+    }
+
+    /* GRID DE CONTROLE SEGURO NO DESKTOP */
+    .content-grid-trabalhe-conosco {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 60px;
+      align-items: center;
+    }
+
+    /* BLOCO ESQUERDO: INFORMAÇÕES */
+    .trabalhe-conosco-info h2 {
+      margin-bottom: 28px;
+    }
+
+    .trabalhe-conosco-description {
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+
+    /* LISTAGEM DE BENEFÍCIOS OTIMIZADA */
+    .benefits-list {
+      list-style: none;
+      padding: 0;
+      margin: 40px 0 0 0;
+    }
+
+    .benefits-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: #c7c7c7;
+      font-size: clamp(0.9rem, 1.1vw, 1rem);
+      line-height: 1.5;
+    }
+
+    .check-icon {
+      color: #967000;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* BLOCO DIREITO: FORM CARD VISUAL */
+    .form-card {
+      background: rgba(20, 20, 20, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+    }
+
+    /* ESTRUTURA DO FORMULÁRIO */
+    .trabalhe-conosco-form {
+      display: grid;
+      gap: 18px;
+    }
+
+    /* ESTRUTURA LABELS (Alinhamento Horizontal Limpo no PC) */
+    .trabalhe-conosco-form label {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      align-items: center;
+      gap: 14px;
+      color: #fff;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    .trabalhe-conosco-form .label-textarea {
+      align-items: start;
+    }
+
+    /* INPUTS E TEXTAREA CAMPOS */
+    .trabalhe-conosco-form input,
+    .trabalhe-conosco-form textarea {
+      width: 100%;
+      background: #050505;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      color: #fff;
+      padding: 14px 16px;
+      font-size: 0.95rem;
+      outline: none;
+      box-sizing: border-box;
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .trabalhe-conosco-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .trabalhe-conosco-form input::placeholder,
+    .trabalhe-conosco-form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .trabalhe-conosco-form input:focus,
+    .trabalhe-conosco-form textarea:focus {
+      border-color: rgba(150, 112, 0, 0.7);
+      box-shadow:
+        0 0 0 1px rgba(150, 112, 0, 0.25),
+        0 0 18px rgba(150, 112, 0, 0.08);
+    }
+
+    /* BOTÃO DA SESSÃO */
+    .trabalhe-conosco-form button {
+      width: 100%;
+      height: 48px;
+      border: 0;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #c89d37, #967000);
+      color: #000;
+      font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .trabalhe-conosco-form button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(150, 112, 0, 0.2);
+    }
+
+    .trabalhe-conosco-form button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* FEEDBACKS */
+    .status-message {
+      min-height: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .status-message.success {
+      color: #7dffb3;
+    }
+    .status-message.error {
+      color: #ff7d7d;
+    }
+
+    .privacy-notice {
+      display: block;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    /* RESPONSIVIDADE EM DEGUSTAÇÃO MÁXIMA */
+    @media (max-width: 1100px) {
+      .content-grid-trabalhe-conosco {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .form-card {
+        padding: 22px;
+      }
+
+      .trabalhe-conosco-form label {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .trabalhe-conosco-form textarea {
+        resize: none;
+      }
+    }
+  </style>
+</Layout>

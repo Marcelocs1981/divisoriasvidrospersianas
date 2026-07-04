@@ -1,0 +1,128 @@
+{
+  "categorias": {
+    "desenhos-para-colorir": {
+      "seo": "Desenhos para Colorir e Imprimir: Milhares de Opções Gratuitas",
+      "h1": "Desenhos para Colorir"
+    },
+    "papelaria-para-colorir": {
+      "seo": "Papelaria Criativa para Colorir e Imprimir em PDF",
+      "h1": "Papelaria para Colorir"
+    },
+    "atividades-educacao-infantil": {
+      "seo": "Atividades de Educação Infantil para Imprimir e Colorir",
+      "h1": "Atividades de Educação Infantil"
+    },
+    "atividade-escolar": {
+      "seo": "Atividades Escolares Pedagógicas para Imprimir Gratuitamente",
+      "h1": "Atividades Escolares"
+    },
+    "moldes": {
+      "seo": "Moldes para Imprimir: Letras, Números e Personagens",
+      "h1": "Moldes para Imprimir"
+    }
+  },
+  "subcategorias": {
+    "desenhos-super-herois": {
+      "parent": "desenhos-para-colorir",
+      "seo": "Super-Heróis para Colorir em PDF",
+      "h1": "Super-Heróis",
+      "shortDescription": "Desenhos dos seus heróis favoritos prontos para colorir e imprimir."
+    },
+    "desenhos-letras": {
+      "parent": "moldes",
+      "seo": "Molde de Letras para Imprimir",
+      "h1": "Letras",
+      "shortDescription": "Moldes de letras decorativas para imprimir e criar projetos criativos."
+    },
+    "desenhos-matematica": {
+      "parent": "atividade-escolar",
+      "seo": "Atividades de Matemática para Imprimir",
+      "h1": "Matemática",
+      "shortDescription": "Exercícios e atividades de matemática lúdicas para imprimir e aprender."
+    },
+    "desenhos-detetive-labrador": {
+      "parent": "desenhos-para-colorir",
+      "seo": "Desenhos do Detetive Labrador para Colorir e Imprimir",
+      "h1": "Detetive Labrador",
+      "shortDescription": "Explore nossa coleção de desenhos do detetive labrador prontos para imprimir e colorir grátis."
+    },
+    "desenhos-hello-kitty": {
+      "parent": "desenhos-para-colorir",
+      "seo": "Desenhos da Hello Kitty para Colorir e Imprimir",
+      "h1": "Hello Kitty",
+      "shortDescription": "Explore nossa coleção de desenhos da hello kitty prontos para imprimir e colorir grátis."
+    },
+    "desenhos-minecraft": {
+      "parent": "desenhos-para-colorir",
+      "seo": "Desenhos do Minecraft para Colorir e Imprimir",
+      "h1": "Minecraft",
+      "shortDescription": "Explore nossa coleção de desenhos do minecraft prontos para imprimir e colorir grátis."
+    },
+    "desenhos-homem-aranha": {
+      "parent": "desenhos-super-herois",
+      "seo": "Desenhos do Homem-Aranha para Colorir",
+      "h1": "Homem-Aranha",
+      "shortDescription": "Explore nossa coleção de desenhos do Homem-Aranha prontos para imprimir e colorir grátis."
+    },
+    "desenhos-batman": {
+      "parent": "desenhos-super-herois",
+      "seo": "Desenhos do Batman para Colorir",
+      "h1": "Batman",
+      "shortDescription": "Explore nossa coleção de desenhos do Batman prontos para imprimir e colorir grátis."
+    },
+    "desenhos-naruto": {
+      "parent": "desenhos-animes",
+      "seo": "Desenhos de Naruto para Colorir e Imprimir",
+      "h1": "Naruto",
+      "shortDescription": "Explore nossa coleção de desenhos de naruto prontos para imprimir e colorir grátis."
+    },
+    "desenhos-rosas": {
+      "parent": "desenhos-flores",
+      "seo": "Desenhos de Rosas para Colorir e Imprimir",
+      "h1": "Rosas",
+      "shortDescription": "Explore nossa coleção de desenhos de rosas prontos para imprimir e colorir grátis."
+    },
+    "desenhos-samambaia": {
+      "parent": "desenhos-folhas-plantas",
+      "seo": "Desenhos de Samambaia para Colorir e Imprimir",
+      "h1": "Samambaia",
+      "shortDescription": "Explore nossa coleção de desenhos de samambaia prontos para imprimir e colorir grátis."
+    },
+    "desenhos-bombeiro": {
+      "parent": "desenhos-profissoes",
+      "seo": "Desenhos de Bombeiro para Colorir e Imprimir",
+      "h1": "Bombeiro",
+      "shortDescription": "Explore nossa coleção de desenhos de bombeiro prontos para imprimir e colorir grátis."
+    },
+    "desenhos-jato": {
+      "parent": "desenhos-avioes",
+      "seo": "Desenhos de Jato para Colorir e Imprimir",
+      "h1": "Jato",
+      "shortDescription": "Explore nossa coleção de desenhos de jato prontos para imprimir e colorir grátis."
+    },
+    "desenhos-fusca": {
+      "parent": "desenhos-carros",
+      "seo": "Desenhos de Fusca para Colorir e Imprimir",
+      "h1": "Fusca",
+      "shortDescription": "Explore nossa coleção de desenhos de fusca prontos para imprimir e colorir grátis."
+    },
+    "desenhos-veleiro": {
+      "parent": "desenhos-navios",
+      "seo": "Desenhos de Veleiro para Colorir e Imprimir",
+      "h1": "Veleiro",
+      "shortDescription": "Explore nossa coleção de desenhos de veleiro prontos para imprimir e colorir grátis."
+    },
+    "desenhos-natal": {
+      "parent": "desenhos-datas-comemorativas",
+      "seo": "Desenhos de Natal para Colorir e Imprimir",
+      "h1": "Natal",
+      "shortDescription": "Explore nossa coleção de desenhos de natal prontos para imprimir e colorir grátis."
+    },
+    "desenhos-maca": {
+      "parent": "desenhos-frutas",
+      "seo": "Desenhos de Maçã para Colorir e Imprimir",
+      "h1": "Maçã",
+      "shortDescription": "Explore nossa coleção de desenhos de maçã prontos para imprimir e colorir grátis."
+    }
+  }
+}

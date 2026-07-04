@@ -1,0 +1,100 @@
+---
+// src/components/LayoutDownload.astro
+import { getRouteHref } from "../utils/routeAlias";
+const { dados } = Astro.props;
+---
+
+<div class="pagina-download-container">
+    <section class="conteudo-wrapper container max-w-4xl mx-auto">
+            <nav class="breadcrumbs">
+        <a href="/">Home</a> &gt;
+        <a href="/desenhos-para-colorir/">desenhos para colorir</a> &gt;
+        {
+            dados.categoria && (
+                <>
+                    <a href={getRouteHref(dados.categoria)}>
+                        {dados.categoria.replace(/-/g, " ")}
+                    </a>{" "}
+                    &gt;
+                </>
+            )
+        }
+        {
+            dados.subcategoria && (
+                <>
+                    <a href={getRouteHref(dados.subcategoria)}>
+                        {dados.subcategoria.replace(/-/g, " ")}
+                    </a>{" "}
+                    &gt;
+                </>
+            )
+        }
+        <span class="cor-atual">{dados.titulo.toLowerCase()}</span>
+    </nav>
+
+        <div
+            class="layout-principal grid grid-cols-1 md:grid-cols-12 gap-8 items-start mt-4"
+        >
+            <div
+                class="md:col-span-7 bg-white rounded-2xl border border-slate-200 p-4 shadow-sm flex items-center justify-center"
+            >
+                <img
+                    src={dados.imagemPreview}
+                    alt={dados.titulo}
+                    class="w-full h-auto max-h-[600px] object-contain rounded-lg"
+                    loading="eager"
+                />
+            </div>
+
+            <div class="md:col-span-5 space-y-6">
+                <div>
+                    <h1 class="text-3xl font-extrabold text-slate-900 mb-2">
+                        {dados.titulo}
+                    </h1>
+                    <p class="text-slate-500 text-sm">
+                        Código do item: {dados.id}
+                    </p>
+                </div>
+
+                <button
+                    id="btn-imprimir"
+                    data-image={dados.imagemPreview}
+                    class="w-full block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg transform hover:-translate-y-0.5 cursor-pointer"
+                >
+                    🖨️ Imprimir Desenho Agora
+                </button>
+
+                <div
+                    class="bg-slate-100 rounded-xl border-2 border-dashed border-slate-300 p-8 text-center text-xs text-slate-400 font-mono"
+                >
+                    [ ANÚNCIO ALTAMENTE RENTÁVEL ]
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    const botao = document.getElementById("btn-imprimir");
+
+    if (botao) {
+        botao.addEventListener("click", () => {
+            const urlImagem = botao.getAttribute("data-image");
+            if (!urlImagem) return;
+
+            // Abre a imagem diretamente em uma nova aba
+            const win = window.open(urlImagem, "_blank");
+
+            if (win) {
+                // O onload garante que a impressão só chame quando a imagem estiver pronta
+                win.onload = () => {
+                    win.print();
+                };
+            } else {
+                alert(
+                    "Pop-up bloqueado! Por favor, autorize a abertura de janelas para imprimir.",
+                );
+            }
+        });
+    }
+</script>

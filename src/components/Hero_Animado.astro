@@ -1,0 +1,226 @@
+---
+// Lista de palavras para a animação contínua
+const titles = ["incrível.", "sofisticado.", "moderno.", "exclusivo.", "perfeito."];
+---
+
+<section id="hero" class="hero-section" aria-label="Seu escritório com um design premium">
+  
+  <span class="badge-tag">
+    — Projetos de Alto Padrão
+  </span>
+
+  <h1 class="main-title">
+    <span class="title-static">Seu escritório com um design&nbsp;</span>
+    
+    <span class="style-premium-container">
+      {titles.map((title, index) => (
+        <span 
+          class="css-animated-word goldgradient"
+          style={`animation-delay: ${index * 4}s;`}
+        >
+          {title}
+        </span>
+      ))}
+    </span>
+  </h1>
+
+  <p class="subtitle-text">
+    Divisórias corporativas sob medida com isolamento acústico e persianas integradas. Valorize seu espaço de trabalho com materiais premium que transmitem autoridade e elegância.
+  </p>
+
+  <div class="actions-container">
+    <a href="#contato" class="cta btn-primary">
+      Falar com Especialista
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    
+    <a href="#modelos" class="btn-secondary">
+      Conhecer Modelos
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+</section>
+
+<style>
+  /* ESTRUTURA PRINCIPAL DO HERO */
+  .hero-section {
+    width: 100%;
+    background-color: #151515 !important;
+    color: #ffffff;
+    padding: 80px 16px; /* py-20 px-4 */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 75vh;
+    box-sizing: border-box;
+  }
+
+  /* TAG SUPERIOR (BADGE) */
+  .badge-tag {
+    display: inline-block;
+    padding: 6px 16px; /* py-1.5 px-4 */
+    border-radius: 9999px;
+    background-color: #18181b; /* zinc-900 */
+    border: 1px solid #27272a; /* zinc-800 */
+    color: #b58a0a; /* Seu dourado padrão corporativo */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 700; /* font-bold */
+    letter-spacing: 0.1em; /* tracking-widest */
+    text-transform: uppercase;
+    margin-bottom: 24px; /* mb-6 */
+  }
+  .badge-tag::selection {
+    background-color: rgba(181, 138, 10, 0.2);
+  }
+
+  /* TÍTULO PRINCIPAL (H1) */
+  .main-title {
+    color: #eaeaea;
+    font-family: serif; /* Mantido seu font-serif */
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: clamp(1.8rem, 4.2vw, 3.5rem);
+    letter-spacing: -0.025em; /* tracking-tight */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .title-static {
+    display: block;
+  }
+
+  /* CONTAINER DAS PALAVRAS EM ANIMAÇÃO */
+  .style-premium-container {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    vertical-align: bottom;
+  }
+
+  /* PALAVRAS ANIMADAS */
+  .css-animated-word {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-family: serif;
+    font-weight: 400;
+    padding-right: 8px; /* pr-2 */
+    text-align: left;
+    opacity: 0;
+    transform: translateY(2rem);
+    will-change: transform;
+    animation: slideWordsPremium 20s infinite ease-in-out;
+  }
+
+  /* TEXTO DE APOIO (SUBTÍTULO) */
+  .subtitle-text {
+    margin-top: 32px; /* mt-8 */
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #a1a1aa; /* zinc-400 */
+    max-width: 42rem; /* max-w-2xl */
+    font-size: clamp(1rem, 1.15vw, 1.12rem);
+    line-height: 1.625; /* leading-relaxed */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+  }
+
+  /* CONTAINER DE BOTÕES ACCORDING */
+  .actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* gap-4 */
+    margin-top: 32px; /* mt-8 */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* BOTÃO SECUNDÁRIO (O PRIMÁRIO É CLASSE GLOBAL .cta) */
+  .btn-primary {
+    width: 100%;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3f3f46; /* zinc-700 */
+    background-color: rgba(24, 24, 27, 0.5); /* zinc-900/50 */
+    color: #ffffff;
+    font-weight: 500;
+    padding: 14px 32px; /* py-3.5 px-8 */
+    border-radius: 4px;
+    transition: all 0.30s ease;
+    gap: 12px; /* gap-3 */
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .btn-secondary:hover {
+    background-color: #27272a; /* zinc-800 */
+  }
+
+  /* ENGENHARIA RESPONSIVA NATIVA (MEDIA QUERIES SIMPLIFICADOS) */
+  @media (min-width: 640px) { /* Breakpoint sm do Tailwind */
+    .actions-container {
+      flex-direction: row;
+      width: auto;
+    }
+    .btn-primary,
+    .btn-secondary {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 768px) { /* Breakpoint md do Tailwind */
+    .main-title {
+      flex-wrap: nowrap;
+    }
+  }
+
+  @media (min-width: 1024px) { /* Breakpoint lg do Tailwind */
+    .hero-section {
+      padding-top: 160px;  /* py-40 */
+      padding-bottom: 160px;
+    }
+  }
+
+  /* TIMING KEYFRAMES DA ANIMAÇÃO */
+  @keyframes slideWordsPremium {
+    0% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    5% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    25% {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+  }
+</style>

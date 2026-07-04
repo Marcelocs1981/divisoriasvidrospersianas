@@ -1,0 +1,90 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Resultados da busca">
+    <div class="layout-container">
+        <aside class="sidebar-left">
+            <div class="ad-placeholder">PUBLICIDADE 1</div>
+        </aside>
+
+        <main class="main-content">
+            <h1>Resultados da busca</h1>
+            <div id="search"></div>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="ad-placeholder">PUBLICIDADE 2</div>
+        </aside>
+    </div>
+</BaseLayout>
+
+<style>
+    /* Desktop: Grid de 3 colunas */
+    .layout-container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .ad-placeholder {
+        background: #f0f0f0;
+        border: 2px dashed #ccc;
+        padding: 20px;
+        text-align: center;
+        min-height: 200px;
+    }
+
+    /* Mobile: Ordem personalizada */
+    @media (max-width: 768px) {
+        .layout-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-left {
+            order: 1;
+        }
+        .main-content {
+            order: 2;
+        }
+        .sidebar-right {
+            order: 3;
+        }
+    }
+</style>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+    // Usamos um evento que garante que tudo foi carregado
+    window.addEventListener("load", () => {
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get("q");
+
+        // Verificação de segurança: checar se o elemento existe
+        const searchElement = document.querySelector("#search");
+        if (!searchElement) {
+            console.error("Elemento #search não encontrado!");
+            return;
+        }
+
+        const searchUI = new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            resetStyles: false,
+            showSearchInput: false,
+            query: query || "",
+        });
+
+        if (query) {
+            // Pequeno atraso para garantir que o DOM do Grid/Flex já estabilizou
+            setTimeout(() => {
+                searchUI.triggerSearch(query);
+            }, 250);
+        }
+    });
+</script>

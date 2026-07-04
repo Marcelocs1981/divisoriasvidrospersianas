@@ -1,124 +1,615 @@
-/* ==RESET== */
-*, *::before, *::after {
+/* ==========================================================================
+   1. VARIÁVEIS GLOBAIS E DIRETRIZES DE DESIGN
+   ========================================================================== */
+:root {
+  --max-width-site: 1200px;
+  --container-padding: 24px;
+  --bg-main: #ffffff;
+  --bg-alt: #f2fdff;
+  --text-main: #2d3748;
+  --text-muted: #4a5568;
+  --border-color: rgba(74, 85, 104, 0.08);
+  --color-primary: #2b9eb3;
+  --color-success: #43aa8b;
+  --color-playful: #4a007c;
+  --color-secondary: #ff6f59;
+  --color-accent: #fbc638;
+  --gradiente-infantil: linear-gradient(135deg, #ff6f59, #fbc638);
+  --goldgradient: linear-gradient(135deg, #2b9eb3, #43aa8b, #7209b7, #ff6f59);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --container-padding: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --max-width-site: 1260px;
+    --container-padding: 32px;
+  }
+}
+
+/* ==========================================================================
+   2. RESET, ACESSIBILIDADE E PERFORMANCE
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family:
-    Arial,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-alt);
+  color: var(--text-main);
 }
 
-h1, h2, h3, h4, h5, h6, .quote-text {
-  font-family: "Times New Roman", Times, Georgia, serif;
-  font-weight: 400;
-  line-height: 1.1;
+/* ==========================================================================
+   3. TIPOGRAFIA
+   ========================================================================== */
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+h1 {
+  font-size: clamp(1.8rem, 3.2vw, 2.1rem);
+  margin-bottom: 16px;
 }
 
-.tag {
-  display: block;
-  font-size: clamp(0.55rem, 1.2vw, 0.8rem);
-  letter-spacing: 4px;
-  color: #ffbf00;
-  margin-bottom: 25px;
-  text-transform: uppercase;
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin-bottom: 12px;
 }
 
-.gold {
-    background: linear-gradient(90deg, #b58a0a, #f5d76e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .bgdk {
-  padding: 100px 0;
-  background: #050505;
-  color: #fff;
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  margin-bottom: 12px;
 }
 
-/* CTA */
-.cta {
-  margin-top: 70px;
-  text-align: center;
+.minusc {
+  text-transform: lowercase;
 }
 
-.cta a {
-  display: inline-flex;
-  padding: 15px 32px;
-  border: 1px solid #b58a0a;
-  border-radius: 5px;
-  color: #f5d76e;
+.capitalize {
+}
+
+/* --- COMPONENTE DO CARD PADRÃO (UNIFICADO) --- */
+.card-categoria {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
   text-decoration: none;
-  font-size: clamp(0.85rem, 0.85vw, 1rem);
-  font-weight: 400;
-  letter-spacing: 1px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
   will-change: transform;
 }
 
-.cta a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(181,138,10,0.25);
+.card-categoria:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  border-color: var(--color-primary);
 }
 
-/*.btndk {
-  border: 1px solid #b58a0a;
-  color: #f5d76e;
+.card-categoria img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background-color: var(--bg-alt);
+  display: block;
 }
 
-.btndk:hover {
-  background: rgba(181,138,10,0.08);
-}*/
+.card-content {
+  padding: 4px 4px 8px 4px;
+}
 
-.lightbox-trigger {
+.card-content h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-content p::first-letter {
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   4. LINKS
+   ========================================================================== */
+a {
+  color: inherit;
+  text-decoration: none !important;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   5. LAYOUT BASE
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section-padrao {
+  padding: 60px 0;
+}
+
+/* ==========================================================================
+   6. COMPONENTES DO PORTAL (COM CORREÇÕES DOS CARDS)
+   ========================================================================== */
+.layout-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .layout-principal {
+    grid-template-columns: 8fr 4fr;
+    align-items: start;
+  }
+}
+
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.card-categoria {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+  transition: 0.2s ease;
+  overflow: hidden;
+}
+
+.card-categoria:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  border-color: var(--color-primary);
+}
+
+.card-categoria img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  /*max-height: 160px;*/
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background-color: var(--bg-alt);
+  display: block;
+}
+
+.card-content {
+  padding: 4px 4px 8px 4px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* TAG INDICADORA SUPERIOR */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.52rem;
+  font-size: 0.80rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.tag::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  background-color: var(--text-muted);
+}
+
+/* GRADIENTES */
+.goldgradient {
+  background: var(--goldgradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+.gradiente-infantil {
+  background: var(--gradiente-infantil);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+/* BOTÃO CTA / BOTÃO DE IMPRESSÃO (Regra dos 10%) */
+.cta,
+#btn-imprimir {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 16px 32px;
+  border-radius: 12px;
+  color: #ffffff;
+  background: var(--color-secondary);
+  /* Laranja Coral de Alta Conversão */
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
   cursor: pointer;
+  line-height: 1.2;
+  box-shadow: 0 4px 14px rgba(255, 111, 89, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  will-change: transform;
 }
 
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.92);
+.cta:hover,
+#btn-imprimir:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-playful);
+  /* Muda para o Roxo Lúdico no foco */
+  box-shadow: 0 8px 22px rgba(114, 9, 183, 0.35);
+}
+
+/* --- ESTRUTURA DA PÁGINA DE DOWNLOAD/PRODUTO FINAL --- */
+.pagina-download-container {
+  padding-top: 110px;
+  /* Impede o conteúdo de sumir sob o menu fixo */
+  padding-bottom: 48px;
+  width: 100%;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.breadcrumbs a {
+  color: var(--text-muted);
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.grid-desenho {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .grid-desenho {
+    grid-template-columns: 7fr 5fr;
+  }
+}
+
+.bloco-imagem {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.bloco-imagem img {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.bloco-informacoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloco-informacoes h1 {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  margin-bottom: 8px;
+}
+
+.codigo-item {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* --- SIDEBAR STICKY --- */
+.sidebar-anuncios {
+  position: static;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-anuncios {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+.bloco-anuncio {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  font-size: 12px;
+  color: #94a3b8;
+  font-family: monospace;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease;
-  z-index: 9999;
 }
 
-.lightbox.active {
-  opacity: 1;
-  visibility: visible;
+/* --- GRID DO LAYOUT DE CATEGORIAS / TILES DE LISTAGEM --- */
+/* Nota: As classes .grid-categorias e .card-categoria foram definidas acima e estão sendo usadas nos componentes */
+
+/* Classes específicas para a nova estrutura de topo unificada */
+.bloco-imagem-topo {
+  width: 100%;
+  max-width: 600px;
+  /* Mantém a imagem em um tamanho focado e elegante no topo */
+  margin: 0 auto 24px auto;
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
-.lightbox img {
-  max-width: 92%;
-  max-height: 92%;
+.bloco-imagem-topo img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.short-description {
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+/* Estilo para a imagem de preview dentro dos cards da listagem de categorias */
+.card-categoria-desenho {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-categoria-desenho:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+}
+
+.img-preview-wrap {
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.img-preview-wrap img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
-.close {
-  position: absolute;
-  top: 20px;
-  right: 24px;
-  background: none;
-  border: 0;
-  color: #fff;
-  font-size: 42px;
-  cursor: pointer;
+/* --- ESTILIZAÇÃO DO WIDGET RECOMENDADOS DA SIDEBAR --- */
+.widget-relacionados {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
+}
+
+/* --- COMPONENTE DO ÍNDICE DA POLÍTICA DE PRIVACIDADE --- */
+.privacy-toc {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 40px 0;
+  color: var(--text-main);
+  line-height: 1.6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width: 767px) {
+  .privacy-toc {
+    padding: 20px 15px;
+  }
+}
+
+.privacy-toc h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  border: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.privacy-toc ol {
+  padding-left: 20px;
+}
+
+.privacy-toc li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.privacy-toc a {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.privacy-toc a:hover {
+  color: var(--color-primary);
+  text-decoration: none !important;
+}
+
+.widget-relacionados h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-main);
+  border-bottom: 2px solid var(--bg-alt);
+  padding-bottom: 8px;
+}
+
+.lista-relacionados {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-lateral {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 12px;
+  background: var(--bg-alt);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.card-lateral:hover {
+  transform: translateX(4px);
+  background-color: #e6f9fc;
+  /* Um tom sutil baseado no seu turquesa */
+}
+
+.img-lateral-wrap {
+  width: 65px;
+  height: 65px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-lateral-wrap img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.info-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-lateral h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
+}
+
+.btn-link-lateral {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Estilos da Página de buscas*/
+
+.pesquisa {
+  max-width: 800px;
+  margin: 40px auto;
+  /* Afasta 40px do topo e centraliza */
+  padding: 0 20px;
 }

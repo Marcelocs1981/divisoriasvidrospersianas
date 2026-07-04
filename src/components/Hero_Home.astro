@@ -1,0 +1,101 @@
+---
+// src/components/Hero.astro
+import { Image } from "astro:assets";
+import placeholderImg from "../assets/placeholder.webp";
+import meta from "../data/metadata.json";
+
+const categoriasHome = [
+  { href: "/desenhos-para-colorir/", id: "desenhos-para-colorir", imgClass: "bg-light-coral" },
+  { href: "/papelaria-para-colorir/", id: "papelaria-para-colorir", imgClass: "bg-light-green" },
+  { href: "/atividades-educacao-infantil/", id: "atividades-educacao-infantil", imgClass: "bg-light-yellow" },
+  { href: "/atividade-escolar/", id: "atividade-escolar", imgClass: "bg-light-blue" },
+  { href: "/moldes/", id: "moldes", imgClass: "bg-light-purple" }
+];
+const metaAny = meta as any;
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <h1 id="hero-title">
+      Atividades ou Desenhos para Colorir e Imprimir Grátis
+    </h1>
+    <p class="hero-lead">
+      Explore milhares de desenhos para colorir, atividades educativas,
+      atividades pedagógicas, moldes para imprimir e diversos materiais
+      gratuitos para professores, educadores, pais e alunos. Tudo pronto para
+      baixar, imprimir e aprender de forma criativa.
+    </p>
+
+    <div class="hero-grid">
+      {categoriasHome.map(cat => {
+        const config = metaAny.categorias[cat.id] || {};
+        return (
+          <a href={cat.href} class="card-categoria">
+            <Image
+          src={placeholderImg}
+              alt={config.h1 || "Categoria"}
+          width={340}
+          height={160}
+              class={`card-img ${cat.imgClass}`}
+        />
+            <div class="card-content">
+              <h3 class="capitalize">{config.h1}</h3>
+              <p class="minusc">{config.seo}</p>
+    </div>
+          </a>
+        );
+      })}
+  </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 125px 0 60px;
+    text-align: left;
+  }
+
+  .hero h1 {
+    margin-bottom: 40px;
+  }
+
+  .hero-lead {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .card-categoria img {
+    aspect-ratio: 340 / 160;
+  }
+
+  /* Fundos pastéis baseados no design system global */
+  .bg-light-coral { background-color: color-mix(in srgb, var(--color-secondary) 10%, #fff); }
+  .bg-light-yellow { background-color: color-mix(in srgb, var(--color-accent) 10%, #fff); }
+  .bg-light-blue { background-color: color-mix(in srgb, var(--color-primary) 10%, #fff); }
+  .bg-light-green { background-color: color-mix(in srgb, var(--color-success) 10%, #fff); }
+  .bg-light-purple { background-color: color-mix(in srgb, var(--color-playful) 10%, #fff); }
+  @media (max-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding-top: 110px;
+      padding-bottom: 40px;
+    }
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+    }
+</style>
+

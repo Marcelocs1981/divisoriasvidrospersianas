@@ -1,62 +1,117 @@
 ---
-import { getImage } from 'astro:assets';
-import imgDesktop from '../assets/divisorias-de-vidros-com-persianas-1920px.webp';
-import imgMobile from '../assets/divisorias-de-vidros-com-persianas-768x1080.webp';
-import Layout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Anticipation from '../components/Anticipation.astro';
-import Diferenciais from '../components/Diferenciais.astro';
-import Produtos from '../components/Produtos.astro';
-import Escolher from '../components/Escolher.astro';
-import Reuniao from '../components/Reuniao.astro';
-import Primeiro from '../components/Porque.astro';
-import Parceiros from '../components/Parceiros.astro';
-import Orcamento from '../components/Orcamento.astro';
+import { getImage } from "astro:assets";
+import Layout from "../layouts/BaseLayout.astro";
+import Hero_Home from "../components/Hero_Home.astro";
+import imgDesktop from "../assets/divisorias-de-vidros-com-persianas-1920px.webp";
+import imgMobile from "../assets/divisorias-de-vidros-com-persianas-768x1080.webp";
+import Intro_Categorias from "../components/Intro_Categorias.astro";
+import Categorias from "../components/Categorias.astro";
+import categoriasDesenhos from "../content/desenhos.json";
+import atividadesEducacao from "../content/atividadesEducacaoInfantil/atividades.json";
+import dadosMoldes from "../content/moldes/moldes.json";
+import dadosAtividades from "../content/atividadesEscolares/atividades.json";
 
-const lcpDesktop = await getImage({ src: imgDesktop, format: 'webp', quality: 45, width: 1920 });
-const lcpMobile = await getImage({ src: imgMobile, format: 'webp', quality: 45, width: 768 });
+type CategoriaCard = {
+  label: string;
+  title: string;
+  alt: string;
+  desc: string;
+  image: string;
+  slug: string;
+  textoBotao: string;
+  isAds: boolean;
+  gridClass?: string;
+};
+
+const isCategoriaCard = (item: unknown): item is CategoriaCard => {
+  if (!item || typeof item !== "object") return false;
+
+  const categoria = item as Partial<CategoriaCard>;
+  return (
+    typeof categoria.label === "string" &&
+    typeof categoria.title === "string" &&
+    typeof categoria.alt === "string" &&
+    typeof categoria.desc === "string" &&
+    typeof categoria.image === "string" &&
+    typeof categoria.slug === "string" &&
+    typeof categoria.textoBotao === "string" &&
+    typeof categoria.isAds === "boolean"
+  );
+};
+
+const categoriasDesenhosValidas: CategoriaCard[] = (
+  categoriasDesenhos as unknown[]
+).filter(isCategoriaCard);
+
+// Otimização assíncrona simultânea (Promise.all) para carregar os tamanhos de LCP na velocidade máxima
+const [lcp1024, lcp1440, lcp1920, lcpMobile] = await Promise.all([
+  getImage({ src: imgDesktop, format: "webp", quality: 75, width: 1024 }),
+  getImage({ src: imgDesktop, format: "webp", quality: 75, width: 1440 }),
+  getImage({ src: imgDesktop, format: "webp", quality: 75, width: 1920 }),
+  getImage({ src: imgMobile, format: "webp", quality: 75, width: 768 }),
+]);
+
+const lcpDesktopSrcset = `${lcp1024.src} 1024w, ${lcp1440.src} 1440w, ${lcp1920.src} 1920w`;
 ---
+
 <Layout
   seo={{
-    title: "Divisórias de Vidro com Persianas",
-    description: "Divisórias de vidros com persianas embutidas é aqui! Seja bem vindo ao nosso site. Descubra soluções elegantes e funcionais para ambientes corporativos, industriais e comerciais. Explore nossa variedade de produtos e encontre a divisória em vidro duplo com persiana integrada perfeita para transformar seu espaço corporativo.",
+    title:
+      "EduColorPrint | Desenhos para Colorir e Atividades Educativas Para Imprimir e Moldes Grátis",
+    description:
+      "Aqui você encontra desenhos para colorir, moldes, atividades educativas para imprimir e muito mais!. Tudo pronto para baixar e imprimir em formato A4.",
+    type: "website",
   }}
-  lcpDesktopSrc={lcpDesktop.src}
+  lcpDesktopSrcset={lcpDesktopSrcset}
   lcpMobileSrc={lcpMobile.src}
 >
-  <Header />
-  <Hero />
-  <Anticipation />
-  <Diferenciais />
-  <Produtos />
-  <Escolher />
-  <Reuniao />
-  <Primeiro />
-  <Parceiros />
-  <Orcamento />
-</Layout>
+  <Hero_Home />
 
-<div class="lightbox" id="lightbox">
+  <Intro_Categorias categoria="desenhos" />
 
-  <button
-    class="close"
-    id="closeLightbox"
-    aria-label="Fechar imagem"
-  >
-    ×
-  </button>
-
-  <img
-    src=""
-    alt=""
-    id="lightboxImage"
+  {/* SEÇÃO 1: Layout de Mosaico para os Desenhos */}
+  <Categorias
+    id="desenhos-colorir"
+    layout="mosaico"
+    tagTopo="Desenhos Para Pintar Grátis"
+    tituloSecao="Explore milhares de opções de desenhos para <span class='gradiente-infantil'>colorir</span>"
+    textoApoio="Aproveite milhares de desenhos para pintar e colorir grátis! Divirta-se com animais, dinossauros, flores..."
+    listaDados={categoriasDesenhosValidas}
   />
 
-</div>
+  <Intro_Categorias categoria="educacao-infantil" />
 
-<script>
+  {/* SEÇÃO 2: Layout de ABAS HORIZONTAIS */}
+  <Categorias
+    id="atividades-educacao-infantil"
+    layout="abas"
+    tagTopo="Educação Infantil"
+    tituloSecao="Atividades Pedagógicas Gratuitas para <span class='gradiente-infantil'>Imprimir</span>"
+    textoApoio="Materiais exclusivos prontos para baixar e aplicar."
+    listaDados={atividadesEducacao.dados}
+  />
 
-  import '../scripts/lightbox.js';
+  <Intro_Categorias categoria="atividades-escolares" />
 
-</script>
+  {/* SEÇÃO 3: NOVO LAYOUT DE GRID DE CARDS INTERATIVOS */}
+  <Categorias
+    id="atividades-escolares"
+    layout="cards-animados"
+    tagTopo="Ensino Fundamental"
+    tituloSecao="Atividades Escolares e Reforço por <span class='gradiente-infantil'>Disciplina</span>"
+    textoApoio="Selecione a matéria abaixo para encontrar materiais de apoio escolar prontos para imprimir e aplicar."
+    listaDados={dadosAtividades}
+  />
+
+  <Intro_Categorias categoria="moldes" />
+
+  {/* SEÇÃO 4: LAYOUT SPLIT PARA MOLDES E ARTESANATO */}
+  <Categorias
+    id="moldes-imprimir"
+    layout="split"
+    tagTopo="Moldes Criativos"
+    tituloSecao="Moldes para Imprimir e <span class='gradiente-infantil'>Recortar</span>"
+    textoApoio="Encontre moldes completos de letras, animais, flores e personagens prontos para e.v.a, feltro e painéis escolares."
+    listaDados={dadosMoldes}
+  />
+</Layout>
